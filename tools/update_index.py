@@ -30,7 +30,9 @@ def is_done(name, cat):
 
 
 def main():
-    parser = argparse.ArgumentParser(description="Regenerate the README index and PLAN.md checkboxes.")
+    parser = argparse.ArgumentParser(
+        description="Regenerate the README index and PLAN.md checkboxes."
+    )
     parser.parse_args()
 
     plan_path = ROOT / "PLAN.md"
@@ -39,14 +41,16 @@ def main():
     for i, day, num, name, cat in parse_plan(lines):
         total += 1
         done = is_done(name, cat)
-        lines[i] = lines[i].replace("- [ ]", "- [x]") if done else lines[i].replace("- [x]", "- [ ]")
+        old, new = ("- [ ]", "- [x]") if done else ("- [x]", "- [ ]")
+        lines[i] = lines[i].replace(old, new)
         if done:
             link = f"[{name}](scripts/{cat}/{name}/)"
             rows.append(f"| {day} | {num} | {name} | {cat} | {link} |")
     plan_path.write_text("\n".join(lines) + "\n", encoding="utf-8")
 
     table = ["| Day | # | Script | Category | Link |", "| --- | --- | --- | --- | --- |", *rows]
-    block = f"{START}\n\n**Progress: {len(rows)}/{total} done**\n\n" + "\n".join(table) + f"\n\n{END}"
+    progress = f"**Progress: {len(rows)}/{total} done**"
+    block = f"{START}\n\n{progress}\n\n" + "\n".join(table) + f"\n\n{END}"
 
     readme_path = ROOT / "README.md"
     text = readme_path.read_text(encoding="utf-8")

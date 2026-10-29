@@ -2,22 +2,46 @@ name: CI
 
 on:
   push:
+    branches: [main]
   pull_request:
 
+permissions:
+  contents: read
+
 jobs:
-  test:
+  lint:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
-      - name: Install tooling
-        run: pip install ruff pytest
+      - run: pip install ruff
+      - run: ruff check .
+
+  test:
+    name: test (${{ matrix.os }}, py${{ matrix.python }})
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+        python: ["3.11", "3.12"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - run: pip install pytest
       - name: Install script requirements
+        shell: python
         run: |
-          find scripts -name requirements.txt -print0 | xargs -0 -r -n1 pip install -r
-      - name: Lint
-        run: ruff check .
-      - name: Test
-        run: pytest scripts -q || test $? -eq 5
+          import pathlib, subprocess, sys
+          for req in pathlib.Path("scripts").rglob("requirements.txt"):
+              subprocess.check_call([sys.executable, "-m", "pip", "install", "-r", str(req)])
+      - name: Run tests
+        shell: python
+        run: |
+          import subprocess, sys
+          code = subprocess.call([sys.executable, "-m", "pytest", "scripts"])
+          sys.exit(0 if code == 5 else code)

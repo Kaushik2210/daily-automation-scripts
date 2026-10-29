@@ -1,5 +1,11 @@
 # daily-automation-scripts
 
+[![CI](https://github.com/Kaushik2210/daily-automation-scripts/actions/workflows/ci.yml/badge.svg)](https://github.com/Kaushik2210/daily-automation-scripts/actions/workflows/ci.yml)
+![Python 3.11+](https://img.shields.io/badge/python-3.11%2B-blue)
+![Platforms](https://img.shields.io/badge/platform-windows%20%7C%20macos%20%7C%20linux-lightgrey)
+[![License: MIT](https://img.shields.io/badge/license-MIT-green)](LICENSE)
+[![Code style: ruff](https://img.shields.io/badge/lint-ruff-261230)](https://docs.astral.sh/ruff/)
+
 A 30-day challenge: ten small, useful automation scripts every day, 300 in total. Each script lives in its own folder, comes with a README and tests, and lands as its own commit and push.
 
 ## The challenge
@@ -20,9 +26,11 @@ If the script folder has a `requirements.txt`, install it first with `pip instal
 ## Development
 ```bash
 pip install ruff pytest
-ruff check .
-pytest scripts
+make check        # ruff + pytest
+make index        # rebuild the index below
 ```
+
+A [pre-commit](https://pre-commit.com) config is included (`pre-commit install`).
 
 ## Categories
 `files`, `pdf-docs`, `github`, `email`, `web-scraping`, `notion-productivity`, `data`, `system`, `security`, `media`, `text`, `devops`
@@ -38,6 +46,9 @@ The table below is rebuilt by `python tools/update_index.py` from `PLAN.md` and 
 | --- | --- | --- | --- | --- |
 
 <!-- INDEX:END -->
+
+## Contributing and security
+See [CONTRIBUTING.md](CONTRIBUTING.md), [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) and [SECURITY.md](SECURITY.md). Release history lives in [CHANGELOG.md](CHANGELOG.md).
 
 ## License
 MIT, see [LICENSE](LICENSE).
