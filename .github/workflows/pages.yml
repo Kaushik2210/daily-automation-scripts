@@ -38,3 +38,10 @@ jobs:
           path: _site
       - id: deployment
         uses: actions/deploy-pages@v4
+      - name: Check live links
+        run: |
+          for attempt in 1 2 3 4 5; do
+            python web/check_links.py --site "${{ steps.deployment.outputs.page_url }}" && exit 0
+            sleep 20
+          done
+          exit 1

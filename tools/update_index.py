@@ -8,6 +8,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 START, END = "<!-- INDEX:START -->", "<!-- INDEX:END -->"
+SITE = "https://kaushik2210.github.io/daily-automation-scripts"
 DAY_RE = re.compile(r"^## Day (\d\d) - ")
 ITEM_RE = re.compile(r"^- \[[ x]\] (\d\d)\. (\S+) - .+ \(([a-z-]+)\)$")
 
@@ -45,10 +46,12 @@ def main():
         lines[i] = lines[i].replace(old, new)
         if done:
             link = f"[{name}](scripts/{cat}/{name}/)"
-            rows.append(f"| {day} | {num} | {name} | {cat} | {link} |")
+            live = f"[Try it]({SITE}/tools/{cat}/{name}/)"
+            rows.append(f"| {day} | {num} | {name} | {cat} | {link} | {live} |")
     plan_path.write_text("\n".join(lines) + "\n", encoding="utf-8", newline="\n")
 
-    table = ["| Day | # | Script | Category | Link |", "| --- | --- | --- | --- | --- |", *rows]
+    head = "| Day | # | Script | Category | Source | Live |"
+    table = [head, "| --- | --- | --- | --- | --- | --- |", *rows]
     progress = f"**Progress: {len(rows)}/{total} done**"
     block = f"{START}\n\n{progress}\n\n" + "\n".join(table) + f"\n\n{END}"
 
