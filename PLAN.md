@@ -24,7 +24,7 @@ Difficulty: easy on days 1-10, medium on days 11-20, more advanced on days 21-30
 - [x] 05. whitespace-stripper - Strip trailing whitespace and fix line endings (text)
 - [x] 06. bulk-find-replace - Find and replace text across many files (text)
 - [x] 07. text-diff-viewer - Show a colored diff of two text files (text)
-- [ ] 08. lorem-generator - Generate placeholder paragraphs of any length (text)
+- [x] 08. lorem-generator - Generate placeholder paragraphs of any length (text)
 - [ ] 09. slugify-text - Turn titles into URL-safe slugs (text)
 - [ ] 10. csv-to-markdown - Convert a CSV file into a markdown table (data)
 

@@ -49,7 +49,7 @@ The table below is rebuilt by `python tools/update_index.py` from `PLAN.md` and 
 
 <!-- INDEX:START -->
 
-**Progress: 17/300 done**
+**Progress: 18/300 done**
 
 | Day | # | Script | Category | Source | Live |
 | --- | --- | --- | --- | --- | --- |
@@ -70,6 +70,7 @@ The table below is rebuilt by `python tools/update_index.py` from `PLAN.md` and 
 | 02 | 05 | whitespace-stripper | text | [whitespace-stripper](scripts/text/whitespace-stripper/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/text/whitespace-stripper/) |
 | 02 | 06 | bulk-find-replace | text | [bulk-find-replace](scripts/text/bulk-find-replace/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/text/bulk-find-replace/) |
 | 02 | 07 | text-diff-viewer | text | [text-diff-viewer](scripts/text/text-diff-viewer/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/text/text-diff-viewer/) |
+| 02 | 08 | lorem-generator | text | [lorem-generator](scripts/text/lorem-generator/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/text/lorem-generator/) |
 
 <!-- INDEX:END -->
 
