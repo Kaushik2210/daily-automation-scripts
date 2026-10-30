@@ -10,7 +10,7 @@ Difficulty: easy on days 1-10, medium on days 11-20, more advanced on days 21-30
 - [x] 03. folder-organizer - Sort files into subfolders by extension (files)
 - [x] 04. empty-folder-cleaner - List and remove empty directories (files)
 - [x] 05. file-size-lister - List files in a folder sorted by size (files)
-- [ ] 06. old-file-finder - Find files not modified in N days (files)
+- [x] 06. old-file-finder - Find files not modified in N days (files)
 - [ ] 07. downloads-sorter - Move downloads into year-month folders (files)
 - [ ] 08. extension-counter - Count files per extension in a tree (files)
 - [ ] 09. filename-normalizer - Lowercase and clean up messy filenames (files)
