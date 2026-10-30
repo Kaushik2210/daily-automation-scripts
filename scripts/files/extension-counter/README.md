@@ -21,7 +21,7 @@ extension      files         bytes
 .py               41        120394
 .md               12         48210
 .json              7          9120
-60 file(s), 5 extension(s)
+75 file(s), 5 extension(s)
 ```
 
 ## Notes

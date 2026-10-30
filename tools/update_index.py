@@ -46,7 +46,7 @@ def main():
         if done:
             link = f"[{name}](scripts/{cat}/{name}/)"
             rows.append(f"| {day} | {num} | {name} | {cat} | {link} |")
-    plan_path.write_text("\n".join(lines) + "\n", encoding="utf-8")
+    plan_path.write_text("\n".join(lines) + "\n", encoding="utf-8", newline="\n")
 
     table = ["| Day | # | Script | Category | Link |", "| --- | --- | --- | --- | --- |", *rows]
     progress = f"**Progress: {len(rows)}/{total} done**"
@@ -57,7 +57,7 @@ def main():
     pattern = re.compile(re.escape(START) + r".*?" + re.escape(END), re.DOTALL)
     if not pattern.search(text):
         raise SystemExit("README.md is missing the INDEX markers")
-    readme_path.write_text(pattern.sub(lambda _: block, text), encoding="utf-8")
+    readme_path.write_text(pattern.sub(lambda _: block, text), encoding="utf-8", newline="\n")
     print(f"{len(rows)}/{total} done")
 
 
