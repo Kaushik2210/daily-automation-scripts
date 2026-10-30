@@ -40,7 +40,7 @@ The table below is rebuilt by `python tools/update_index.py` from `PLAN.md` and 
 
 <!-- INDEX:START -->
 
-**Progress: 8/300 done**
+**Progress: 9/300 done**
 
 | Day | # | Script | Category | Link |
 | --- | --- | --- | --- | --- |
@@ -52,6 +52,7 @@ The table below is rebuilt by `python tools/update_index.py` from `PLAN.md` and 
 | 01 | 06 | old-file-finder | files | [old-file-finder](scripts/files/old-file-finder/) |
 | 01 | 07 | downloads-sorter | files | [downloads-sorter](scripts/files/downloads-sorter/) |
 | 01 | 08 | extension-counter | files | [extension-counter](scripts/files/extension-counter/) |
+| 01 | 09 | filename-normalizer | files | [filename-normalizer](scripts/files/filename-normalizer/) |
 
 <!-- INDEX:END -->
 
