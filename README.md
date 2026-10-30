@@ -40,7 +40,7 @@ The table below is rebuilt by `python tools/update_index.py` from `PLAN.md` and 
 
 <!-- INDEX:START -->
 
-**Progress: 4/300 done**
+**Progress: 5/300 done**
 
 | Day | # | Script | Category | Link |
 | --- | --- | --- | --- | --- |
@@ -48,6 +48,7 @@ The table below is rebuilt by `python tools/update_index.py` from `PLAN.md` and 
 | 01 | 02 | duplicate-file-finder | files | [duplicate-file-finder](scripts/files/duplicate-file-finder/) |
 | 01 | 03 | folder-organizer | files | [folder-organizer](scripts/files/folder-organizer/) |
 | 01 | 04 | empty-folder-cleaner | files | [empty-folder-cleaner](scripts/files/empty-folder-cleaner/) |
+| 01 | 05 | file-size-lister | files | [file-size-lister](scripts/files/file-size-lister/) |
 
 <!-- INDEX:END -->
 
