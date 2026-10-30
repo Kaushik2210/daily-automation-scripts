@@ -43,5 +43,5 @@ jobs:
         shell: python
         run: |
           import subprocess, sys
-          code = subprocess.call([sys.executable, "-m", "pytest", "scripts"])
+          code = subprocess.call([sys.executable, "-m", "pytest", "scripts", "web"])
           sys.exit(0 if code == 5 else code)
