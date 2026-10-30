@@ -17,7 +17,7 @@ Difficulty: easy on days 1-10, medium on days 11-20, more advanced on days 21-30
 - [x] 10. tree-printer - Print a directory tree with depth limit (files)
 
 ## Day 02 - Text tidy-up
-- [ ] 01. word-counter - Count words, lines and characters in text files (text)
+- [x] 01. word-counter - Count words, lines and characters in text files (text)
 - [ ] 02. line-deduper - Remove duplicate lines while keeping order (text)
 - [ ] 03. case-converter - Convert text between camel, snake, kebab and title case (text)
 - [ ] 04. markdown-toc-generator - Build a table of contents for a markdown file (text)
