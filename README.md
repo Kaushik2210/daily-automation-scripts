@@ -40,7 +40,7 @@ The table below is rebuilt by `python tools/update_index.py` from `PLAN.md` and 
 
 <!-- INDEX:START -->
 
-**Progress: 6/300 done**
+**Progress: 7/300 done**
 
 | Day | # | Script | Category | Link |
 | --- | --- | --- | --- | --- |
@@ -50,6 +50,7 @@ The table below is rebuilt by `python tools/update_index.py` from `PLAN.md` and 
 | 01 | 04 | empty-folder-cleaner | files | [empty-folder-cleaner](scripts/files/empty-folder-cleaner/) |
 | 01 | 05 | file-size-lister | files | [file-size-lister](scripts/files/file-size-lister/) |
 | 01 | 06 | old-file-finder | files | [old-file-finder](scripts/files/old-file-finder/) |
+| 01 | 07 | downloads-sorter | files | [downloads-sorter](scripts/files/downloads-sorter/) |
 
 <!-- INDEX:END -->
 
