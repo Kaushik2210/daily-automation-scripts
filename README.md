@@ -49,7 +49,7 @@ The table below is rebuilt by `python tools/update_index.py` from `PLAN.md` and 
 
 <!-- INDEX:START -->
 
-**Progress: 12/300 done**
+**Progress: 13/300 done**
 
 | Day | # | Script | Category | Source | Live |
 | --- | --- | --- | --- | --- | --- |
@@ -65,6 +65,7 @@ The table below is rebuilt by `python tools/update_index.py` from `PLAN.md` and 
 | 01 | 10 | tree-printer | files | [tree-printer](scripts/files/tree-printer/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/files/tree-printer/) |
 | 02 | 01 | word-counter | text | [word-counter](scripts/text/word-counter/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/text/word-counter/) |
 | 02 | 02 | line-deduper | text | [line-deduper](scripts/text/line-deduper/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/text/line-deduper/) |
+| 02 | 03 | case-converter | text | [case-converter](scripts/text/case-converter/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/text/case-converter/) |
 
 <!-- INDEX:END -->
 
