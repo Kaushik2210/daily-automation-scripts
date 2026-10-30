@@ -40,12 +40,13 @@ The table below is rebuilt by `python tools/update_index.py` from `PLAN.md` and 
 
 <!-- INDEX:START -->
 
-**Progress: 2/300 done**
+**Progress: 3/300 done**
 
 | Day | # | Script | Category | Link |
 | --- | --- | --- | --- | --- |
 | 01 | 01 | bulk-file-renamer | files | [bulk-file-renamer](scripts/files/bulk-file-renamer/) |
 | 01 | 02 | duplicate-file-finder | files | [duplicate-file-finder](scripts/files/duplicate-file-finder/) |
+| 01 | 03 | folder-organizer | files | [folder-organizer](scripts/files/folder-organizer/) |
 
 <!-- INDEX:END -->
 
