@@ -14,7 +14,7 @@ Difficulty: easy on days 1-10, medium on days 11-20, more advanced on days 21-30
 - [x] 07. downloads-sorter - Move downloads into year-month folders (files)
 - [x] 08. extension-counter - Count files per extension in a tree (files)
 - [x] 09. filename-normalizer - Lowercase and clean up messy filenames (files)
-- [ ] 10. tree-printer - Print a directory tree with depth limit (files)
+- [x] 10. tree-printer - Print a directory tree with depth limit (files)
 
 ## Day 02 - Text tidy-up
 - [ ] 01. word-counter - Count words, lines and characters in text files (text)
