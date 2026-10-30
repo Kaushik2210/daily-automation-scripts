@@ -6,7 +6,7 @@ Difficulty: easy on days 1-10, medium on days 11-20, more advanced on days 21-30
 
 ## Day 01 - File basics
 - [x] 01. bulk-file-renamer - Rename many files with find/replace, prefixes or numbering (files)
-- [ ] 02. duplicate-file-finder - Find duplicate files by size and content hash (files)
+- [x] 02. duplicate-file-finder - Find duplicate files by size and content hash (files)
 - [ ] 03. folder-organizer - Sort files into subfolders by extension (files)
 - [ ] 04. empty-folder-cleaner - List and remove empty directories (files)
 - [ ] 05. file-size-lister - List files in a folder sorted by size (files)
