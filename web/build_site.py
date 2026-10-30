@@ -86,7 +86,7 @@ def build(out, root=ROOT, repo=REPO):
     out, root = Path(out), Path(root)
     if out.exists():
         shutil.rmtree(out)
-    for name in ("app.css", "app.js"):
+    for name in ("app.css", "app.js", "fx.js"):
         out_file = out / "static" / name
         out_file.parent.mkdir(parents=True, exist_ok=True)
         shutil.copyfile(STATIC / name, out_file)

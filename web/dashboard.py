@@ -173,7 +173,7 @@ class Handler(BaseHTTPRequestHandler):
         path = urlparse(self.path).path
         if path == "/":
             return self.send_body(200, render_index(self.server.token), CONTENT_TYPES[".html"])
-        if path in ("/static/app.css", "/static/app.js"):
+        if path in ("/static/app.css", "/static/app.js", "/static/fx.js"):
             file = STATIC / path.rsplit("/", 1)[1]
             return self.send_body(200, file.read_bytes(), CONTENT_TYPES[file.suffix])
         scripts = discover(self.server.root)
