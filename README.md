@@ -49,7 +49,7 @@ The table below is rebuilt by `python tools/update_index.py` from `PLAN.md` and 
 
 <!-- INDEX:START -->
 
-**Progress: 13/300 done**
+**Progress: 14/300 done**
 
 | Day | # | Script | Category | Source | Live |
 | --- | --- | --- | --- | --- | --- |
@@ -66,6 +66,7 @@ The table below is rebuilt by `python tools/update_index.py` from `PLAN.md` and 
 | 02 | 01 | word-counter | text | [word-counter](scripts/text/word-counter/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/text/word-counter/) |
 | 02 | 02 | line-deduper | text | [line-deduper](scripts/text/line-deduper/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/text/line-deduper/) |
 | 02 | 03 | case-converter | text | [case-converter](scripts/text/case-converter/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/text/case-converter/) |
+| 02 | 04 | markdown-toc-generator | text | [markdown-toc-generator](scripts/text/markdown-toc-generator/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/text/markdown-toc-generator/) |
 
 <!-- INDEX:END -->
 
