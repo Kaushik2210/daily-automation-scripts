@@ -40,7 +40,7 @@ The table below is rebuilt by `python tools/update_index.py` from `PLAN.md` and 
 
 <!-- INDEX:START -->
 
-**Progress: 11/300 done**
+**Progress: 12/300 done**
 
 | Day | # | Script | Category | Link |
 | --- | --- | --- | --- | --- |
@@ -55,6 +55,7 @@ The table below is rebuilt by `python tools/update_index.py` from `PLAN.md` and 
 | 01 | 09 | filename-normalizer | files | [filename-normalizer](scripts/files/filename-normalizer/) |
 | 01 | 10 | tree-printer | files | [tree-printer](scripts/files/tree-printer/) |
 | 02 | 01 | word-counter | text | [word-counter](scripts/text/word-counter/) |
+| 02 | 02 | line-deduper | text | [line-deduper](scripts/text/line-deduper/) |
 
 <!-- INDEX:END -->
 

@@ -18,7 +18,7 @@ Difficulty: easy on days 1-10, medium on days 11-20, more advanced on days 21-30
 
 ## Day 02 - Text tidy-up
 - [x] 01. word-counter - Count words, lines and characters in text files (text)
-- [ ] 02. line-deduper - Remove duplicate lines while keeping order (text)
+- [x] 02. line-deduper - Remove duplicate lines while keeping order (text)
 - [ ] 03. case-converter - Convert text between camel, snake, kebab and title case (text)
 - [ ] 04. markdown-toc-generator - Build a table of contents for a markdown file (text)
 - [ ] 05. whitespace-stripper - Strip trailing whitespace and fix line endings (text)
