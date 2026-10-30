@@ -226,7 +226,13 @@
       dot.style.transform = `translate3d(${mx}px, ${my}px, 0)`;
       if (!queued) {
         queued = true;
-        requestAnimationFrame(() => { root.style.setProperty("--mx", `${mx}px`); root.style.setProperty("--my", `${my}px`); queued = false; });
+        requestAnimationFrame(() => {
+          root.style.setProperty("--mx", `${mx}px`);
+          root.style.setProperty("--my", `${my}px`);
+          root.style.setProperty("--nx", ((mx / innerWidth - 0.5) * 2).toFixed(3));
+          root.style.setProperty("--ny", ((my / innerHeight - 0.5) * 2).toFixed(3));
+          queued = false;
+        });
       }
     });
     const follow = () => {
@@ -252,5 +258,5 @@
 
   intro();
   document.addEventListener("DOMContentLoaded", setup);
-  window.FX = { thumb, observe, toggleTheme, reduce };
+  window.FX = { thumb, observe, toggleTheme, reduce, fine };
 })();

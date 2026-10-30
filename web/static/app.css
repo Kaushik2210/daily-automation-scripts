@@ -269,6 +269,73 @@ dialog h2 { font: 400 1.8rem var(--serif); }
 .toast { position: fixed; left: 50%; bottom: 1.4rem; z-index: 500; transform: translate(-50%, 220%); padding: 0.7rem 1.3rem; border-radius: 999px; background: var(--fg); color: var(--bg); font-size: 0.92rem; transition: transform 0.5s var(--ease); max-width: 90vw; }
 .toast.show { transform: translate(-50%, 0); }
 
+/* Hero art stack that follows the pointer */
+.hero-art { display: none; }
+@media (min-width: 70rem) {
+  .hero-art { display: block; position: absolute; right: 0; top: clamp(2rem, 6vw, 7rem); width: clamp(15rem, 26vw, 30rem); aspect-ratio: 1; pointer-events: none; }
+  .hero-art .tile { position: absolute; width: 62%; aspect-ratio: 4 / 3; border-radius: var(--radius); overflow: hidden;
+    box-shadow: 0 1.5rem 3rem -1rem rgba(0, 0, 0, 0.35), 0 0 0 1px var(--line);
+    transform: translate(calc(var(--nx, 0) * var(--depth) * 1px), calc(var(--ny, 0) * var(--depth) * 1px)) rotate(var(--rot));
+    transition: transform 0.9s var(--ease); }
+  .ready .hero-art .tile { animation: pop 1.3s var(--ease) both; animation-delay: calc(var(--k, 0) * 150ms + 600ms); }
+  .hero-art .tile .art { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
+  .hero-art .tile:nth-child(1) { left: 0; top: 0; --rot: -7deg; --depth: 16; }
+  .hero-art .tile:nth-child(2) { right: 0; top: 24%; --rot: 5deg; --depth: -24; z-index: 1; }
+  .hero-art .tile:nth-child(3) { left: 14%; bottom: 0; --rot: -2deg; --depth: 34; z-index: 2; }
+}
+@keyframes pop { from { opacity: 0; scale: 0.8; translate: 0 2rem; } }
+
+/* Category index */
+.index { margin-top: clamp(2.5rem, 1rem + 5vw, 6rem); }
+.cat-row { display: grid; grid-template-columns: 3rem minmax(0, 1fr) auto 2rem; align-items: center; gap: 1rem; width: 100%; padding: clamp(0.7rem, 0.4rem + 1vw, 1.4rem) 0;
+  border: 0; border-top: 1px solid var(--line); background: none; color: var(--fg); text-align: left; cursor: pointer; transition: padding 0.6s var(--ease), color 0.3s; }
+.cat-row:last-child { border-bottom: 1px solid var(--line); }
+.cat-row .n, .cat-row .c { font: 500 0.72rem var(--mono); letter-spacing: 0.08em; color: var(--muted); text-transform: uppercase; }
+.cat-row .name { font: 400 clamp(2rem, 1rem + 5.5vw, 6rem)/1 var(--serif); letter-spacing: -0.03em; transition: font-style 0.3s; }
+.cat-row:hover, .cat-row:focus-visible { padding-left: clamp(0.5rem, 2.5vw, 2.5rem); color: var(--blue); }
+:root[data-theme="dark"] .cat-row:hover, :root:not([data-theme="light"]) .cat-row:hover { color: var(--link); }
+.cat-row:hover .name { font-style: italic; }
+.cat-row:hover .arrow { background: var(--blue); border-color: var(--blue); color: var(--on-blue); transform: rotate(45deg); }
+@media (max-width: 36rem) { .cat-row { grid-template-columns: 2rem minmax(0, 1fr) 2rem; } .cat-row .c { display: none; } }
+.peek { position: fixed; left: 0; top: 0; z-index: 350; width: clamp(12rem, 20vw, 19rem); aspect-ratio: 4 / 3; border-radius: var(--radius); overflow: hidden; pointer-events: none;
+  opacity: 0; scale: 0.8; transition: opacity 0.3s, scale 0.5s var(--ease); box-shadow: 0 1.5rem 3rem -1rem rgba(0, 0, 0, 0.45); }
+.peek.show { opacity: 1; scale: 1; }
+.peek .art { width: 100%; height: 100%; display: block; }
+
+/* Command palette */
+.search-btn { display: inline-flex; align-items: center; gap: 0.7rem; padding: 0.35rem 0.5rem 0.35rem 1rem; border: 1px solid var(--line); border-radius: 999px; background: none; color: var(--muted); font-size: 0.9rem; cursor: pointer; transition: border-color 0.3s, color 0.3s; }
+.search-btn:hover { border-color: var(--fg); color: var(--fg); }
+.kbd { font: 500 0.68rem var(--mono); border: 1px solid var(--line); border-radius: 0.4rem; padding: 0.15rem 0.45rem; }
+@media (hover: none) { .search-btn .kbd { display: none; } }
+.palette { position: fixed; inset: 0; z-index: 450; display: none; align-items: flex-start; justify-content: center; padding: 12vh 1rem 1rem; background: rgba(9, 9, 13, 0.55); backdrop-filter: blur(6px); }
+.palette.open { display: flex; }
+.palette-box { width: min(100%, 40rem); overflow: hidden; border: 1px solid var(--line); border-radius: var(--radius); background: var(--card); color: var(--fg);
+  box-shadow: 0 2rem 5rem -1rem rgba(0, 0, 0, 0.55); animation: pal 0.4s var(--ease); }
+@keyframes pal { from { opacity: 0; transform: translateY(1rem) scale(0.98); } }
+.palette input.pi { width: 100%; min-height: 4rem; padding: 1rem 1.3rem; border: 0; border-bottom: 1px solid var(--line); border-radius: 0; background: transparent; color: var(--fg); font: 400 1.5rem var(--serif); box-shadow: none; }
+.palette ul { max-height: 50vh; overflow: auto; padding: 0.4rem; }
+.palette li a { display: flex; justify-content: space-between; gap: 1rem; padding: 0.75rem 0.9rem; border-radius: 0.6rem; }
+.palette li[aria-selected="true"] a { background: var(--blue); color: var(--on-blue); }
+.palette li[aria-selected="true"] .help { color: inherit; opacity: 0.8; }
+.pal-foot, .pal-empty { padding: 0.8rem 1.3rem; border-top: 1px solid var(--line); font-size: 0.8rem; }
+.pal-empty { border: 0; }
+
+/* Related tools and pager */
+.related { margin-top: clamp(3rem, 2rem + 5vw, 7rem); }
+.related h2 { margin-bottom: 1.5rem; font: 400 clamp(1.8rem, 1.2rem + 2.5vw, 3.5rem)/1 var(--serif); letter-spacing: -0.02em; }
+.related h2 em { color: var(--blue); }
+.pager { display: grid; grid-template-columns: 1fr 1fr; gap: var(--gap); margin-top: clamp(2rem, 1rem + 3vw, 4rem); }
+.pager a { display: block; padding: 1.2rem 0; border-top: 1px solid var(--line); transition: color 0.3s; }
+.pager a:hover { color: var(--blue); }
+.pager a:last-child { text-align: right; }
+.pager small { display: block; font: 500 0.7rem var(--mono); letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); }
+.pager b { font: 400 clamp(1.3rem, 0.9rem + 2vw, 2.6rem)/1.1 var(--serif); letter-spacing: -0.02em; overflow-wrap: anywhere; }
+
+/* Output lines type in */
+.out .ln { display: block; opacity: 0; transform: translateX(-0.5rem); animation: ln 0.5s var(--ease) forwards; animation-delay: calc(var(--i, 0) * 28ms); }
+@keyframes ln { to { opacity: 1; transform: none; } }
+@media (prefers-reduced-motion: reduce) { .out .ln { opacity: 1 !important; transform: none !important; } }
+
 /* Page transitions between tool pages */
 @view-transition { navigation: auto; }
 ::view-transition-old(root) { animation: 0.35s ease both fade-out; }

@@ -179,6 +179,8 @@ json.dumps({'code': code, 'stdout': out.getvalue(), 'stderr': err.getvalue(), 'f
       h("a", { class: "logo", href: home(), "aria-label": "Daily Automation Scripts, home" }, "Daily", h("em", {}, "Automation"), h("sup", {}, "300")),
       h("nav", { class: "nav", "aria-label": "Site" },
         h("a", { href: MODE === "static" ? `${ROOT}#tools` : "#", class: "hide-sm" }, "Tools"),
+        h("button", { class: "search-btn hide-sm", type: "button", onclick: openPalette },
+          "Search", h("span", { class: "kbd" }, /Mac|iPhone|iPad/.test(navigator.platform) ? "⌘K" : "Ctrl K")),
         catalog.repo && h("a", { href: catalog.repo, rel: "noopener" }, "GitHub"),
         h("button", { class: "icon-btn", type: "button", "aria-label": "Switch light and dark theme", onclick: () => FX.toggleTheme() }, "◐")));
   }
@@ -201,6 +203,84 @@ json.dumps({'code': code, 'stdout': out.getvalue(), 'stderr': err.getvalue(), 'f
       h("span", { class: `pill ${runsHere(tool) ? "ok" : "local"}` }, MODE === "server" ? "Runs here" : runsHere(tool) ? "Runs in browser" : "Local only"));
   }
 
+  function card(t, index) {
+    const item = h("li", { class: "card", "data-reveal": "" },
+      h("a", { class: "card-link", href: toolHref(t), "data-tilt": "" },
+        h("figure", { class: "thumb" }, FX.thumb(t.name, t.category),
+          h("span", { class: "tag" }, t.day ? `Day ${t.day}` : (CATS[t.category] || t.category)),
+          runsHere(t) && h("span", { class: "tag live" }, MODE === "server" ? "Local" : "Live")),
+        h("div", { class: "card-meta" }, h("h3", {}, t.name), h("span", { class: "arrow" }, arrow())),
+        h("p", { class: "sub" }, t.summary || "Open to see what it does.")));
+    return withVar(item, "--i", index % 8);
+  }
+
+  /* Art preview that follows the pointer over the category list */
+  let peekEl;
+  function peek(tool) {
+    if (!FX.fine || FX.reduce) return;
+    if (!peekEl) {
+      peekEl = h("div", { class: "peek", "aria-hidden": "true" });
+      document.body.append(peekEl);
+      addEventListener("pointermove", (e) => {
+        peekEl.style.transform = `translate3d(${e.clientX + 28}px, ${e.clientY - 70}px, 0)`;
+      });
+    }
+    peekEl.classList.toggle("show", !!tool);
+    if (tool) peekEl.replaceChildren(FX.thumb(tool.name, tool.category));
+  }
+
+  /* Command palette: Ctrl/Cmd+K or / */
+  let palette;
+  const closePalette = () => palette?.root.classList.remove("open");
+  function openPalette() {
+    if (!palette) {
+      const input = h("input", { class: "pi", type: "text", placeholder: "Jump to a tool…", "aria-label": "Search tools", autocomplete: "off", spellcheck: "false" });
+      const list = h("ul", { role: "listbox", "aria-label": "Matching tools" });
+      const root = h("div", { class: "palette", onclick: (e) => { if (e.target === root) closePalette(); } },
+        h("div", { class: "palette-box", role: "dialog", "aria-modal": "true", "aria-label": "Search tools" }, input, list,
+          h("p", { class: "help pal-foot" }, "↑ ↓ to move · Enter to open · Esc to close")));
+      document.body.append(root);
+      let sel = 0, shown = [];
+      const draw = () => {
+        const q = input.value.trim().toLowerCase();
+        shown = catalog.tools.filter((t) => !q || `${t.name} ${t.summary} ${t.category}`.toLowerCase().includes(q)).slice(0, 8);
+        sel = Math.min(sel, Math.max(0, shown.length - 1));
+        list.replaceChildren(...(shown.length ? shown.map((t, i) => h("li", { role: "option", "aria-selected": String(i === sel) },
+          h("a", { href: toolHref(t), onclick: closePalette }, h("span", {}, t.name), h("span", { class: "help" }, CATS[t.category] || t.category))))
+          : [h("li", { class: "help pal-empty" }, "No match. Try another word.")]));
+      };
+      input.addEventListener("input", () => { sel = 0; draw(); });
+      input.addEventListener("keydown", (e) => {
+        if (e.key === "ArrowDown" || e.key === "ArrowUp") {
+          e.preventDefault();
+          sel = (sel + (e.key === "ArrowDown" ? 1 : -1) + shown.length) % Math.max(1, shown.length);
+          draw();
+        } else if (e.key === "Enter" && shown[sel]) { location.href = toolHref(shown[sel]); closePalette(); }
+        else if (e.key === "Escape") closePalette();
+      });
+      palette = { root, input, draw };
+    }
+    palette.root.classList.add("open");
+    palette.input.value = "";
+    palette.draw();
+    palette.input.focus();
+  }
+  addEventListener("keydown", (e) => {
+    const typing = /^(INPUT|TEXTAREA|SELECT)$/.test(document.activeElement?.tagName ?? "");
+    if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === "k") { e.preventDefault(); openPalette(); }
+    else if (e.key === "/" && !typing) { e.preventDefault(); openPalette(); }
+    else if (e.key === "Escape") closePalette();
+  });
+
+  function outBlock(text, cls) {
+    const pre = h("pre", { class: cls });
+    text.replace(/\n$/, "").split("\n").forEach((ln, i) => {
+      if (i < 80) pre.append(withVar(h("span", { class: "ln" }, ln || " "), "--i", i));
+      else pre.append(`${ln}\n`);
+    });
+    return pre;
+  }
+
   /* ---------- home ---------- */
   function renderHome() {
     document.title = "Daily Automation Scripts";
@@ -212,16 +292,6 @@ json.dumps({'code': code, 'stdout': out.getvalue(), 'stderr': err.getvalue(), 'f
     const chips = h("div", { class: "chips", role: "group", "aria-label": "Filter by category" });
     const countIn = (cat) => tools.filter((t) => cat === "all" || t.category === cat).length;
 
-    const card = (t, index) => {
-      const item = h("li", { class: "card", "data-reveal": "" },
-        h("a", { class: "card-link", href: toolHref(t), "data-tilt": "" },
-          h("figure", { class: "thumb" }, FX.thumb(t.name, t.category),
-            h("span", { class: "tag" }, t.day ? `Day ${t.day}` : (CATS[t.category] || t.category)),
-            runsHere(t) && h("span", { class: "tag live" }, MODE === "server" ? "Local" : "Live")),
-          h("div", { class: "card-meta" }, h("h3", {}, t.name), h("span", { class: "arrow" }, arrow())),
-          h("p", { class: "sub" }, t.summary || "Open to see what it does.")));
-      return withVar(item, "--i", index % 8);
-    };
     const draw = () => {
       const q = query.trim().toLowerCase();
       const shown = tools.filter((t) => (active === "all" || t.category === active)
@@ -235,12 +305,26 @@ json.dumps({'code': code, 'stdout': out.getvalue(), 'stderr': err.getvalue(), 'f
       chips.append(h("button", { class: "chip", type: "button", "data-cat": cat, "aria-pressed": "false",
         onclick: () => { active = cat; draw(); } }, cat === "all" ? "All" : (CATS[cat] || cat), h("sup", {}, String(countIn(cat)))));
     }
+    const picks = [0, Math.floor(tools.length / 2), tools.length - 1].map((i) => tools[i]).filter(Boolean);
+    const rows = cats.map((cat, i) => {
+      const first = tools.find((t) => t.category === cat);
+      const row = h("button", { class: "cat-row", type: "button", onclick: () => {
+        active = cat; draw(); peek(null);
+        document.getElementById("tools").scrollIntoView({ behavior: FX.reduce ? "auto" : "smooth" });
+      } },
+        h("span", { class: "n" }, String(i + 1).padStart(2, "0")), h("span", { class: "name" }, CATS[cat] || cat),
+        h("span", { class: "c" }, `${countIn(cat)} ${countIn(cat) === 1 ? "tool" : "tools"}`), h("span", { class: "arrow" }, arrow()));
+      row.addEventListener("pointerenter", () => peek(first));
+      row.addEventListener("pointerleave", () => peek(null));
+      return row;
+    });
     const words = ["Rename", "Dedupe", "Organize", "Clean", "Count", "Convert", "Sort", "Scan", "Back up", "Report"];
     const ticker = [...words, ...words].map((w) => h("span", {}, w));
     const runnable = tools.filter(runsHere).length;
 
     mount(
       h("section", { class: "hero" },
+        h("div", { class: "hero-art", "aria-hidden": "true" }, picks.map((t, i) => withVar(h("div", { class: "tile" }, FX.thumb(t.name, t.category)), "--k", i))),
         h("p", { class: "eyebrow" }, h("b", {}, "Collection"), h("span", {}, "30 days"), h("span", {}, "300 scripts"), h("span", {}, MODE === "static" ? "Runs in the browser" : "Runs on this computer")),
         h("h1", { class: "display" }, line(0, "Small scripts"), line(1, h("em", {}, "for big"), " boring"), line(2, "jobs.")),
         h("div", { class: "hero-foot" },
@@ -253,6 +337,7 @@ json.dumps({'code': code, 'stdout': out.getvalue(), 'stderr': err.getvalue(), 'f
             h("div", { class: "stat" }, h("b", { "data-count": String(runnable) }, "0"), h("span", {}, MODE === "static" ? "in browser" : "runnable"))),
           h("a", { class: "cue", href: "#tools" }, h("i", {}), "Scroll"))),
       h("div", { class: "ticker", "aria-hidden": "true" }, h("div", {}, ticker)),
+      h("section", { class: "index", "aria-label": "Browse by category", "data-reveal": "" }, rows),
       h("section", { class: "filters", id: "tools" },
         h("div", {}, h("span", { class: "label" }, "Filters"), chips),
         h("div", {}, h("label", { class: "label", for: "q" }, "Search"),
@@ -394,8 +479,8 @@ json.dumps({'code': code, 'stdout': out.getvalue(), 'stderr': err.getvalue(), 'f
         const good = res.exit_code === 0;
         put(panelTitle("→", "Results"),
           h("span", { class: `status ${good ? "" : "bad"}` }, res.timed_out ? "Timed out" : good ? `Done · ${res.seconds}s` : `Exit ${res.exit_code} · ${res.seconds}s`),
-          res.stdout ? h("pre", { class: "out" }, res.stdout) : h("p", { class: "help" }, "No output."),
-          res.stderr && h("pre", { class: "out err" }, res.stderr),
+          res.stdout ? outBlock(res.stdout, "out") : h("p", { class: "help" }, "No output."),
+          res.stderr && outBlock(res.stderr, "out err"),
           res.files?.length ? h("div", { class: "files" }, h("p", { class: "help" }, "Workspace after the run"),
             res.files.map((f) => h("div", { class: "file" }, h("span", {}, f.path, f.isNew && h("span", { class: "pill ok" }, "new or changed")),
               h("button", { class: "btn ghost small", type: "button", onclick: async () => {
@@ -416,6 +501,15 @@ json.dumps({'code': code, 'stdout': out.getvalue(), 'stderr': err.getvalue(), 'f
     form.addEventListener("change", () => { updateCmd(); syncLabel(); });
 
     const sourceUrl = catalog.repo && `${catalog.repo}/blob/main/scripts/${tool.category}/${tool.name}/${pyFile(tool)}`;
+    const same = catalog.tools.filter((t) => t.category === tool.category && t.id !== tool.id).slice(0, 3);
+    const at = catalog.tools.findIndex((t) => t.id === tool.id);
+    const [before, after] = [catalog.tools[at - 1], catalog.tools[at + 1]];
+    const related = same.length ? h("section", { class: "related" },
+      h("h2", {}, "More in ", h("em", {}, CATS[tool.category] || tool.category)),
+      h("ul", { class: "grid" }, same.map(card))) : null;
+    const pager = (before || after) && h("nav", { class: "pager", "aria-label": "Previous and next tool" },
+      before ? h("a", { href: toolHref(before) }, h("small", {}, "← Previous"), h("b", {}, before.name)) : h("span"),
+      after ? h("a", { href: toolHref(after) }, h("small", {}, "Next →"), h("b", {}, after.name)) : h("span"));
     const art = h("div", { class: "art-banner", "data-reveal": "" }, FX.thumb(tool.name, tool.category));
     art.firstChild.setAttribute("data-parallax", "0.06");
     mount(
@@ -438,6 +532,7 @@ json.dumps({'code': code, 'stdout': out.getvalue(), 'stderr': err.getvalue(), 'f
           h("section", { class: "panel", "data-reveal": "" }, panelTitle("04", "Command"), cmd,
             h("div", { class: "actions" }, h("button", { class: "btn ghost small", type: "button", onclick: () => copy(cmd.textContent) }, "Copy command")))),
         h("div", {}, results)),
+      related, pager,
       dialog);
     updateCmd();
     syncLabel();
