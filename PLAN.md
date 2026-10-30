@@ -21,7 +21,7 @@ Difficulty: easy on days 1-10, medium on days 11-20, more advanced on days 21-30
 - [x] 02. line-deduper - Remove duplicate lines while keeping order (text)
 - [x] 03. case-converter - Convert text between camel, snake, kebab and title case (text)
 - [x] 04. markdown-toc-generator - Build a table of contents for a markdown file (text)
-- [ ] 05. whitespace-stripper - Strip trailing whitespace and fix line endings (text)
+- [x] 05. whitespace-stripper - Strip trailing whitespace and fix line endings (text)
 - [ ] 06. bulk-find-replace - Find and replace text across many files (text)
 - [ ] 07. text-diff-viewer - Show a colored diff of two text files (text)
 - [ ] 08. lorem-generator - Generate placeholder paragraphs of any length (text)
