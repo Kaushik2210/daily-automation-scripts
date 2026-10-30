@@ -26,7 +26,7 @@ Difficulty: easy on days 1-10, medium on days 11-20, more advanced on days 21-30
 - [x] 07. text-diff-viewer - Show a colored diff of two text files (text)
 - [x] 08. lorem-generator - Generate placeholder paragraphs of any length (text)
 - [x] 09. slugify-text - Turn titles into URL-safe slugs (text)
-- [ ] 10. csv-to-markdown - Convert a CSV file into a markdown table (data)
+- [x] 10. csv-to-markdown - Convert a CSV file into a markdown table (data)
 
 ## Day 03 - System snapshot
 - [ ] 01. disk-usage-reporter - Report disk usage per drive and top folders (system)
