@@ -49,7 +49,7 @@ The table below is rebuilt by `python tools/update_index.py` from `PLAN.md` and 
 
 <!-- INDEX:START -->
 
-**Progress: 29/300 done**
+**Progress: 30/300 done**
 
 | Day | # | Script | Category | Source | Live |
 | --- | --- | --- | --- | --- | --- |
@@ -82,6 +82,7 @@ The table below is rebuilt by `python tools/update_index.py` from `PLAN.md` and 
 | 03 | 07 | python-env-reporter | system | [python-env-reporter](scripts/system/python-env-reporter/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/system/python-env-reporter/) |
 | 03 | 08 | free-space-alerter | system | [free-space-alerter](scripts/system/free-space-alerter/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/system/free-space-alerter/) |
 | 03 | 09 | folder-size-history | system | [folder-size-history](scripts/system/folder-size-history/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/system/folder-size-history/) |
+| 03 | 10 | hosts-file-viewer | system | [hosts-file-viewer](scripts/system/hosts-file-viewer/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/system/hosts-file-viewer/) |
 
 <!-- INDEX:END -->
 

@@ -38,7 +38,7 @@ Difficulty: easy on days 1-10, medium on days 11-20, more advanced on days 21-30
 - [x] 07. python-env-reporter - List installed packages and versions (system)
 - [x] 08. free-space-alerter - Warn when free disk space drops below a limit (system)
 - [x] 09. folder-size-history - Log folder size over time to a CSV (system)
-- [ ] 10. hosts-file-viewer - Show hosts file entries in a readable table (system)
+- [x] 10. hosts-file-viewer - Show hosts file entries in a readable table (system)
 
 ## Day 04 - Data basics
 - [ ] 01. csv-cleaner - Trim whitespace, drop empty rows and fix headers (data)
