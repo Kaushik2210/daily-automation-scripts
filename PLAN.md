@@ -29,7 +29,7 @@ Difficulty: easy on days 1-10, medium on days 11-20, more advanced on days 21-30
 - [x] 10. csv-to-markdown - Convert a CSV file into a markdown table (data)
 
 ## Day 03 - System snapshot
-- [ ] 01. disk-usage-reporter - Report disk usage per drive and top folders (system)
+- [x] 01. disk-usage-reporter - Report disk usage per drive and top folders (system)
 - [ ] 02. system-info-report - Print OS, CPU, Python and memory details (system)
 - [ ] 03. large-file-finder - Find the biggest files under a path (system)
 - [ ] 04. temp-cleaner - Clear old files from temp folders (system)
