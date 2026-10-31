@@ -33,7 +33,7 @@ Difficulty: easy on days 1-10, medium on days 11-20, more advanced on days 21-30
 - [x] 02. system-info-report - Print OS, CPU, Python and memory details (system)
 - [x] 03. large-file-finder - Find the biggest files under a path (system)
 - [x] 04. temp-cleaner - Clear old files from temp folders (system)
-- [ ] 05. env-var-lister - List and search environment variables safely (system)
+- [x] 05. env-var-lister - List and search environment variables safely (system)
 - [ ] 06. path-checker - Check PATH entries for missing or duplicate folders (system)
 - [ ] 07. python-env-reporter - List installed packages and versions (system)
 - [ ] 08. free-space-alerter - Warn when free disk space drops below a limit (system)

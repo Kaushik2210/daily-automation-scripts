@@ -49,7 +49,7 @@ The table below is rebuilt by `python tools/update_index.py` from `PLAN.md` and 
 
 <!-- INDEX:START -->
 
-**Progress: 24/300 done**
+**Progress: 25/300 done**
 
 | Day | # | Script | Category | Source | Live |
 | --- | --- | --- | --- | --- | --- |
@@ -77,6 +77,7 @@ The table below is rebuilt by `python tools/update_index.py` from `PLAN.md` and 
 | 03 | 02 | system-info-report | system | [system-info-report](scripts/system/system-info-report/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/system/system-info-report/) |
 | 03 | 03 | large-file-finder | system | [large-file-finder](scripts/system/large-file-finder/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/system/large-file-finder/) |
 | 03 | 04 | temp-cleaner | system | [temp-cleaner](scripts/system/temp-cleaner/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/system/temp-cleaner/) |
+| 03 | 05 | env-var-lister | system | [env-var-lister](scripts/system/env-var-lister/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/system/env-var-lister/) |
 
 <!-- INDEX:END -->
 
