@@ -49,7 +49,7 @@ The table below is rebuilt by `python tools/update_index.py` from `PLAN.md` and 
 
 <!-- INDEX:START -->
 
-**Progress: 21/300 done**
+**Progress: 22/300 done**
 
 | Day | # | Script | Category | Source | Live |
 | --- | --- | --- | --- | --- | --- |
@@ -74,6 +74,7 @@ The table below is rebuilt by `python tools/update_index.py` from `PLAN.md` and 
 | 02 | 09 | slugify-text | text | [slugify-text](scripts/text/slugify-text/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/text/slugify-text/) |
 | 02 | 10 | csv-to-markdown | data | [csv-to-markdown](scripts/data/csv-to-markdown/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/data/csv-to-markdown/) |
 | 03 | 01 | disk-usage-reporter | system | [disk-usage-reporter](scripts/system/disk-usage-reporter/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/system/disk-usage-reporter/) |
+| 03 | 02 | system-info-report | system | [system-info-report](scripts/system/system-info-report/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/system/system-info-report/) |
 
 <!-- INDEX:END -->
 

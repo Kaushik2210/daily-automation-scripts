@@ -30,7 +30,7 @@ Difficulty: easy on days 1-10, medium on days 11-20, more advanced on days 21-30
 
 ## Day 03 - System snapshot
 - [x] 01. disk-usage-reporter - Report disk usage per drive and top folders (system)
-- [ ] 02. system-info-report - Print OS, CPU, Python and memory details (system)
+- [x] 02. system-info-report - Print OS, CPU, Python and memory details (system)
 - [ ] 03. large-file-finder - Find the biggest files under a path (system)
 - [ ] 04. temp-cleaner - Clear old files from temp folders (system)
 - [ ] 05. env-var-lister - List and search environment variables safely (system)
