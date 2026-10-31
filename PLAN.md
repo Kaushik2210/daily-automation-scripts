@@ -37,7 +37,7 @@ Difficulty: easy on days 1-10, medium on days 11-20, more advanced on days 21-30
 - [x] 06. path-checker - Check PATH entries for missing or duplicate folders (system)
 - [x] 07. python-env-reporter - List installed packages and versions (system)
 - [x] 08. free-space-alerter - Warn when free disk space drops below a limit (system)
-- [ ] 09. folder-size-history - Log folder size over time to a CSV (system)
+- [x] 09. folder-size-history - Log folder size over time to a CSV (system)
 - [ ] 10. hosts-file-viewer - Show hosts file entries in a readable table (system)
 
 ## Day 04 - Data basics
