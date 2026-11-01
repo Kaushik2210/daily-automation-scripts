@@ -42,7 +42,7 @@ Difficulty: easy on days 1-10, medium on days 11-20, more advanced on days 21-30
 
 ## Day 04 - Data basics
 - [x] 01. csv-cleaner - Trim whitespace, drop empty rows and fix headers (data)
-- [ ] 02. csv-column-stats - Min, max, mean and counts per CSV column (data)
+- [x] 02. csv-column-stats - Min, max, mean and counts per CSV column (data)
 - [ ] 03. json-pretty-printer - Format and validate JSON files (data)
 - [ ] 04. json-yaml-converter - Convert between JSON and YAML (data)
 - [ ] 05. csv-to-json - Convert CSV rows into JSON records (data)
