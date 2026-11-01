@@ -46,7 +46,7 @@ Difficulty: easy on days 1-10, medium on days 11-20, more advanced on days 21-30
 - [x] 03. json-pretty-printer - Format and validate JSON files (data)
 - [x] 04. json-yaml-converter - Convert between JSON and YAML (data)
 - [x] 05. csv-to-json - Convert CSV rows into JSON records (data)
-- [ ] 06. json-to-csv - Flatten JSON records into a CSV (data)
+- [x] 06. json-to-csv - Flatten JSON records into a CSV (data)
 - [ ] 07. csv-merger - Merge several CSV files with matching columns (data)
 - [ ] 08. csv-splitter - Split a big CSV into smaller chunks (data)
 - [ ] 09. csv-deduper - Remove duplicate CSV rows by chosen columns (data)
