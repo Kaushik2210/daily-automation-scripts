@@ -49,7 +49,7 @@ The table below is rebuilt by `python tools/update_index.py` from `PLAN.md` and 
 
 <!-- INDEX:START -->
 
-**Progress: 39/300 done**
+**Progress: 40/300 done**
 
 | Day | # | Script | Category | Source | Live |
 | --- | --- | --- | --- | --- | --- |
@@ -92,6 +92,7 @@ The table below is rebuilt by `python tools/update_index.py` from `PLAN.md` and 
 | 04 | 07 | csv-merger | data | [csv-merger](scripts/data/csv-merger/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/data/csv-merger/) |
 | 04 | 08 | csv-splitter | data | [csv-splitter](scripts/data/csv-splitter/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/data/csv-splitter/) |
 | 04 | 09 | csv-deduper | data | [csv-deduper](scripts/data/csv-deduper/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/data/csv-deduper/) |
+| 04 | 10 | excel-to-csv | data | [excel-to-csv](scripts/data/excel-to-csv/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/data/excel-to-csv/) |
 
 <!-- INDEX:END -->
 
