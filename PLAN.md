@@ -48,7 +48,7 @@ Difficulty: easy on days 1-10, medium on days 11-20, more advanced on days 21-30
 - [x] 05. csv-to-json - Convert CSV rows into JSON records (data)
 - [x] 06. json-to-csv - Flatten JSON records into a CSV (data)
 - [x] 07. csv-merger - Merge several CSV files with matching columns (data)
-- [ ] 08. csv-splitter - Split a big CSV into smaller chunks (data)
+- [x] 08. csv-splitter - Split a big CSV into smaller chunks (data)
 - [ ] 09. csv-deduper - Remove duplicate CSV rows by chosen columns (data)
 - [ ] 10. excel-to-csv - Export Excel sheets to CSV files (data)
 
