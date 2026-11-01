@@ -49,7 +49,7 @@ The table below is rebuilt by `python tools/update_index.py` from `PLAN.md` and 
 
 <!-- INDEX:START -->
 
-**Progress: 32/300 done**
+**Progress: 33/300 done**
 
 | Day | # | Script | Category | Source | Live |
 | --- | --- | --- | --- | --- | --- |
@@ -85,6 +85,7 @@ The table below is rebuilt by `python tools/update_index.py` from `PLAN.md` and 
 | 03 | 10 | hosts-file-viewer | system | [hosts-file-viewer](scripts/system/hosts-file-viewer/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/system/hosts-file-viewer/) |
 | 04 | 01 | csv-cleaner | data | [csv-cleaner](scripts/data/csv-cleaner/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/data/csv-cleaner/) |
 | 04 | 02 | csv-column-stats | data | [csv-column-stats](scripts/data/csv-column-stats/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/data/csv-column-stats/) |
+| 04 | 03 | json-pretty-printer | data | [json-pretty-printer](scripts/data/json-pretty-printer/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/data/json-pretty-printer/) |
 
 <!-- INDEX:END -->
 
