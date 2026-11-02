@@ -56,7 +56,7 @@ Difficulty: easy on days 1-10, medium on days 11-20, more advanced on days 21-30
 - [x] 01. password-strength-checker - Score passwords and explain weaknesses (security)
 - [x] 02. password-generator - Generate strong random passwords and passphrases (security)
 - [x] 03. hash-checker - Verify a file against an expected hash (security)
-- [ ] 04. file-hasher - Print MD5, SHA1 and SHA256 for files (security)
+- [x] 04. file-hasher - Print MD5, SHA1 and SHA256 for files (security)
 - [ ] 05. checksum-manifest - Write and verify a checksum list for a folder (security)
 - [ ] 06. secret-scanner - Scan a folder for accidentally committed secrets (security)
 - [ ] 07. env-file-auditor - Check .env files for risky or missing values (security)

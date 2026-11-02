@@ -49,7 +49,7 @@ The table below is rebuilt by `python tools/update_index.py` from `PLAN.md` and 
 
 <!-- INDEX:START -->
 
-**Progress: 43/300 done**
+**Progress: 44/300 done**
 
 | Day | # | Script | Category | Source | Live |
 | --- | --- | --- | --- | --- | --- |
@@ -96,6 +96,7 @@ The table below is rebuilt by `python tools/update_index.py` from `PLAN.md` and 
 | 05 | 01 | password-strength-checker | security | [password-strength-checker](scripts/security/password-strength-checker/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/security/password-strength-checker/) |
 | 05 | 02 | password-generator | security | [password-generator](scripts/security/password-generator/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/security/password-generator/) |
 | 05 | 03 | hash-checker | security | [hash-checker](scripts/security/hash-checker/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/security/hash-checker/) |
+| 05 | 04 | file-hasher | security | [file-hasher](scripts/security/file-hasher/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/security/file-hasher/) |
 
 <!-- INDEX:END -->
 
