@@ -10,7 +10,7 @@ import shutil
 import sys
 from pathlib import Path
 
-from dashboard import ROOT, STATIC, discover, get_schema, readme_sections
+from dashboard import HERE, ROOT, STATIC, discover, get_schema, readme_sections
 
 REPO = "https://github.com/Kaushik2210/daily-automation-scripts"
 NEEDS_NETWORK = {
@@ -69,6 +69,11 @@ def plan_info(root):
     return info
 
 
+def load_json(name):
+    path = HERE / name
+    return json.loads(path.read_text(encoding="utf-8")) if path.is_file() else {}
+
+
 def render_page(prefix, tool_id=""):
     page = (STATIC / "index.html").read_text(encoding="utf-8")
     for key, value in {"__MODE__": "static", "__ROOT__": prefix, "__TOOL__": tool_id,
@@ -92,6 +97,8 @@ def build(out, root=ROOT, repo=REPO):
         shutil.copyfile(STATIC / name, out_file)
 
     plan = plan_info(root)
+    samples = load_json("samples.json")
+    examples = load_json("examples.json")
     tools = []
     for tool_id, info in discover(root).items():
         path = info["path"]
@@ -105,11 +112,14 @@ def build(out, root=ROOT, repo=REPO):
             "browser": browser_support(source),
             "schema": get_schema(path),
             "sections": readme_sections(path.parent),
+            "example": examples.get(tool_id, {}).get("values"),
+            "stdin": "sys.stdin" in source,
         })
         write(out / "tools" / tool_id / "index.html", render_page("../../../", tool_id))
     tools.sort(key=lambda t: (t["day"] or "99", t["num"] or "99", t["name"]))
 
-    write(out / "data" / "tools.json", json.dumps({"repo": repo, "tools": tools}))
+    write(out / "data" / "tools.json",
+          json.dumps({"repo": repo, "samples": samples, "tools": tools}))
     write(out / "index.html", render_page("./"))
     write(out / "404.html", render_page("./"))
     write(out / ".nojekyll", "")

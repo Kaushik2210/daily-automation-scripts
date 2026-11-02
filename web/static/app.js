@@ -106,7 +106,7 @@ import contextlib, io, json, os, runpy, sys, traceback
 os.chdir('/work')
 sys.argv = [tool_path] + json.loads(argv_json)
 sys.path.insert(0, os.path.dirname(tool_path))
-sys.stdin = io.StringIO(stdin_text)
+sys.stdin = io.TextIOWrapper(io.BytesIO(stdin_text.encode('utf-8')), encoding='utf-8')
 out, err = io.StringIO(), io.StringIO()
 code = 0
 with contextlib.redirect_stdout(out), contextlib.redirect_stderr(err):
@@ -133,13 +133,21 @@ json.dumps({'code': code, 'stdout': out.getvalue(), 'stderr': err.getvalue(), 'f
   async function runInBrowser(tool, argv, stdin, uploads) {
     const started = performance.now();
     const py = await getPyodide();
-    if (tool.browser?.packages?.length) await py.loadPackage(tool.browser.packages);
+    for (const name of tool.browser?.packages || []) {
+      try {
+        await py.loadPackage(name); // bundled with Pyodide
+      } catch {
+        await py.loadPackage("micropip"); // not bundled: install the pure-Python package from PyPI
+        await py.pyimport("micropip").install(name);
+      }
+    }
     const response = await fetch(ROOT + tool.source);
     if (!response.ok) throw new Error("Couldn't load the tool's source code.");
     py.FS.mkdirTree("/tool");
     py.FS.writeFile(`/tool/${pyFile(tool)}`, await response.text());
     py.runPython("import os, shutil\nshutil.rmtree('/work', ignore_errors=True)\nos.makedirs('/work')");
     for (const [path, file] of uploads) {
+      if (path.endsWith("/")) { py.FS.mkdirTree(`/work/${path}`); continue; }
       const dir = path.split("/").slice(0, -1).join("/");
       if (dir) py.FS.mkdirTree(`/work/${dir}`);
       py.FS.writeFile(`/work/${path}`, new Uint8Array(await file.arrayBuffer()));
@@ -170,7 +178,7 @@ json.dumps({'code': code, 'stdout': out.getvalue(), 'stderr': err.getvalue(), 'f
     const reply = await fetch(MODE === "static" ? `${ROOT}data/tools.json` : "api/scripts");
     if (!reply.ok) throw new Error("Couldn't load the tool list.");
     const data = await reply.json();
-    catalog = { tools: data.tools || data.scripts || [], repo: data.repo || "", cwd: data.cwd || "" };
+    catalog = { tools: data.tools || data.scripts || [], repo: data.repo || "", cwd: data.cwd || "", samples: data.samples || {} };
   }
 
   /* ---------- shared chrome ---------- */
@@ -368,16 +376,27 @@ json.dumps({'code': code, 'stdout': out.getvalue(), 'stderr': err.getvalue(), 'f
       return h("div", { class: "field" }, h("div", { class: "switch" }, h("label", { for: id }, h("code", {}, label)), box), help);
     }
     let control;
-    if (arg.choices && arg.choices.length <= 5) {
-      const name = `r-${arg.dest}`;
-      const choose = start ?? arg.choices[0];
-      control = h("div", { class: "seg", role: "radiogroup", "aria-labelledby": `${id}-l` },
+    // An optional choice with no default must start on "default" (send nothing), not on the first item.
+    const noDefault = !arg.required && (arg.default === null || arg.default === undefined);
+    const options = arg.choices ? (noDefault && arg.kind !== "multi" ? ["", ...arg.choices] : arg.choices) : null;
+    const optionLabel = (c) => (c === "" ? "default" : String(c));
+    if (arg.choices && arg.kind === "multi") {
+      const chosen = new Set((Array.isArray(start) ? start : []).map(String));
+      control = h("div", { class: "seg", role: "group", "aria-labelledby": `${id}-l` },
         arg.choices.flatMap((c, i) => [
-          h("input", { type: "radio", name, id: `${id}-${i}`, value: c, checked: String(c) === String(choose) }),
+          h("input", { type: "checkbox", id: `${id}-${i}`, value: c, checked: chosen.has(String(c)) }),
           h("label", { for: `${id}-${i}` }, String(c))]));
+      getters[arg.dest] = () => [...control.querySelectorAll("input:checked")].map((box) => box.value);
+    } else if (options && options.length <= 6) {
+      const name = `r-${arg.dest}`;
+      const choose = start ?? options[0];
+      control = h("div", { class: "seg", role: "radiogroup", "aria-labelledby": `${id}-l` },
+        options.flatMap((c, i) => [
+          h("input", { type: "radio", name, id: `${id}-${i}`, value: c, checked: String(c) === String(choose) }),
+          h("label", { for: `${id}-${i}` }, optionLabel(c))]));
       getters[arg.dest] = () => control.querySelector("input:checked")?.value ?? "";
-    } else if (arg.choices) {
-      control = h("select", { id, "aria-describedby": describedBy }, arg.choices.map((c) => h("option", { value: c, selected: String(c) === String(start) }, String(c))));
+    } else if (options) {
+      control = h("select", { id, "aria-describedby": describedBy }, options.map((c) => h("option", { value: c, selected: String(c) === String(start ?? options[0]) }, optionLabel(c))));
       getters[arg.dest] = () => control.value;
     } else if (arg.kind === "multi") {
       control = h("textarea", { id, "aria-describedby": describedBy, placeholder: "One value per line", spellcheck: "false" });
@@ -413,6 +432,7 @@ json.dumps({'code': code, 'stdout': out.getvalue(), 'stderr': err.getvalue(), 'f
     const uploads = new Map();
 
     const form = h("form", { novalidate: true, autocomplete: "off" });
+    const stdinBox = tool.stdin ? h("textarea", { id: "stdin-text", placeholder: "Optional: text for the tool to work on", spellcheck: "false" }) : null;
     const cmd = h("pre", { class: "cmd", "aria-label": "Equivalent command" });
     const results = h("section", { class: "panel sticky", "aria-live": "polite" },
       panelTitle("→", "Results"), h("p", { class: "help" }, "Run the tool and the output appears here."));
@@ -431,25 +451,40 @@ json.dumps({'code': code, 'stdout': out.getvalue(), 'stderr': err.getvalue(), 'f
       store.set(`das:${id}`, collect());
     };
 
-    for (const arg of args) if (arg !== applyArg) form.append(field(arg, getters, saved));
-    if (!args.length || (args.length === 1 && applyArg)) form.prepend(h("p", { class: "help" }, "This tool has no extra options."));
-    if (applyArg) {
-      form.prepend(h("div", { class: "field" }, h("div", { class: "lab" }, h("code", {}, "mode")),
-        h("div", { class: "seg", role: "radiogroup", "aria-label": "Mode" },
-          h("input", { type: "radio", name: "mode", id: "m-prev", value: "preview", checked: !saved.apply }),
-          h("label", { for: "m-prev" }, "Preview (dry run)"),
-          h("input", { type: "radio", name: "mode", id: "m-apply", value: "apply", checked: saved.apply === true }),
-          h("label", { for: "m-apply" }, "Apply changes")),
-        h("p", { class: "help" }, "Preview shows what would happen and changes nothing. Apply really does it.")));
-    }
+    const buildForm = (vals) => {
+      for (const key of Object.keys(getters)) delete getters[key];
+      form.replaceChildren();
+      for (const arg of args) if (arg !== applyArg) form.append(field(arg, getters, vals));
+      if (!args.length || (args.length === 1 && applyArg)) form.prepend(h("p", { class: "help" }, "This tool has no extra options."));
+      if (applyArg) {
+        form.prepend(h("div", { class: "field" }, h("div", { class: "lab" }, h("code", {}, "mode")),
+          h("div", { class: "seg", role: "radiogroup", "aria-label": "Mode" },
+            h("input", { type: "radio", name: "mode", id: "m-prev", value: "preview", checked: !vals.apply }),
+            h("label", { for: "m-prev" }, "Preview (dry run)"),
+            h("input", { type: "radio", name: "mode", id: "m-apply", value: "apply", checked: vals.apply === true }),
+            h("label", { for: "m-apply" }, "Apply changes")),
+          h("p", { class: "help" }, "Preview shows what would happen and changes nothing. Apply really does it.")));
+      }
+    };
+    buildForm(saved);
     const runBtn = h("button", { class: "btn blue", type: "submit", disabled: !canRun, "data-magnetic": "" }, "Run");
     const syncLabel = () => { runBtn.textContent = applyArg && collect().apply ? "Apply changes" : applyArg ? "Preview" : "Run"; };
 
     let workspace = null;
+    let drawFiles = () => {};
+    const loadSamples = () => {
+      const source = Object.keys(catalog.samples || {}).length ? catalog.samples : SAMPLES;
+      for (const [name, content] of Object.entries(source)) {
+        if (name.endsWith("/")) uploads.set(name, new File([], name));
+        else if (content && content.base64) uploads.set(name, new File([Uint8Array.from(atob(content.base64), (c) => c.charCodeAt(0))], name));
+        else uploads.set(name, new File([content], name));
+      }
+      drawFiles();
+    };
     if (MODE === "static" && canRun) {
       const list = h("div", { class: "files" });
-      const drawFiles = () => list.replaceChildren(...[...uploads].map(([path, file]) =>
-        h("div", { class: "file" }, h("span", {}, `${path} · ${file.size} B`),
+      drawFiles = () => list.replaceChildren(...[...uploads].map(([path, file]) =>
+        h("div", { class: "file" }, h("span", {}, path.endsWith("/") ? `${path} · empty folder` : `${path} · ${file.size} B`),
           h("button", { class: "btn ghost small", type: "button", onclick: () => { uploads.delete(path); drawFiles(); } }, "Remove"))));
       const add = (files) => { for (const f of files) uploads.set(f.webkitRelativePath || f.name, f); drawFiles(); };
       const pick = (dir) => { const i = h("input", { type: "file", multiple: true, webkitdirectory: dir || null, hidden: true, onchange: () => add(i.files) }); i.click(); };
@@ -458,7 +493,7 @@ json.dumps({'code': code, 'stdout': out.getvalue(), 'stderr': err.getvalue(), 'f
         h("div", { class: "actions" },
           h("button", { class: "btn ghost small", type: "button", onclick: () => pick(false) }, "Add files"),
           h("button", { class: "btn ghost small", type: "button", onclick: () => pick(true) }, "Add a folder"),
-          h("button", { class: "btn ghost small", type: "button", onclick: () => { for (const [n, c] of Object.entries(SAMPLES)) uploads.set(n, new File([c], n)); drawFiles(); toast("Sample files added"); } }, "Sample files")),
+          h("button", { class: "btn ghost small", type: "button", onclick: () => { loadSamples(); toast("Sample files added"); } }, "Sample files")),
         list);
     }
 
@@ -470,15 +505,29 @@ json.dumps({'code': code, 'stdout': out.getvalue(), 'stderr': err.getvalue(), 'f
 
     async function go() {
       const values = collect();
+      const stdin = stdinBox ? stdinBox.value : "";
       let argv;
-      try { argv = buildArgv(args, values); } catch (err) { toast(err.message); return; }
+      try { argv = buildArgv(args, values); } catch (err) {
+        toast(err.message);
+        put(panelTitle("→", "Results"), h("span", { class: "status bad" }, "Missing input"),
+          h("p", { class: "about" }, `${err.message}.`),
+          MODE === "static" && tool.example && h("p", { class: "help" }, "Not sure what to enter? Press “Try an example” and it will fill everything in and run it for you."));
+        return;
+      }
       runBtn.disabled = true;
       put(panelTitle("→", "Results"), h("span", { class: "status wait" }, MODE === "static" ? "Warming up Python…" : "Running…"), h("div", { class: "bar" }));
       try {
-        const res = MODE === "static" ? await runInBrowser(tool, argv, "", uploads) : await runOnServer(tool, values, "");
+        const res = MODE === "static" ? await runInBrowser(tool, argv, stdin, uploads) : await runOnServer(tool, values, stdin);
         const good = res.exit_code === 0;
+        const findings = res.exit_code === 1 && res.stdout.trim() !== ""; // many tools exit 1 to say "I found something"
+        const label = res.timed_out ? "Timed out" : good ? `Done · ${res.seconds}s`
+          : findings ? `Finished with findings · ${res.seconds}s` : `Exit ${res.exit_code} · ${res.seconds}s`;
+        const exampleValues = JSON.stringify(tool.example || {});
+        const wantsFiles = MODE === "static" && uploads.size === 0 && !stdin.trim() && (/"\."/.test(exampleValues)
+          || Object.keys(catalog.samples || {}).some((name) => exampleValues.includes(JSON.stringify(name))));
         put(panelTitle("→", "Results"),
-          h("span", { class: `status ${good ? "" : "bad"}` }, res.timed_out ? "Timed out" : good ? `Done · ${res.seconds}s` : `Exit ${res.exit_code} · ${res.seconds}s`),
+          h("span", { class: `status ${good ? "" : findings ? "warn" : "bad"}` }, label),
+          wantsFiles && h("p", { class: "notice" }, "Your workspace is empty, so there was nothing to work on. Add files above, or press “Try an example”."),
           res.stdout ? outBlock(res.stdout, "out") : h("p", { class: "help" }, "No output."),
           res.stderr && outBlock(res.stderr, "out err"),
           res.files?.length ? h("div", { class: "files" }, h("p", { class: "help" }, "Workspace after the run"),
@@ -493,6 +542,14 @@ json.dumps({'code': code, 'stdout': out.getvalue(), 'stderr': err.getvalue(), 'f
         put(panelTitle("→", "Results"), h("span", { class: "status bad" }, "Couldn't run"), h("pre", { class: "out err" }, err.message));
       } finally { runBtn.disabled = !canRun; }
     }
+    const runExample = () => {
+      loadSamples();
+      buildForm({ ...tool.example });
+      updateCmd();
+      syncLabel();
+      go();
+    };
+    const hasExample = MODE === "static" && canRun && tool.example;
     form.addEventListener("submit", (e) => {
       e.preventDefault();
       if (MODE === "server" && applyArg && collect().apply) dialog.showModal(); else go();
@@ -518,7 +575,10 @@ json.dumps({'code': code, 'stdout': out.getvalue(), 'stderr': err.getvalue(), 'f
         h("p", { class: "eyebrow" }, tool.day && h("b", {}, `Day ${tool.day}`), h("span", {}, CATS[tool.category] || tool.category), tool.num && h("span", {}, `No. ${tool.num}`)),
         h("h1", { class: "tool-title" }, line(0, tool.name)),
         h("p", { class: "tool-sum", "data-reveal": "" }, tool.summary || ""),
-        pills(tool)),
+        pills(tool),
+        hasExample && h("div", { class: "actions try" },
+          h("button", { class: "btn blue", type: "button", onclick: runExample, "data-magnetic": "" }, "Try an example"),
+          h("span", { class: "help" }, "Loads sample files, fills in the form and runs it for you."))),
       art,
       !canRun && h("div", { class: "notice" }, `This one can't run in a browser (${tool.browser?.reason || "it needs your computer"}). Run it locally with the command below.`),
       h("div", { class: "layout" },
@@ -528,7 +588,9 @@ json.dumps({'code': code, 'stdout': out.getvalue(), 'stderr': err.getvalue(), 'f
             sections.Notes && h("p", { class: "help about" }, sections.Notes)),
           workspace,
           h("section", { class: "panel", "data-reveal": "" }, panelTitle("03", "Options"), form,
-            h("div", { class: "actions" }, runBtn, sourceUrl && h("a", { class: "btn ghost small", href: sourceUrl, rel: "noopener" }, "View source"))),
+            stdinBox && h("div", { class: "field" }, h("label", { for: "stdin-text" }, h("code", {}, "stdin")), stdinBox,
+              h("p", { class: "help" }, "Text sent to the tool as its input. It is used when you don't give a file.")),
+            h("div", { class: "actions" }, runBtn, hasExample && h("button", { class: "btn ghost small", type: "button", onclick: runExample }, "Try an example"), sourceUrl && h("a", { class: "btn ghost small", href: sourceUrl, rel: "noopener" }, "View source"))),
           h("section", { class: "panel", "data-reveal": "" }, panelTitle("04", "Command"), cmd,
             h("div", { class: "actions" }, h("button", { class: "btn ghost small", type: "button", onclick: () => copy(cmd.textContent) }, "Copy command")))),
         h("div", {}, results)),

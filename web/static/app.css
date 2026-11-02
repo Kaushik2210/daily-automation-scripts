@@ -258,6 +258,9 @@ input:focus, select:focus, textarea:focus { border-color: var(--blue); box-shado
 .status { display: inline-flex; align-items: center; gap: 0.55rem; font: 500 0.78rem var(--mono); letter-spacing: 0.08em; text-transform: uppercase; }
 .status::before { content: ""; width: 0.6rem; height: 0.6rem; border-radius: 50%; background: #2fd36b; box-shadow: 0 0 0 4px rgba(47, 211, 107, 0.25); }
 .status.bad::before { background: #ff4d3d; box-shadow: 0 0 0 4px rgba(255, 77, 61, 0.25); }
+.status.warn::before { background: #ffb020; box-shadow: 0 0 0 4px rgba(255, 176, 32, 0.28); }
+.actions.try { margin-top: 1.6rem; gap: 1rem; }
+.notice.help, p.notice { margin-bottom: 0.9rem; }
 .status.wait::before { background: var(--blue); animation: pulse 1s ease-in-out infinite; }
 @keyframes pulse { 50% { transform: scale(1.6); opacity: 0.5; } }
 .bar { position: relative; height: 2px; margin-top: 1rem; background: var(--line); overflow: hidden; }
