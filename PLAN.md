@@ -58,7 +58,7 @@ Difficulty: easy on days 1-10, medium on days 11-20, more advanced on days 21-30
 - [x] 03. hash-checker - Verify a file against an expected hash (security)
 - [x] 04. file-hasher - Print MD5, SHA1 and SHA256 for files (security)
 - [x] 05. checksum-manifest - Write and verify a checksum list for a folder (security)
-- [ ] 06. secret-scanner - Scan a folder for accidentally committed secrets (security)
+- [x] 06. secret-scanner - Scan a folder for accidentally committed secrets (security)
 - [ ] 07. env-file-auditor - Check .env files for risky or missing values (security)
 - [ ] 08. token-generator - Create random URL-safe tokens and API key placeholders (security)
 - [ ] 09. base64-tool - Encode and decode text or files as Base64 (security)
