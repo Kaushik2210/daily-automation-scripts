@@ -49,7 +49,7 @@ The table below is rebuilt by `python tools/update_index.py` from `PLAN.md` and 
 
 <!-- INDEX:START -->
 
-**Progress: 47/300 done**
+**Progress: 48/300 done**
 
 | Day | # | Script | Category | Source | Live |
 | --- | --- | --- | --- | --- | --- |
@@ -100,6 +100,7 @@ The table below is rebuilt by `python tools/update_index.py` from `PLAN.md` and 
 | 05 | 05 | checksum-manifest | security | [checksum-manifest](scripts/security/checksum-manifest/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/security/checksum-manifest/) |
 | 05 | 06 | secret-scanner | security | [secret-scanner](scripts/security/secret-scanner/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/security/secret-scanner/) |
 | 05 | 07 | env-file-auditor | security | [env-file-auditor](scripts/security/env-file-auditor/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/security/env-file-auditor/) |
+| 05 | 08 | token-generator | security | [token-generator](scripts/security/token-generator/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/security/token-generator/) |
 
 <!-- INDEX:END -->
 
