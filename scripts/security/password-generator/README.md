@@ -26,5 +26,5 @@ Maple-Cafe-Wolf-Jade
 
 ## Notes
 - Output goes to the terminal only; nothing is saved or sent anywhere.
-- The built-in word list is small (about 190 words, roughly 7.6 bits per word), so use 6 or more words for passphrases that matter.
+- The built-in word list is small (181 words, roughly 7.5 bits per word), so use 6 or more words for passphrases that matter.
 - `--no-ambiguous` skips characters that look alike, such as `O`, `0`, `l` and `1`.
