@@ -53,7 +53,7 @@ Difficulty: easy on days 1-10, medium on days 11-20, more advanced on days 21-30
 - [x] 10. excel-to-csv - Export Excel sheets to CSV files (data)
 
 ## Day 05 - Security basics
-- [ ] 01. password-strength-checker - Score passwords and explain weaknesses (security)
+- [x] 01. password-strength-checker - Score passwords and explain weaknesses (security)
 - [ ] 02. password-generator - Generate strong random passwords and passphrases (security)
 - [ ] 03. hash-checker - Verify a file against an expected hash (security)
 - [ ] 04. file-hasher - Print MD5, SHA1 and SHA256 for files (security)
