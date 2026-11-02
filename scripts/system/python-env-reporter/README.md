@@ -25,3 +25,4 @@ python-dateutil==2.9.0
 - `SEARCH` matches part of a package name, ignoring case.
 - `requirements` output can be saved straight to a `requirements.txt`.
 - Read-only. It lists what is installed and does not check for newer versions.
+- On the website it runs inside the browser's sandboxed Python, which has no packages installed, so it reports 0. Run it locally to see your own environment.

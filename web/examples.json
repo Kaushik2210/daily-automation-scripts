@@ -1,0 +1,457 @@
+{
+ "files/bulk-file-renamer": {
+  "values": {
+   "folder": ".",
+   "pattern": "*.JPG",
+   "find": "Holiday Photo",
+   "replace": "trip",
+   "number": true
+  },
+  "exit": [
+   0
+  ]
+ },
+ "files/duplicate-file-finder": {
+  "values": {
+   "folder": "."
+  },
+  "exit": [
+   0
+  ]
+ },
+ "files/folder-organizer": {
+  "values": {
+   "folder": "."
+  },
+  "exit": [
+   0
+  ]
+ },
+ "files/empty-folder-cleaner": {
+  "values": {
+   "folder": "."
+  },
+  "exit": [
+   0
+  ]
+ },
+ "files/file-size-lister": {
+  "values": {
+   "folder": ".",
+   "recursive": true
+  },
+  "exit": [
+   0
+  ]
+ },
+ "files/old-file-finder": {
+  "values": {
+   "folder": ".",
+   "days": "0"
+  },
+  "exit": [
+   0
+  ]
+ },
+ "files/downloads-sorter": {
+  "values": {
+   "folder": "."
+  },
+  "exit": [
+   0
+  ]
+ },
+ "files/extension-counter": {
+  "values": {
+   "folder": "."
+  },
+  "exit": [
+   0
+  ]
+ },
+ "files/filename-normalizer": {
+  "values": {
+   "folder": "."
+  },
+  "exit": [
+   0
+  ]
+ },
+ "files/tree-printer": {
+  "values": {
+   "folder": "."
+  },
+  "exit": [
+   0
+  ]
+ },
+ "text/word-counter": {
+  "values": {
+   "files": [
+    "notes.txt",
+    "README.md"
+   ],
+   "top": "3"
+  },
+  "exit": [
+   0
+  ]
+ },
+ "text/line-deduper": {
+  "values": {
+   "file": "notes.txt",
+   "strip": true
+  },
+  "exit": [
+   0
+  ]
+ },
+ "text/case-converter": {
+  "values": {
+   "text": [
+    "FirstName",
+    "shippingAddressLine2"
+   ],
+   "style": "snake"
+  },
+  "exit": [
+   0
+  ]
+ },
+ "text/markdown-toc-generator": {
+  "values": {
+   "file": "README.md"
+  },
+  "exit": [
+   0
+  ]
+ },
+ "text/whitespace-stripper": {
+  "values": {
+   "paths": [
+    "."
+   ],
+   "pattern": "*.txt"
+  },
+  "exit": [
+   0
+  ]
+ },
+ "text/bulk-find-replace": {
+  "values": {
+   "folder": ".",
+   "find": "milk",
+   "replace": "oat milk",
+   "pattern": "*.txt"
+  },
+  "exit": [
+   0
+  ]
+ },
+ "text/text-diff-viewer": {
+  "values": {
+   "old": "old-version.txt",
+   "new": "new-version.txt"
+  },
+  "exit": [
+   0
+  ]
+ },
+ "text/lorem-generator": {
+  "values": {
+   "paragraphs": "2",
+   "sentences": "3",
+   "seed": "7"
+  },
+  "exit": [
+   0
+  ]
+ },
+ "text/slugify-text": {
+  "values": {
+   "text": [
+    "Crème Brûlée & Café",
+    "Hello, World!"
+   ]
+  },
+  "exit": [
+   0
+  ]
+ },
+ "data/csv-to-markdown": {
+  "values": {
+   "file": "sales.csv",
+   "align": "right"
+  },
+  "exit": [
+   0
+  ]
+ },
+ "system/disk-usage-reporter": {
+  "values": {
+   "paths": [
+    "."
+   ],
+   "warn": "101"
+  },
+  "exit": [
+   0
+  ]
+ },
+ "system/system-info-report": {
+  "values": {},
+  "exit": [
+   0
+  ]
+ },
+ "system/large-file-finder": {
+  "values": {
+   "folder": ".",
+   "top": "5"
+  },
+  "exit": [
+   0
+  ]
+ },
+ "system/temp-cleaner": {
+  "values": {
+   "folders": [
+    "."
+   ],
+   "days": "0"
+  },
+  "exit": [
+   0
+  ]
+ },
+ "system/env-var-lister": {
+  "values": {},
+  "exit": [
+   0
+  ]
+ },
+ "system/path-checker": {
+  "values": {
+   "path": "/usr/bin:/definitely/missing:/usr/bin:",
+   "suggest": true
+  },
+  "exit": [
+   1
+  ]
+ },
+ "system/python-env-reporter": {
+  "values": {},
+  "exit": [
+   0
+  ]
+ },
+ "system/free-space-alerter": {
+  "values": {
+   "paths": [
+    "."
+   ],
+   "min_free": "1KB"
+  },
+  "exit": [
+   0
+  ]
+ },
+ "system/folder-size-history": {
+  "values": {
+   "folder": ".",
+   "log": "sizes.csv"
+  },
+  "exit": [
+   0
+  ]
+ },
+ "system/hosts-file-viewer": {
+  "values": {
+   "file": "hosts-sample.txt"
+  },
+  "exit": [
+   0
+  ]
+ },
+ "data/csv-cleaner": {
+  "values": {
+   "file": "contacts.csv"
+  },
+  "exit": [
+   0
+  ]
+ },
+ "data/csv-column-stats": {
+  "values": {
+   "file": "sales.csv"
+  },
+  "exit": [
+   0
+  ]
+ },
+ "data/json-pretty-printer": {
+  "values": {
+   "file": "people.json",
+   "sort_keys": true
+  },
+  "exit": [
+   0
+  ]
+ },
+ "data/json-yaml-converter": {
+  "values": {
+   "file": "config.yaml"
+  },
+  "exit": [
+   0
+  ]
+ },
+ "data/csv-to-json": {
+  "values": {
+   "file": "sales.csv",
+   "types": true
+  },
+  "exit": [
+   0
+  ]
+ },
+ "data/json-to-csv": {
+  "values": {
+   "file": "people.json"
+  },
+  "exit": [
+   0
+  ]
+ },
+ "data/csv-merger": {
+  "values": {
+   "files": [
+    "sales.csv",
+    "more-sales.csv"
+   ],
+   "add_source": true
+  },
+  "exit": [
+   0
+  ]
+ },
+ "data/csv-splitter": {
+  "values": {
+   "file": "sales.csv",
+   "rows": "2"
+  },
+  "exit": [
+   0
+  ]
+ },
+ "data/csv-deduper": {
+  "values": {
+   "file": "sales.csv",
+   "columns": "region"
+  },
+  "exit": [
+   0
+  ]
+ },
+ "data/excel-to-csv": {
+  "values": {
+   "file": "report.xlsx"
+  },
+  "exit": [
+   0
+  ]
+ },
+ "security/password-strength-checker": {
+  "values": {
+   "password": "summer2024"
+  },
+  "exit": [
+   1
+  ]
+ },
+ "security/password-generator": {
+  "values": {
+   "count": "3",
+   "length": "18"
+  },
+  "exit": [
+   0
+  ]
+ },
+ "security/hash-checker": {
+  "values": {
+   "file": "notes.txt",
+   "expected": "005add27b393cab05178d44b51cb2f2bcbfda62132f1a8ebde0be3d6b3f59a37"
+  },
+  "exit": [
+   0
+  ]
+ },
+ "security/file-hasher": {
+  "values": {
+   "paths": [
+    "notes.txt"
+   ],
+   "algorithm": [
+    "md5",
+    "sha256"
+   ]
+  },
+  "exit": [
+   0
+  ]
+ },
+ "security/checksum-manifest": {
+  "values": {
+   "folder": "."
+  },
+  "exit": [
+   0
+  ]
+ },
+ "security/secret-scanner": {
+  "values": {
+   "folder": "."
+  },
+  "exit": [
+   1
+  ]
+ },
+ "security/env-file-auditor": {
+  "values": {
+   "file": "app.env",
+   "example": "app.env.example",
+   "gitignore": ".gitignore"
+  },
+  "exit": [
+   1
+  ]
+ },
+ "security/token-generator": {
+  "values": {
+   "kind": "hex",
+   "bytes": "16",
+   "prefix": "sk_",
+   "count": "2"
+  },
+  "exit": [
+   0
+  ]
+ },
+ "security/base64-tool": {
+  "values": {
+   "text": "hello world"
+  },
+  "exit": [
+   0
+  ]
+ },
+ "security/permission-auditor": {
+  "values": {
+   "folder": "."
+  },
+  "exit": [
+   0
+  ]
+ }
+}

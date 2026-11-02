@@ -120,14 +120,14 @@ def build_argv(arguments, values):
     return options + (["--", *positionals] if positionals else [])
 
 
-def run_script(path, argv, stdin_text="", timeout=RUN_TIMEOUT):
+def run_script(path, argv, stdin_text="", timeout=RUN_TIMEOUT, cwd=None):
     env = {**os.environ, "PYTHONIOENCODING": "utf-8"}
     started = time.monotonic()
     try:
         proc = subprocess.run(
             [sys.executable, str(path), *argv], input=stdin_text, capture_output=True,
             text=True, encoding="utf-8", errors="replace", timeout=timeout, env=env,
-            cwd=Path.home(),
+            cwd=cwd or Path.home(),
         )
         result = {"exit_code": proc.returncode, "stdout": proc.stdout, "stderr": proc.stderr,
                   "timed_out": False}
@@ -186,6 +186,7 @@ class Handler(BaseHTTPRequestHandler):
                 detail = {k: v for k, v in info.items() if k != "path"}
                 detail["sections"] = readme_sections(info["path"].parent)
                 detail["schema"] = get_schema(info["path"])
+                detail["stdin"] = "sys.stdin" in info["path"].read_text(encoding="utf-8")
                 return self.send_body(200, detail)
         return self.send_body(404, {"error": "Not found"})
 
