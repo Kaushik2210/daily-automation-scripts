@@ -10,6 +10,10 @@ KEY_SUFFIXES = (".pem", ".key", ".p12", ".pfx")
 SKIP_DIRS = {".git", "node_modules", "__pycache__"}
 
 
+def is_windows():
+    return os.name == "nt"
+
+
 def classify(mode, is_dir, name):
     """Return a list of (problem, safer_mode) for one file's permission bits."""
     problems = []
@@ -49,7 +53,7 @@ def main(argv=None):
     args = parser.parse_args(argv)
     if not args.folder.is_dir():
         parser.error(f"not a folder: {args.folder}")
-    if os.name == "nt":
+    if is_windows():
         print("Unix permission bits don't apply on Windows; nothing to audit.")
         return 0
 

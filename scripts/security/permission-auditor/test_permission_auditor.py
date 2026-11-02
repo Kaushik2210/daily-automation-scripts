@@ -28,7 +28,7 @@ def test_setuid_and_private_keys():
 
 
 def test_cli_on_windows_is_a_noop(tmp_path, capsys, monkeypatch):
-    monkeypatch.setattr(os, "name", "nt")
+    monkeypatch.setattr("permission_auditor.is_windows", lambda: True)
     assert main([str(tmp_path)]) == 0
     assert "don't apply on Windows" in capsys.readouterr().out
 
