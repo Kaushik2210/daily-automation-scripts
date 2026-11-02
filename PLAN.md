@@ -61,7 +61,7 @@ Difficulty: easy on days 1-10, medium on days 11-20, more advanced on days 21-30
 - [x] 06. secret-scanner - Scan a folder for accidentally committed secrets (security)
 - [x] 07. env-file-auditor - Check .env files for risky or missing values (security)
 - [x] 08. token-generator - Create random URL-safe tokens and API key placeholders (security)
-- [ ] 09. base64-tool - Encode and decode text or files as Base64 (security)
+- [x] 09. base64-tool - Encode and decode text or files as Base64 (security)
 - [ ] 10. permission-auditor - Flag world-writable files on Linux and macOS (security)
 
 ## Day 06 - Media basics
