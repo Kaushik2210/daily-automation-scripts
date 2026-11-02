@@ -49,7 +49,7 @@ The table below is rebuilt by `python tools/update_index.py` from `PLAN.md` and 
 
 <!-- INDEX:START -->
 
-**Progress: 49/300 done**
+**Progress: 50/300 done**
 
 | Day | # | Script | Category | Source | Live |
 | --- | --- | --- | --- | --- | --- |
@@ -102,6 +102,7 @@ The table below is rebuilt by `python tools/update_index.py` from `PLAN.md` and 
 | 05 | 07 | env-file-auditor | security | [env-file-auditor](scripts/security/env-file-auditor/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/security/env-file-auditor/) |
 | 05 | 08 | token-generator | security | [token-generator](scripts/security/token-generator/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/security/token-generator/) |
 | 05 | 09 | base64-tool | security | [base64-tool](scripts/security/base64-tool/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/security/base64-tool/) |
+| 05 | 10 | permission-auditor | security | [permission-auditor](scripts/security/permission-auditor/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/security/permission-auditor/) |
 
 <!-- INDEX:END -->
 

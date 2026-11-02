@@ -62,7 +62,7 @@ Difficulty: easy on days 1-10, medium on days 11-20, more advanced on days 21-30
 - [x] 07. env-file-auditor - Check .env files for risky or missing values (security)
 - [x] 08. token-generator - Create random URL-safe tokens and API key placeholders (security)
 - [x] 09. base64-tool - Encode and decode text or files as Base64 (security)
-- [ ] 10. permission-auditor - Flag world-writable files on Linux and macOS (security)
+- [x] 10. permission-auditor - Flag world-writable files on Linux and macOS (security)
 
 ## Day 06 - Media basics
 - [ ] 01. image-resizer - Resize images by width, height or percentage (media)
