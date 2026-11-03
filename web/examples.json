@@ -194,6 +194,17 @@
    0
   ]
  },
+ "media/image-metadata-reader": {
+  "values": {
+   "paths": [
+    "Holiday Photo 01.JPG",
+    "logo.png"
+   ]
+  },
+  "exit": [
+   0
+  ]
+ },
  "media/image-resizer": {
   "values": {
    "paths": [
