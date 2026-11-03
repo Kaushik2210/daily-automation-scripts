@@ -182,6 +182,18 @@
    0
   ]
  },
+ "media/image-converter": {
+  "values": {
+   "paths": [
+    "."
+   ],
+   "to": "webp",
+   "quality": "80"
+  },
+  "exit": [
+   0
+  ]
+ },
  "media/image-resizer": {
   "values": {
    "paths": [
