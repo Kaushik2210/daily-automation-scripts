@@ -49,7 +49,7 @@ The table below is rebuilt by `python tools/update_index.py` from `PLAN.md` and 
 
 <!-- INDEX:START -->
 
-**Progress: 57/300 done**
+**Progress: 58/300 done**
 
 | Day | # | Script | Category | Source | Live |
 | --- | --- | --- | --- | --- | --- |
@@ -110,6 +110,7 @@ The table below is rebuilt by `python tools/update_index.py` from `PLAN.md` and 
 | 06 | 05 | thumbnail-generator | media | [thumbnail-generator](scripts/media/thumbnail-generator/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/media/thumbnail-generator/) |
 | 06 | 06 | image-rotator | media | [image-rotator](scripts/media/image-rotator/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/media/image-rotator/) |
 | 06 | 07 | qr-generator | media | [qr-generator](scripts/media/qr-generator/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/media/qr-generator/) |
+| 06 | 08 | grayscale-converter | media | [grayscale-converter](scripts/media/grayscale-converter/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/media/grayscale-converter/) |
 
 <!-- INDEX:END -->
 
