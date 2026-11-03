@@ -182,6 +182,14 @@
    0
   ]
  },
+ "media/gif-frame-extractor": {
+  "values": {
+   "gif": "animated.gif"
+  },
+  "exit": [
+   0
+  ]
+ },
  "media/grayscale-converter": {
   "values": {
    "paths": [

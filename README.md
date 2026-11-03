@@ -49,7 +49,7 @@ The table below is rebuilt by `python tools/update_index.py` from `PLAN.md` and 
 
 <!-- INDEX:START -->
 
-**Progress: 59/300 done**
+**Progress: 60/300 done**
 
 | Day | # | Script | Category | Source | Live |
 | --- | --- | --- | --- | --- | --- |
@@ -112,6 +112,7 @@ The table below is rebuilt by `python tools/update_index.py` from `PLAN.md` and 
 | 06 | 07 | qr-generator | media | [qr-generator](scripts/media/qr-generator/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/media/qr-generator/) |
 | 06 | 08 | grayscale-converter | media | [grayscale-converter](scripts/media/grayscale-converter/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/media/grayscale-converter/) |
 | 06 | 09 | photo-date-renamer | media | [photo-date-renamer](scripts/media/photo-date-renamer/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/media/photo-date-renamer/) |
+| 06 | 10 | gif-frame-extractor | media | [gif-frame-extractor](scripts/media/gif-frame-extractor/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/media/gif-frame-extractor/) |
 
 <!-- INDEX:END -->
 
