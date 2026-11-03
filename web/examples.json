@@ -224,6 +224,16 @@
    0
   ]
  },
+ "media/thumbnail-generator": {
+  "values": {
+   "folder": ".",
+   "size": "64",
+   "square": true
+  },
+  "exit": [
+   0
+  ]
+ },
  "security/base64-tool": {
   "values": {
    "text": "hello world"
