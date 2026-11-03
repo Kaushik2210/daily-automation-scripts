@@ -68,7 +68,7 @@ Difficulty: easy on days 1-10, medium on days 11-20, more advanced on days 21-30
 - [x] 01. image-resizer - Resize images by width, height or percentage (media)
 - [x] 02. image-converter - Convert images between PNG, JPG and WEBP (media)
 - [x] 03. image-metadata-reader - Show size, format and EXIF data for images (media)
-- [ ] 04. screenshot-organizer - File screenshots into dated folders (media)
+- [x] 04. screenshot-organizer - File screenshots into dated folders (media)
 - [ ] 05. thumbnail-generator - Make thumbnails for every image in a folder (media)
 - [ ] 06. image-rotator - Rotate or flip images in bulk (media)
 - [ ] 07. qr-generator - Generate QR codes from text or URLs (media)

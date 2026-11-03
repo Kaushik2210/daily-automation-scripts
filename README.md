@@ -49,7 +49,7 @@ The table below is rebuilt by `python tools/update_index.py` from `PLAN.md` and 
 
 <!-- INDEX:START -->
 
-**Progress: 53/300 done**
+**Progress: 54/300 done**
 
 | Day | # | Script | Category | Source | Live |
 | --- | --- | --- | --- | --- | --- |
@@ -106,6 +106,7 @@ The table below is rebuilt by `python tools/update_index.py` from `PLAN.md` and 
 | 06 | 01 | image-resizer | media | [image-resizer](scripts/media/image-resizer/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/media/image-resizer/) |
 | 06 | 02 | image-converter | media | [image-converter](scripts/media/image-converter/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/media/image-converter/) |
 | 06 | 03 | image-metadata-reader | media | [image-metadata-reader](scripts/media/image-metadata-reader/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/media/image-metadata-reader/) |
+| 06 | 04 | screenshot-organizer | media | [screenshot-organizer](scripts/media/screenshot-organizer/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/media/screenshot-organizer/) |
 
 <!-- INDEX:END -->
 

@@ -216,6 +216,14 @@
    0
   ]
  },
+ "media/screenshot-organizer": {
+  "values": {
+   "folder": "."
+  },
+  "exit": [
+   0
+  ]
+ },
  "security/base64-tool": {
   "values": {
    "text": "hello world"
