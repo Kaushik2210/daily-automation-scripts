@@ -71,7 +71,7 @@ Difficulty: easy on days 1-10, medium on days 11-20, more advanced on days 21-30
 - [x] 04. screenshot-organizer - File screenshots into dated folders (media)
 - [x] 05. thumbnail-generator - Make thumbnails for every image in a folder (media)
 - [x] 06. image-rotator - Rotate or flip images in bulk (media)
-- [ ] 07. qr-generator - Generate QR codes from text or URLs (media)
+- [x] 07. qr-generator - Generate QR codes from text or URLs (media)
 - [ ] 08. grayscale-converter - Convert a folder of images to grayscale (media)
 - [ ] 09. photo-date-renamer - Rename photos using their capture date (media)
 - [ ] 10. gif-frame-extractor - Save every frame of a GIF as an image (media)

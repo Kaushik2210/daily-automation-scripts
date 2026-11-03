@@ -20,7 +20,8 @@ NEEDS_NETWORK = {
 NEEDS_SYSTEM = {"subprocess", "multiprocessing", "tkinter", "curses", "winreg", "msvcrt", "ctypes"}
 # import name -> package that Pyodide can load
 PYODIDE_PACKAGES = {"PIL": "pillow", "yaml": "pyyaml", "numpy": "numpy", "pandas": "pandas",
-                    "openpyxl": "openpyxl", "lxml": "lxml", "bs4": "beautifulsoup4"}
+                    "openpyxl": "openpyxl", "lxml": "lxml", "bs4": "beautifulsoup4",
+                    "qrcode": "qrcode"}
 PLAN_ITEM = re.compile(r"^- \[[ x]\] (\d\d)\. (\S+) - (.+) \(([a-z-]+)\)$")
 
 
