@@ -240,6 +240,14 @@
    0
   ]
  },
+ "media/photo-date-renamer": {
+  "values": {
+   "folder": "."
+  },
+  "exit": [
+   0
+  ]
+ },
  "media/qr-generator": {
   "values": {
    "text": "https://kaushik2210.github.io/daily-automation-scripts/",

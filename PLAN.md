@@ -73,7 +73,7 @@ Difficulty: easy on days 1-10, medium on days 11-20, more advanced on days 21-30
 - [x] 06. image-rotator - Rotate or flip images in bulk (media)
 - [x] 07. qr-generator - Generate QR codes from text or URLs (media)
 - [x] 08. grayscale-converter - Convert a folder of images to grayscale (media)
-- [ ] 09. photo-date-renamer - Rename photos using their capture date (media)
+- [x] 09. photo-date-renamer - Rename photos using their capture date (media)
 - [ ] 10. gif-frame-extractor - Save every frame of a GIF as an image (media)
 
 ## Day 07 - Everyday productivity
