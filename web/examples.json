@@ -216,6 +216,19 @@
    0
   ]
  },
+ "media/image-rotator": {
+  "values": {
+   "paths": [
+    "photo-portrait.jpg",
+    "logo.png"
+   ],
+   "rotate": 90,
+   "fix_orientation": true
+  },
+  "exit": [
+   0
+  ]
+ },
  "media/screenshot-organizer": {
   "values": {
    "folder": "."
