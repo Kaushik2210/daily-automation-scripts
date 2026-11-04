@@ -283,6 +283,16 @@
    0
   ]
  },
+ "notion-productivity/habit-tracker": {
+  "values": {
+   "action": "report",
+   "file": "habits.json",
+   "today": "2026-01-07"
+  },
+  "exit": [
+   0
+  ]
+ },
  "security/base64-tool": {
   "values": {
    "text": "hello world"

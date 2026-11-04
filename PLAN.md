@@ -77,7 +77,7 @@ Difficulty: easy on days 1-10, medium on days 11-20, more advanced on days 21-30
 - [x] 10. gif-frame-extractor - Save every frame of a GIF as an image (media)
 
 ## Day 07 - Everyday productivity
-- [ ] 01. habit-tracker - Track daily habits and streaks from the terminal (notion-productivity)
+- [x] 01. habit-tracker - Track daily habits and streaks from the terminal (notion-productivity)
 - [ ] 02. pomodoro-timer - Run focus and break cycles with a terminal timer (notion-productivity)
 - [ ] 03. todo-cli - Simple add, done and list task manager (notion-productivity)
 - [ ] 04. journal-cli - Append dated entries to a daily journal file (notion-productivity)
