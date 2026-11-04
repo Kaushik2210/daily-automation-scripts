@@ -293,6 +293,15 @@
    0
   ]
  },
+ "notion-productivity/journal-cli": {
+  "values": {
+   "file": "journal.md",
+   "show": "2"
+  },
+  "exit": [
+   0
+  ]
+ },
  "notion-productivity/pomodoro-timer": {
   "values": {
    "plan": true,
