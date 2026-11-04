@@ -292,6 +292,16 @@
    0
   ]
  },
+ "notion-productivity/expense-logger": {
+  "values": {
+   "action": "summary",
+   "month": "2026-01",
+   "file": "expenses.csv"
+  },
+  "exit": [
+   0
+  ]
+ },
  "notion-productivity/habit-tracker": {
   "values": {
    "action": "report",
