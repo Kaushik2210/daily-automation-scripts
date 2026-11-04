@@ -320,6 +320,16 @@
    0
   ]
  },
+ "notion-productivity/quick-notes": {
+  "values": {
+   "action": "list",
+   "tag": "errands",
+   "file": "notes.json"
+  },
+  "exit": [
+   0
+  ]
+ },
  "notion-productivity/timezone-converter": {
   "values": {
    "time": "12:00",

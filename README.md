@@ -49,7 +49,7 @@ The table below is rebuilt by `python tools/update_index.py` from `PLAN.md` and 
 
 <!-- INDEX:START -->
 
-**Progress: 66/300 done**
+**Progress: 67/300 done**
 
 | Day | # | Script | Category | Source | Live |
 | --- | --- | --- | --- | --- | --- |
@@ -119,6 +119,7 @@ The table below is rebuilt by `python tools/update_index.py` from `PLAN.md` and 
 | 07 | 04 | journal-cli | notion-productivity | [journal-cli](scripts/notion-productivity/journal-cli/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/notion-productivity/journal-cli/) |
 | 07 | 05 | countdown-timer | notion-productivity | [countdown-timer](scripts/notion-productivity/countdown-timer/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/notion-productivity/countdown-timer/) |
 | 07 | 06 | timezone-converter | notion-productivity | [timezone-converter](scripts/notion-productivity/timezone-converter/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/notion-productivity/timezone-converter/) |
+| 07 | 07 | quick-notes | notion-productivity | [quick-notes](scripts/notion-productivity/quick-notes/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/notion-productivity/quick-notes/) |
 
 <!-- INDEX:END -->
 
