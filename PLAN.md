@@ -79,7 +79,7 @@ Difficulty: easy on days 1-10, medium on days 11-20, more advanced on days 21-30
 ## Day 07 - Everyday productivity
 - [x] 01. habit-tracker - Track daily habits and streaks from the terminal (notion-productivity)
 - [x] 02. pomodoro-timer - Run focus and break cycles with a terminal timer (notion-productivity)
-- [ ] 03. todo-cli - Simple add, done and list task manager (notion-productivity)
+- [x] 03. todo-cli - Simple add, done and list task manager (notion-productivity)
 - [ ] 04. journal-cli - Append dated entries to a daily journal file (notion-productivity)
 - [ ] 05. countdown-timer - Count down to a date or duration (notion-productivity)
 - [ ] 06. timezone-converter - Convert times between time zones (notion-productivity)

@@ -302,6 +302,16 @@
    0
   ]
  },
+ "notion-productivity/todo-cli": {
+  "values": {
+   "action": "list",
+   "file": "todos.json",
+   "all": true
+  },
+  "exit": [
+   0
+  ]
+ },
  "security/base64-tool": {
   "values": {
    "text": "hello world"
