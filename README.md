@@ -49,7 +49,7 @@ The table below is rebuilt by `python tools/update_index.py` from `PLAN.md` and 
 
 <!-- INDEX:START -->
 
-**Progress: 68/300 done**
+**Progress: 69/300 done**
 
 | Day | # | Script | Category | Source | Live |
 | --- | --- | --- | --- | --- | --- |
@@ -121,6 +121,7 @@ The table below is rebuilt by `python tools/update_index.py` from `PLAN.md` and 
 | 07 | 06 | timezone-converter | notion-productivity | [timezone-converter](scripts/notion-productivity/timezone-converter/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/notion-productivity/timezone-converter/) |
 | 07 | 07 | quick-notes | notion-productivity | [quick-notes](scripts/notion-productivity/quick-notes/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/notion-productivity/quick-notes/) |
 | 07 | 08 | expense-logger | notion-productivity | [expense-logger](scripts/notion-productivity/expense-logger/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/notion-productivity/expense-logger/) |
+| 07 | 09 | break-reminder | notion-productivity | [break-reminder](scripts/notion-productivity/break-reminder/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/notion-productivity/break-reminder/) |
 
 <!-- INDEX:END -->
 

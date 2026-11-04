@@ -283,6 +283,17 @@
    0
   ]
  },
+ "notion-productivity/break-reminder": {
+  "values": {
+   "plan": true,
+   "start": "09:00",
+   "every": "45",
+   "total": "180"
+  },
+  "exit": [
+   0
+  ]
+ },
  "notion-productivity/countdown-timer": {
   "values": {
    "target": "2026-12-25",
