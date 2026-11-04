@@ -82,7 +82,7 @@ Difficulty: easy on days 1-10, medium on days 11-20, more advanced on days 21-30
 - [x] 03. todo-cli - Simple add, done and list task manager (notion-productivity)
 - [x] 04. journal-cli - Append dated entries to a daily journal file (notion-productivity)
 - [x] 05. countdown-timer - Count down to a date or duration (notion-productivity)
-- [ ] 06. timezone-converter - Convert times between time zones (notion-productivity)
+- [x] 06. timezone-converter - Convert times between time zones (notion-productivity)
 - [ ] 07. quick-notes - Capture and search quick notes from the shell (notion-productivity)
 - [ ] 08. expense-logger - Log expenses to CSV with category totals (notion-productivity)
 - [ ] 09. break-reminder - Desktop-free reminder that nags every N minutes (notion-productivity)

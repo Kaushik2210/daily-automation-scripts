@@ -320,6 +320,21 @@
    0
   ]
  },
+ "notion-productivity/timezone-converter": {
+  "values": {
+   "time": "12:00",
+   "source": "Europe/London",
+   "to": [
+    "America/New_York",
+    "Asia/Tokyo",
+    "Asia/Kolkata"
+   ],
+   "date": "2026-01-15"
+  },
+  "exit": [
+   0
+  ]
+ },
  "notion-productivity/todo-cli": {
   "values": {
    "action": "list",
