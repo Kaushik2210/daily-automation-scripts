@@ -283,6 +283,15 @@
    0
   ]
  },
+ "notion-productivity/countdown-timer": {
+  "values": {
+   "target": "2026-12-25",
+   "now": "2026-11-04 09:00"
+  },
+  "exit": [
+   0
+  ]
+ },
  "notion-productivity/habit-tracker": {
   "values": {
    "action": "report",

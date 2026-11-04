@@ -49,7 +49,7 @@ The table below is rebuilt by `python tools/update_index.py` from `PLAN.md` and 
 
 <!-- INDEX:START -->
 
-**Progress: 64/300 done**
+**Progress: 65/300 done**
 
 | Day | # | Script | Category | Source | Live |
 | --- | --- | --- | --- | --- | --- |
@@ -117,6 +117,7 @@ The table below is rebuilt by `python tools/update_index.py` from `PLAN.md` and 
 | 07 | 02 | pomodoro-timer | notion-productivity | [pomodoro-timer](scripts/notion-productivity/pomodoro-timer/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/notion-productivity/pomodoro-timer/) |
 | 07 | 03 | todo-cli | notion-productivity | [todo-cli](scripts/notion-productivity/todo-cli/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/notion-productivity/todo-cli/) |
 | 07 | 04 | journal-cli | notion-productivity | [journal-cli](scripts/notion-productivity/journal-cli/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/notion-productivity/journal-cli/) |
+| 07 | 05 | countdown-timer | notion-productivity | [countdown-timer](scripts/notion-productivity/countdown-timer/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/notion-productivity/countdown-timer/) |
 
 <!-- INDEX:END -->
 
