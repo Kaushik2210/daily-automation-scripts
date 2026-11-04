@@ -1,5 +1,6 @@
 from datetime import date
 
+import pytest
 from habit_tracker import grid, load, main, streaks
 
 TODAY = date(2026, 1, 7)
@@ -27,13 +28,12 @@ def test_check_uncheck_and_report(tmp_path, capsys):
     assert "Current streak: 2" in capsys.readouterr().out
     main(["report", "--file", f, "--today", "2026-01-07"])
     out = capsys.readouterr().out
-    assert "read" in out and out.rstrip().endswith("..........." + "...##"[1:]) or "##" in out
+    assert "read" in out and out.splitlines()[-1].endswith("............##")
     main(["uncheck", "read", "--file", f, "--today", "2026-01-07"])
     assert load(tmp_path / "h.json")["habits"]["read"] == ["2026-01-06"]
 
 
 def test_check_needs_name_and_bad_date(tmp_path):
-    import pytest
     with pytest.raises(SystemExit):
         main(["check", "--file", str(tmp_path / "h.json")])
     with pytest.raises(SystemExit):

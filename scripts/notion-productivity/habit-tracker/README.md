@@ -20,10 +20,7 @@ Data is kept in a small JSON file (default `~/.habits.json`; choose another with
 python habit_tracker.py report --file habits.json --today 2026-01-07
 ```
 ```
-habit          streak  best  total  last 14 days (to 2026-01-07)
-exercise            0     5      5  ..........###..
-meditate            1     1      1  ............#
-read                3     3      6  .........#####
+
 ```
 
 ## Notes
