@@ -57,6 +57,8 @@ def describe(parser):
         else:
             kind = "value"
         default = None if action.default is argparse.SUPPRESS else jsonable(action.default)
+        # Python 3.11 marks nargs="*" positionals as required; newer versions don't. Be consistent.
+        optional_positional = not action.option_strings and action.nargs in ("*", "?")
         arguments.append({
             "dest": action.dest,
             "flags": list(action.option_strings),
@@ -66,7 +68,7 @@ def describe(parser):
             "help": action.help or "",
             "choices": [jsonable(c) for c in action.choices] if action.choices else None,
             "default": default,
-            "required": bool(action.required),
+            "required": bool(action.required) and not optional_positional,
             "metavar": action.metavar if isinstance(action.metavar, str) else None,
             "nargs": action.nargs if isinstance(action.nargs, str) else None,
         })

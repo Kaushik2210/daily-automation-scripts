@@ -15,6 +15,7 @@ DEMO = textwrap.dedent('''
     def main(argv=None):
         parser = argparse.ArgumentParser(description="Say hello.")
         parser.add_argument("name")
+        parser.add_argument("extras", nargs="*")
         parser.add_argument("--shout", action="store_true")
         parser.add_argument("--times", type=int, default=1)
         args = parser.parse_args(argv)
@@ -51,6 +52,7 @@ def test_schema_lists_options(root):
     assert by_dest["shout"]["kind"] == "flag"
     assert by_dest["times"]["type"] == "int"
     assert by_dest["times"]["default"] == 1
+    assert by_dest["extras"]["positional"] and not by_dest["extras"]["required"]
 
 
 def test_build_argv(root):
