@@ -49,7 +49,7 @@ The table below is rebuilt by `python tools/update_index.py` from `PLAN.md` and 
 
 <!-- INDEX:START -->
 
-**Progress: 61/300 done**
+**Progress: 62/300 done**
 
 | Day | # | Script | Category | Source | Live |
 | --- | --- | --- | --- | --- | --- |
@@ -114,6 +114,7 @@ The table below is rebuilt by `python tools/update_index.py` from `PLAN.md` and 
 | 06 | 09 | photo-date-renamer | media | [photo-date-renamer](scripts/media/photo-date-renamer/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/media/photo-date-renamer/) |
 | 06 | 10 | gif-frame-extractor | media | [gif-frame-extractor](scripts/media/gif-frame-extractor/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/media/gif-frame-extractor/) |
 | 07 | 01 | habit-tracker | notion-productivity | [habit-tracker](scripts/notion-productivity/habit-tracker/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/notion-productivity/habit-tracker/) |
+| 07 | 02 | pomodoro-timer | notion-productivity | [pomodoro-timer](scripts/notion-productivity/pomodoro-timer/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/notion-productivity/pomodoro-timer/) |
 
 <!-- INDEX:END -->
 
