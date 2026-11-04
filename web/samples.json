@@ -38,5 +38,10 @@
  },
  "Screenshot 2026-03-02 at 14.05.00.png": {
   "base64": "iVBORw0KGgoAAAANSUhEUgAAAKAAAABkCAIAAACO1KzYAAABSklEQVR4nO3dwQnDUAxEwa+g/qvx2UWkIldhDI+ZCgxhkbQmyVz3/9C18/UT8Ko94yMuk+C4PQKctuMTTvt9/QC8a+1YbRIctyPCaRIc5w6O02TFSXCcJitOkxVni47TZMVJcJwmK06C49zBcZqsOAmO02TFabLiJDjODI5zB8dpsuIkOM7bpLg9vrqSZouOcwfHabLiJDjODI6zRce5g+M0WXESHGcGx9mi49zBcZqsOAmOM4PjbNFx7uA4TVacBMeZwXG26Dh3cJwmK06C48zgOFt0nDs4TpMVJ8FxZnCcLTrOHRynyYqT4DgzOM4WHecOjtNkxfmluzgJjrNFx7mD4zRZcRIcZwbH+d+kOAmOcwfHabLiJDjO26Q4CY7TZMVpsuLcwXGarDgJjrNFx2my4iQ4TpMVJ8Fxmqw4TVacOzhOkxUnwaftAa/4BCRujVnqAAAAAElFTkSuQmCC"
- }
+ },
+ "habits.json": "{\n \"habits\": {\n  \"read\": [\n   \"2026-01-01\",\n   \"2026-01-02\",\n   \"2026-01-03\",\n   \"2026-01-05\",\n   \"2026-01-06\",\n   \"2026-01-07\"\n  ],\n  \"exercise\": [\n   \"2026-01-02\",\n   \"2026-01-03\",\n   \"2026-01-04\",\n   \"2026-01-05\",\n   \"2026-01-06\"\n  ],\n  \"meditate\": [\n   \"2026-01-07\"\n  ]\n }\n}\n",
+ "todos.json": "{\n \"next_id\": 5,\n \"todos\": [\n  {\n   \"id\": 1,\n   \"text\": \"Write the weekly report\",\n   \"priority\": \"high\",\n   \"done\": false\n  },\n  {\n   \"id\": 2,\n   \"text\": \"Book dentist appointment\",\n   \"priority\": \"normal\",\n   \"done\": false\n  },\n  {\n   \"id\": 3,\n   \"text\": \"Reply to Sam\",\n   \"priority\": \"low\",\n   \"done\": true\n  },\n  {\n   \"id\": 4,\n   \"text\": \"Renew passport\",\n   \"priority\": \"high\",\n   \"done\": false\n  }\n ]\n}\n",
+ "journal.md": "# Journal\n\n## 2026-01-05\n\n- 09:10 Started the day with a long walk.\n- 18:45 Finished the draft and sent it out.\n\n## 2026-01-06\n\n- 08:30 Planned the week.\n- 21:00 Read two chapters.\n",
+ "notes.json": "{\n \"next_id\": 4,\n \"notes\": [\n  {\n   \"id\": 1,\n   \"text\": \"Buy oat milk #errands\",\n   \"created\": \"2026-01-05 09:10\"\n  },\n  {\n   \"id\": 2,\n   \"text\": \"Idea: a script that renames receipts #ideas\",\n   \"created\": \"2026-01-05 14:22\"\n  },\n  {\n   \"id\": 3,\n   \"text\": \"Call the bank about the card #errands #money\",\n   \"created\": \"2026-01-06 11:03\"\n  }\n ]\n}\n",
+ "expenses.csv": "date,amount,category,note\n2026-01-02,4.50,coffee,flat white\n2026-01-03,62.10,groceries,weekly shop\n2026-01-05,12.00,transport,bus pass top-up\n2026-01-09,38.75,groceries,market\n2026-02-01,900.00,rent,february rent\n2026-02-03,5.20,coffee,latte\n"
 }
