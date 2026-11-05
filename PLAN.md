@@ -96,7 +96,7 @@ Difficulty: easy on days 1-10, medium on days 11-20, more advanced on days 21-30
 - [x] 05. todo-comment-finder - List TODO and FIXME comments in a repo (github)
 - [x] 06. gitignore-generator - Generate a .gitignore for common stacks (github)
 - [x] 07. repo-readme-generator - Draft a README from a project's structure (github)
-- [ ] 08. changelog-generator - Build a changelog from conventional commits (github)
+- [x] 08. changelog-generator - Build a changelog from conventional commits (github)
 - [ ] 09. branch-lister - List local branches with last commit age (github)
 - [ ] 10. repo-size-reporter - Report repo size and heaviest files (github)
 

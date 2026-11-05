@@ -182,6 +182,16 @@
    0
   ]
  },
+ "github/changelog-generator": {
+  "values": {
+   "log": "git-log.txt",
+   "version": "1.2.0",
+   "date": "2026-01-14"
+  },
+  "exit": [
+   0
+  ]
+ },
  "github/commit-message-linter": {
   "values": {
    "log": "git-log.txt"
