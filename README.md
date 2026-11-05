@@ -49,7 +49,7 @@ The table below is rebuilt by `python tools/update_index.py` from `PLAN.md` and 
 
 <!-- INDEX:START -->
 
-**Progress: 75/300 done**
+**Progress: 76/300 done**
 
 | Day | # | Script | Category | Source | Live |
 | --- | --- | --- | --- | --- | --- |
@@ -128,6 +128,7 @@ The table below is rebuilt by `python tools/update_index.py` from `PLAN.md` and 
 | 08 | 03 | commit-message-linter | github | [commit-message-linter](scripts/github/commit-message-linter/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/github/commit-message-linter/) |
 | 08 | 04 | git-author-stats | github | [git-author-stats](scripts/github/git-author-stats/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/github/git-author-stats/) |
 | 08 | 05 | todo-comment-finder | github | [todo-comment-finder](scripts/github/todo-comment-finder/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/github/todo-comment-finder/) |
+| 08 | 06 | gitignore-generator | github | [gitignore-generator](scripts/github/gitignore-generator/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/github/gitignore-generator/) |
 
 <!-- INDEX:END -->
 
