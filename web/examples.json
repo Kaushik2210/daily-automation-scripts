@@ -182,6 +182,14 @@
    0
   ]
  },
+ "github/git-log-summarizer": {
+  "values": {
+   "log": "git-log.txt"
+  },
+  "exit": [
+   0
+  ]
+ },
  "github/standup-generator": {
   "values": {
    "log": "git-log.txt",
