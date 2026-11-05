@@ -44,3 +44,9 @@ def test_cli_preview_and_apply(tmp_path, capsys):
     assert not out.exists() and "### Features" in capsys.readouterr().out
     cg.main([*base, "--apply"])
     assert out.read_text(encoding="utf-8").startswith("# Changelog\n\n## [1.2.0]")
+
+
+def test_since_accepts_dates_and_tags():
+    assert cg.since_args(None) == []
+    assert cg.since_args("2026-01-01") == ["--since=2026-01-01"]
+    assert cg.since_args("v1.2.0") == ["v1.2.0..HEAD"]

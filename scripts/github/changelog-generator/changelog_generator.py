@@ -33,6 +33,15 @@ def run_git(repo, *args):
     return proc.stdout
 
 
+def since_args(since):
+    """git arguments for --since: a date becomes --since=DATE, anything else is a tag or ref."""
+    if not since:
+        return []
+    if re.fullmatch(r"\d{4}-\d{2}-\d{2}", since):
+        return [f"--since={since}"]
+    return [f"{since}..HEAD"]
+
+
 def group_commits(commits):
     """Return (breaking, {type: [entries]}, ignored_count) from conventional commit subjects."""
     groups, breaking, ignored = {}, [], 0
@@ -91,8 +100,8 @@ def main(argv=None):
     if args.log:
         text = args.log.read_text(encoding="utf-8")
     else:
-        extra = [f"{args.since}..HEAD"] if args.since else []
-        text = run_git(args.repo, "log", "--date=short", f"--pretty=format:{LOG_FORMAT}", *extra)
+        text = run_git(args.repo, "log", "--date=short", f"--pretty=format:{LOG_FORMAT}",
+                       *since_args(args.since))
     section = render(parse_log(text), args.version, args.date or date.today().isoformat())
     if args.output and args.apply:
         old = args.output.read_text(encoding="utf-8") if args.output.exists() else ""
