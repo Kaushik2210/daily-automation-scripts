@@ -91,7 +91,7 @@ Difficulty: easy on days 1-10, medium on days 11-20, more advanced on days 21-30
 ## Day 08 - Git helpers
 - [x] 01. standup-generator - Build a daily standup from your recent git commits (github)
 - [x] 02. git-log-summarizer - Summarize commits by author and week (github)
-- [ ] 03. commit-message-linter - Check commit messages against a format (github)
+- [x] 03. commit-message-linter - Check commit messages against a format (github)
 - [ ] 04. git-author-stats - Count commits and lines per author (github)
 - [ ] 05. todo-comment-finder - List TODO and FIXME comments in a repo (github)
 - [ ] 06. gitignore-generator - Generate a .gitignore for common stacks (github)
