@@ -41,3 +41,9 @@ def test_cli_output_and_empty(tmp_path, capsys):
     f.write_text("")
     gl.main(["--log", str(f)])
     assert "No commits found." in capsys.readouterr().out
+
+
+def test_missing_log_file_is_a_clear_error(tmp_path):
+    import pytest
+    with pytest.raises(SystemExit):
+        gl.main(["--log", str(tmp_path / "nope.txt")])

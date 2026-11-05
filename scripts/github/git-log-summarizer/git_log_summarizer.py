@@ -56,6 +56,8 @@ def main(argv=None):
     parser.add_argument("--log", type=Path, help="read a saved git log file instead of running git")
     parser.add_argument("--since", help="only commits after this date, e.g. 2026-01-01 (git mode)")
     args = parser.parse_args(argv)
+    if args.log and not args.log.is_file():
+        parser.error(f"log file not found: {args.log}")
 
     if args.log:
         text = args.log.read_text(encoding="utf-8")

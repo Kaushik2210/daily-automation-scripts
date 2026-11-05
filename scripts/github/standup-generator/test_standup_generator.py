@@ -47,3 +47,8 @@ def test_no_commits_and_cli(tmp_path, capsys):
     assert "(no commits)" in out and "Blockers:\n- None" in out
     with pytest.raises(SystemExit):
         sg.main(["--log", str(log), "--today", "tomorrow"])
+
+
+def test_missing_log_file_is_a_clear_error(tmp_path):
+    with pytest.raises(SystemExit):
+        sg.main(["--log", str(tmp_path / "nope.txt"), "--today", "2026-01-13"])

@@ -70,6 +70,8 @@ def main(argv=None):
     parser.add_argument("--today", help="treat this date as today, YYYY-MM-DD")
     parser.add_argument("--raw", action="store_true", help="keep the original commit subjects")
     args = parser.parse_args(argv)
+    if args.log and not args.log.is_file():
+        parser.error(f"log file not found: {args.log}")
     try:
         today = date.fromisoformat(args.today) if args.today else date.today()
     except ValueError:
