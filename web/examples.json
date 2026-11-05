@@ -182,6 +182,16 @@
    0
   ]
  },
+ "github/standup-generator": {
+  "values": {
+   "log": "git-log.txt",
+   "author": "Ada",
+   "today": "2026-01-13"
+  },
+  "exit": [
+   0
+  ]
+ },
  "media/gif-frame-extractor": {
   "values": {
    "gif": "animated.gif"

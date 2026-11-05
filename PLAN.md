@@ -89,7 +89,7 @@ Difficulty: easy on days 1-10, medium on days 11-20, more advanced on days 21-30
 - [x] 10. weekly-planner - Generate a weekly planner in markdown (notion-productivity)
 
 ## Day 08 - Git helpers
-- [ ] 01. standup-generator - Build a daily standup from your recent git commits (github)
+- [x] 01. standup-generator - Build a daily standup from your recent git commits (github)
 - [ ] 02. git-log-summarizer - Summarize commits by author and week (github)
 - [ ] 03. commit-message-linter - Check commit messages against a format (github)
 - [ ] 04. git-author-stats - Count commits and lines per author (github)

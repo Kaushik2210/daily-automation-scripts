@@ -49,7 +49,7 @@ The table below is rebuilt by `python tools/update_index.py` from `PLAN.md` and 
 
 <!-- INDEX:START -->
 
-**Progress: 70/300 done**
+**Progress: 71/300 done**
 
 | Day | # | Script | Category | Source | Live |
 | --- | --- | --- | --- | --- | --- |
@@ -123,6 +123,7 @@ The table below is rebuilt by `python tools/update_index.py` from `PLAN.md` and 
 | 07 | 08 | expense-logger | notion-productivity | [expense-logger](scripts/notion-productivity/expense-logger/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/notion-productivity/expense-logger/) |
 | 07 | 09 | break-reminder | notion-productivity | [break-reminder](scripts/notion-productivity/break-reminder/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/notion-productivity/break-reminder/) |
 | 07 | 10 | weekly-planner | notion-productivity | [weekly-planner](scripts/notion-productivity/weekly-planner/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/notion-productivity/weekly-planner/) |
+| 08 | 01 | standup-generator | github | [standup-generator](scripts/github/standup-generator/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/github/standup-generator/) |
 
 <!-- INDEX:END -->
 
