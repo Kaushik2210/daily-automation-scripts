@@ -16,7 +16,7 @@ The draft is printed. To save it pass `-o` with `--apply`; an existing file is n
 ```bash
 python repo_readme_generator.py demo-project
 ```
-```
+````
 # shop-demo
 
 A tiny demo storefront
@@ -31,7 +31,23 @@ npm start
 npm run test
 npm run build
 ```
+
+## Project structure
+
 ```
+src/
+  app.js
+  utils.js
+tests/
+  app.test.js
+LICENSE
+package.json
+```
+
+## License
+
+MIT.
+````
 
 ## Notes
 - It understands `package.json` (name, description, scripts, license), `requirements.txt` and `pyproject.toml`.

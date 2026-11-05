@@ -31,6 +31,16 @@ dist/
 .coverage
 htmlcov/
 
+# dotenv
+.env
+.env.*
+!.env.example
+
+# macos
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
 ```
 
 ## Notes
