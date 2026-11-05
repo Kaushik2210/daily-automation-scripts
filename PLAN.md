@@ -98,7 +98,7 @@ Difficulty: easy on days 1-10, medium on days 11-20, more advanced on days 21-30
 - [x] 07. repo-readme-generator - Draft a README from a project's structure (github)
 - [x] 08. changelog-generator - Build a changelog from conventional commits (github)
 - [x] 09. branch-lister - List local branches with last commit age (github)
-- [ ] 10. repo-size-reporter - Report repo size and heaviest files (github)
+- [x] 10. repo-size-reporter - Report repo size and heaviest files (github)
 
 ## Day 09 - PDFs and documents
 - [ ] 01. pdf-merger - Merge several PDFs into one (pdf-docs)

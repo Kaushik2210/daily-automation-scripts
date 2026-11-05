@@ -245,6 +245,14 @@
    0
   ]
  },
+ "github/repo-size-reporter": {
+  "values": {
+   "folder": "demo-project"
+  },
+  "exit": [
+   0
+  ]
+ },
  "github/standup-generator": {
   "values": {
    "log": "git-log.txt",
