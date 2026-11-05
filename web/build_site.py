@@ -22,6 +22,9 @@ NEEDS_SYSTEM = {"subprocess", "multiprocessing", "tkinter", "curses", "winreg", 
 PYODIDE_PACKAGES = {"PIL": "pillow", "yaml": "pyyaml", "numpy": "numpy", "pandas": "pandas",
                     "openpyxl": "openpyxl", "lxml": "lxml", "bs4": "beautifulsoup4",
                     "qrcode": "qrcode", "tzdata": "tzdata"}
+# A script can opt in with this comment when it only starts other programs for optional modes
+# (for example git), so its main features still work inside a browser.
+WEB_OK_MARKER = "# web-ok:"
 PLAN_ITEM = re.compile(r"^- \[[ x]\] (\d\d)\. (\S+) - (.+) \(([a-z-]+)\)$")
 
 
@@ -39,12 +42,13 @@ def imported_modules(source):
 def browser_support(source):
     """Say whether a script can run inside Pyodide, and why not if it can't."""
     modules = imported_modules(source)
+    exempt_system = WEB_OK_MARKER in source
     packages = set()
     for name in sorted(modules):
         top = name.split(".")[0]
         if name in NEEDS_NETWORK or top in NEEDS_NETWORK:
             return {"ok": False, "reason": "it needs network access", "packages": []}
-        if top in NEEDS_SYSTEM:
+        if top in NEEDS_SYSTEM and not exempt_system:
             reason = "it needs to run programs on your computer"
             return {"ok": False, "reason": reason, "packages": []}
         if top in sys.stdlib_module_names:
