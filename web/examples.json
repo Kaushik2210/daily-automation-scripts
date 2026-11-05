@@ -190,6 +190,14 @@
    1
   ]
  },
+ "github/git-author-stats": {
+  "values": {
+   "log": "git-log.txt"
+  },
+  "exit": [
+   0
+  ]
+ },
  "github/git-log-summarizer": {
   "values": {
    "log": "git-log.txt"
