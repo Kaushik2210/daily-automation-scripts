@@ -49,7 +49,7 @@ The table below is rebuilt by `python tools/update_index.py` from `PLAN.md` and 
 
 <!-- INDEX:START -->
 
-**Progress: 74/300 done**
+**Progress: 75/300 done**
 
 | Day | # | Script | Category | Source | Live |
 | --- | --- | --- | --- | --- | --- |
@@ -127,6 +127,7 @@ The table below is rebuilt by `python tools/update_index.py` from `PLAN.md` and 
 | 08 | 02 | git-log-summarizer | github | [git-log-summarizer](scripts/github/git-log-summarizer/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/github/git-log-summarizer/) |
 | 08 | 03 | commit-message-linter | github | [commit-message-linter](scripts/github/commit-message-linter/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/github/commit-message-linter/) |
 | 08 | 04 | git-author-stats | github | [git-author-stats](scripts/github/git-author-stats/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/github/git-author-stats/) |
+| 08 | 05 | todo-comment-finder | github | [todo-comment-finder](scripts/github/todo-comment-finder/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/github/todo-comment-finder/) |
 
 <!-- INDEX:END -->
 

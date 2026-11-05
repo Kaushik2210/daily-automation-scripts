@@ -216,6 +216,14 @@
    0
   ]
  },
+ "github/todo-comment-finder": {
+  "values": {
+   "folder": "demo-project"
+  },
+  "exit": [
+   0
+  ]
+ },
  "media/gif-frame-extractor": {
   "values": {
    "gif": "animated.gif"

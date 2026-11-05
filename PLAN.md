@@ -93,7 +93,7 @@ Difficulty: easy on days 1-10, medium on days 11-20, more advanced on days 21-30
 - [x] 02. git-log-summarizer - Summarize commits by author and week (github)
 - [x] 03. commit-message-linter - Check commit messages against a format (github)
 - [x] 04. git-author-stats - Count commits and lines per author (github)
-- [ ] 05. todo-comment-finder - List TODO and FIXME comments in a repo (github)
+- [x] 05. todo-comment-finder - List TODO and FIXME comments in a repo (github)
 - [ ] 06. gitignore-generator - Generate a .gitignore for common stacks (github)
 - [ ] 07. repo-readme-generator - Draft a README from a project's structure (github)
 - [ ] 08. changelog-generator - Build a changelog from conventional commits (github)
