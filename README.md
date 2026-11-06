@@ -41,6 +41,8 @@ make index        # rebuild the index below
 
 A [pre-commit](https://pre-commit.com) config is included (`pre-commit install`).
 
+CI lints and runs the tests on Linux (Python 3.11 and 3.12) for every push. Windows and macOS are tested on pull requests, every Monday and on demand from the Actions tab, because those runners use many times more Actions minutes.
+
 ## Categories
 `files`, `pdf-docs`, `github`, `email`, `web-scraping`, `notion-productivity`, `data`, `system`, `security`, `media`, `text`, `devops`
 
