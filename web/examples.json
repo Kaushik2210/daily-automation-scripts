@@ -490,6 +490,15 @@
    0
   ]
  },
+ "pdf-docs/pdf-splitter": {
+  "values": {
+   "file": "handbook.pdf",
+   "every": "2"
+  },
+  "exit": [
+   0
+  ]
+ },
  "security/base64-tool": {
   "values": {
    "text": "hello world"
