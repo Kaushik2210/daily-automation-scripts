@@ -21,7 +21,7 @@ NEEDS_SYSTEM = {"subprocess", "multiprocessing", "tkinter", "curses", "winreg", 
 # import name -> package that Pyodide can load
 PYODIDE_PACKAGES = {"PIL": "pillow", "yaml": "pyyaml", "numpy": "numpy", "pandas": "pandas",
                     "openpyxl": "openpyxl", "lxml": "lxml", "bs4": "beautifulsoup4",
-                    "qrcode": "qrcode", "tzdata": "tzdata"}
+                    "qrcode": "qrcode", "tzdata": "tzdata", "pypdf": "pypdf", "fpdf": "fpdf2"}
 # A script can opt in with this comment when it only starts other programs for optional modes
 # (for example git), so its main features still work inside a browser.
 WEB_OK_MARKER = "# web-ok:"
