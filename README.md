@@ -49,7 +49,7 @@ The table below is rebuilt by `python tools/update_index.py` from `PLAN.md` and 
 
 <!-- INDEX:START -->
 
-**Progress: 82/300 done**
+**Progress: 83/300 done**
 
 | Day | # | Script | Category | Source | Live |
 | --- | --- | --- | --- | --- | --- |
@@ -135,6 +135,7 @@ The table below is rebuilt by `python tools/update_index.py` from `PLAN.md` and 
 | 08 | 10 | repo-size-reporter | github | [repo-size-reporter](scripts/github/repo-size-reporter/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/github/repo-size-reporter/) |
 | 09 | 01 | pdf-merger | pdf-docs | [pdf-merger](scripts/pdf-docs/pdf-merger/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/pdf-docs/pdf-merger/) |
 | 09 | 02 | pdf-splitter | pdf-docs | [pdf-splitter](scripts/pdf-docs/pdf-splitter/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/pdf-docs/pdf-splitter/) |
+| 09 | 03 | pdf-page-counter | pdf-docs | [pdf-page-counter](scripts/pdf-docs/pdf-page-counter/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/pdf-docs/pdf-page-counter/) |
 
 <!-- INDEX:END -->
 

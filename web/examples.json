@@ -490,6 +490,18 @@
    0
   ]
  },
+ "pdf-docs/pdf-page-counter": {
+  "values": {
+   "paths": [
+    "report.pdf",
+    "handbook.pdf",
+    "scan_0001.pdf"
+   ]
+  },
+  "exit": [
+   0
+  ]
+ },
  "pdf-docs/pdf-splitter": {
   "values": {
    "file": "handbook.pdf",
