@@ -506,6 +506,17 @@
    0
   ]
  },
+ "pdf-docs/pdf-metadata-viewer": {
+  "values": {
+   "files": [
+    "report.pdf",
+    "handbook.pdf"
+   ]
+  },
+  "exit": [
+   0
+  ]
+ },
  "pdf-docs/pdf-page-counter": {
   "values": {
    "paths": [
