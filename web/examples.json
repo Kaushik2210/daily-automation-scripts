@@ -477,6 +477,14 @@
    0
   ]
  },
+ "pdf-docs/invoice-renamer": {
+  "values": {
+   "folder": "."
+  },
+  "exit": [
+   0
+  ]
+ },
  "pdf-docs/markdown-to-pdf": {
   "values": {
    "file": "README.md"

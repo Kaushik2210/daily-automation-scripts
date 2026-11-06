@@ -107,7 +107,7 @@ Difficulty: easy on days 1-10, medium on days 11-20, more advanced on days 21-30
 - [x] 04. pdf-text-extractor - Extract text from PDFs to .txt files (pdf-docs)
 - [x] 05. pdf-rotator - Rotate selected pages of a PDF (pdf-docs)
 - [x] 06. markdown-to-pdf - Render markdown files as PDF (pdf-docs)
-- [ ] 07. invoice-renamer - Rename invoice PDFs from their date and vendor (pdf-docs)
+- [x] 07. invoice-renamer - Rename invoice PDFs from their date and vendor (pdf-docs)
 - [ ] 08. pdf-metadata-viewer - Show title, author and page size of PDFs (pdf-docs)
 - [ ] 09. docx-text-extractor - Pull plain text out of Word documents (pdf-docs)
 - [ ] 10. images-to-pdf - Combine images into a single PDF (pdf-docs)
