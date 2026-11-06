@@ -477,6 +477,17 @@
    0
   ]
  },
+ "pdf-docs/docx-text-extractor": {
+  "values": {
+   "files": [
+    "contract.docx"
+   ],
+   "markdown": true
+  },
+  "exit": [
+   0
+  ]
+ },
  "pdf-docs/invoice-renamer": {
   "values": {
    "folder": "."

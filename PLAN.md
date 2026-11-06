@@ -109,7 +109,7 @@ Difficulty: easy on days 1-10, medium on days 11-20, more advanced on days 21-30
 - [x] 06. markdown-to-pdf - Render markdown files as PDF (pdf-docs)
 - [x] 07. invoice-renamer - Rename invoice PDFs from their date and vendor (pdf-docs)
 - [x] 08. pdf-metadata-viewer - Show title, author and page size of PDFs (pdf-docs)
-- [ ] 09. docx-text-extractor - Pull plain text out of Word documents (pdf-docs)
+- [x] 09. docx-text-extractor - Pull plain text out of Word documents (pdf-docs)
 - [ ] 10. images-to-pdf - Combine images into a single PDF (pdf-docs)
 
 ## Day 10 - Web basics
