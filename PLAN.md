@@ -101,7 +101,7 @@ Difficulty: easy on days 1-10, medium on days 11-20, more advanced on days 21-30
 - [x] 10. repo-size-reporter - Report repo size and heaviest files (github)
 
 ## Day 09 - PDFs and documents
-- [ ] 01. pdf-merger - Merge several PDFs into one (pdf-docs)
+- [x] 01. pdf-merger - Merge several PDFs into one (pdf-docs)
 - [ ] 02. pdf-splitter - Split a PDF by page range or into single pages (pdf-docs)
 - [ ] 03. pdf-page-counter - Count pages across a folder of PDFs (pdf-docs)
 - [ ] 04. pdf-text-extractor - Extract text from PDFs to .txt files (pdf-docs)

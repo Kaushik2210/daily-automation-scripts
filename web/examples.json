@@ -477,6 +477,19 @@
    0
   ]
  },
+ "pdf-docs/pdf-merger": {
+  "values": {
+   "files": [
+    "report.pdf",
+    "handbook.pdf"
+   ],
+   "output": "combined.pdf",
+   "bookmarks": true
+  },
+  "exit": [
+   0
+  ]
+ },
  "security/base64-tool": {
   "values": {
    "text": "hello world"
