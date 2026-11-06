@@ -36,6 +36,7 @@ def test_browser_support_rules():
     pil = browser_support("from PIL import Image")
     assert pil["ok"] and pil["packages"] == ["pillow"]
     assert "requests" in browser_support("import requests")["reason"]
+    assert browser_support("from fpdf import FPDF")["packages"] == ["fpdf2", "ssl"]
 
 
 def test_plan_info(tmp_path):

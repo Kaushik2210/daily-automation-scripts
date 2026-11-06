@@ -25,6 +25,8 @@ PYODIDE_PACKAGES = {"PIL": "pillow", "yaml": "pyyaml", "numpy": "numpy", "pandas
 # A script can opt in with this comment when it only starts other programs for optional modes
 # (for example git), so its main features still work inside a browser.
 WEB_OK_MARKER = "# web-ok:"
+# Packages that also need Pyodide's own helper packages to import (fpdf2 wants the ssl module).
+EXTRA_PACKAGES = {"fpdf": ["ssl"]}
 PLAN_ITEM = re.compile(r"^- \[[ x]\] (\d\d)\. (\S+) - (.+) \(([a-z-]+)\)$")
 
 
@@ -55,6 +57,7 @@ def browser_support(source):
             continue
         if top in PYODIDE_PACKAGES:
             packages.add(PYODIDE_PACKAGES[top])
+            packages.update(EXTRA_PACKAGES.get(top, []))
         else:
             return {"ok": False, "reason": f"it needs the {top} package", "packages": []}
     return {"ok": True, "reason": "", "packages": sorted(packages)}
