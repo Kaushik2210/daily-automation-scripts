@@ -1,4 +1,4 @@
-.PHONY: lint test index check tools web
+.PHONY: lint test index check tools web publish
 
 lint:
 	ruff check .
@@ -16,3 +16,6 @@ tools:
 
 web:
 	python web/dashboard.py
+
+publish:
+	python web/publish_site.py --push

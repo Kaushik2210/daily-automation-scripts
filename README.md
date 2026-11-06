@@ -153,6 +153,7 @@ The table below is rebuilt by `python tools/update_index.py` from `PLAN.md` and 
 - `web/build_site.py` builds the static site (one page per tool) and `.github/workflows/pages.yml` deploys it on every push.
 - `web/dashboard.py` is the local server. It only listens on 127.0.0.1 and never runs anything through a shell.
 - `web/check_links.py` checks that every live tool page and source file loads.
+- `web/publish_site.py` publishes the site to the `gh-pages` branch from your own machine (`make publish`), for when GitHub Actions isn't available.
 - `web/examples.json` and `web/samples.json` give every tool a working example (the **Try an example** button). Run `python web/run_examples.py` to test every tool at once; the test suite fails if a tool has no example.
 
 ## Contributing and security
