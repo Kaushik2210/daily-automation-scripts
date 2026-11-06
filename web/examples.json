@@ -502,6 +502,16 @@
    0
   ]
  },
+ "pdf-docs/pdf-rotator": {
+  "values": {
+   "file": "handbook.pdf",
+   "angle": 90,
+   "pages": "2-3"
+  },
+  "exit": [
+   0
+  ]
+ },
  "pdf-docs/pdf-splitter": {
   "values": {
    "file": "handbook.pdf",
