@@ -488,6 +488,19 @@
    0
   ]
  },
+ "pdf-docs/images-to-pdf": {
+  "values": {
+   "images": [
+    "Holiday Photo 01.JPG",
+    "Holiday Photo 02.JPG",
+    "logo.png"
+   ],
+   "output": "album.pdf"
+  },
+  "exit": [
+   0
+  ]
+ },
  "pdf-docs/invoice-renamer": {
   "values": {
    "folder": "."

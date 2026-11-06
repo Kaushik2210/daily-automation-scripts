@@ -49,7 +49,7 @@ The table below is rebuilt by `python tools/update_index.py` from `PLAN.md` and 
 
 <!-- INDEX:START -->
 
-**Progress: 89/300 done**
+**Progress: 90/300 done**
 
 | Day | # | Script | Category | Source | Live |
 | --- | --- | --- | --- | --- | --- |
@@ -142,6 +142,7 @@ The table below is rebuilt by `python tools/update_index.py` from `PLAN.md` and 
 | 09 | 07 | invoice-renamer | pdf-docs | [invoice-renamer](scripts/pdf-docs/invoice-renamer/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/pdf-docs/invoice-renamer/) |
 | 09 | 08 | pdf-metadata-viewer | pdf-docs | [pdf-metadata-viewer](scripts/pdf-docs/pdf-metadata-viewer/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/pdf-docs/pdf-metadata-viewer/) |
 | 09 | 09 | docx-text-extractor | pdf-docs | [docx-text-extractor](scripts/pdf-docs/docx-text-extractor/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/pdf-docs/docx-text-extractor/) |
+| 09 | 10 | images-to-pdf | pdf-docs | [images-to-pdf](scripts/pdf-docs/images-to-pdf/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/pdf-docs/images-to-pdf/) |
 
 <!-- INDEX:END -->
 
