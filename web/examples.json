@@ -477,6 +477,14 @@
    0
   ]
  },
+ "pdf-docs/markdown-to-pdf": {
+  "values": {
+   "file": "README.md"
+  },
+  "exit": [
+   0
+  ]
+ },
  "pdf-docs/pdf-merger": {
   "values": {
    "files": [

@@ -49,7 +49,7 @@ The table below is rebuilt by `python tools/update_index.py` from `PLAN.md` and 
 
 <!-- INDEX:START -->
 
-**Progress: 85/300 done**
+**Progress: 86/300 done**
 
 | Day | # | Script | Category | Source | Live |
 | --- | --- | --- | --- | --- | --- |
@@ -138,6 +138,7 @@ The table below is rebuilt by `python tools/update_index.py` from `PLAN.md` and 
 | 09 | 03 | pdf-page-counter | pdf-docs | [pdf-page-counter](scripts/pdf-docs/pdf-page-counter/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/pdf-docs/pdf-page-counter/) |
 | 09 | 04 | pdf-text-extractor | pdf-docs | [pdf-text-extractor](scripts/pdf-docs/pdf-text-extractor/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/pdf-docs/pdf-text-extractor/) |
 | 09 | 05 | pdf-rotator | pdf-docs | [pdf-rotator](scripts/pdf-docs/pdf-rotator/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/pdf-docs/pdf-rotator/) |
+| 09 | 06 | markdown-to-pdf | pdf-docs | [markdown-to-pdf](scripts/pdf-docs/markdown-to-pdf/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/pdf-docs/markdown-to-pdf/) |
 
 <!-- INDEX:END -->
 
