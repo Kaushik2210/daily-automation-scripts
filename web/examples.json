@@ -511,6 +511,17 @@
    0
   ]
  },
+ "pdf-docs/pdf-text-extractor": {
+  "values": {
+   "files": [
+    "report.pdf"
+   ],
+   "markers": true
+  },
+  "exit": [
+   0
+  ]
+ },
  "security/base64-tool": {
   "values": {
    "text": "hello world"
