@@ -865,5 +865,14 @@
   "exit": [
    0
   ]
+ },
+ "web-scraping/link-extractor": {
+  "values": {
+   "source": "page.html",
+   "base": "https://example.com/"
+  },
+  "exit": [
+   0
+  ]
  }
 }
