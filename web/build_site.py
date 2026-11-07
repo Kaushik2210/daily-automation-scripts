@@ -22,8 +22,8 @@ NEEDS_SYSTEM = {"subprocess", "multiprocessing", "tkinter", "curses", "winreg", 
 PYODIDE_PACKAGES = {"PIL": "pillow", "yaml": "pyyaml", "numpy": "numpy", "pandas": "pandas",
                     "openpyxl": "openpyxl", "lxml": "lxml", "bs4": "beautifulsoup4",
                     "qrcode": "qrcode", "tzdata": "tzdata", "pypdf": "pypdf", "fpdf": "fpdf2"}
-# A script can opt in with this comment when it only starts other programs for optional modes
-# (for example git), so its main features still work inside a browser.
+# A script can opt in with this comment when it only uses the network or other programs in
+# optional modes (for example git or fetching a URL), so its offline modes still work in a browser.
 WEB_OK_MARKER = "# web-ok:"
 # Packages that also need Pyodide's own helper packages to import (fpdf2 wants the ssl module).
 EXTRA_PACKAGES = {"fpdf": ["ssl"]}
@@ -44,13 +44,13 @@ def imported_modules(source):
 def browser_support(source):
     """Say whether a script can run inside Pyodide, and why not if it can't."""
     modules = imported_modules(source)
-    exempt_system = WEB_OK_MARKER in source
+    opted_in = WEB_OK_MARKER in source
     packages = set()
     for name in sorted(modules):
         top = name.split(".")[0]
-        if name in NEEDS_NETWORK or top in NEEDS_NETWORK:
+        if (name in NEEDS_NETWORK or top in NEEDS_NETWORK) and not opted_in:
             return {"ok": False, "reason": "it needs network access", "packages": []}
-        if top in NEEDS_SYSTEM and not exempt_system:
+        if top in NEEDS_SYSTEM and not opted_in:
             reason = "it needs to run programs on your computer"
             return {"ok": False, "reason": reason, "packages": []}
         if top in sys.stdlib_module_names:

@@ -31,7 +31,8 @@ def test_browser_support_rules():
     assert not browser_support("import subprocess")["ok"]
     opted_in = "# web-ok: git is optional\nimport subprocess\n"
     assert browser_support(opted_in)["ok"]
-    assert not browser_support("# web-ok: x\nimport socket\n")["ok"]  # network is never exempt
+    assert browser_support("# web-ok: offline modes\nimport urllib.request\n")["ok"]
+    assert not browser_support("import urllib.request\n")["ok"]   # without the opt-in
     assert browser_support("from urllib.parse import quote")["ok"]
     pil = browser_support("from PIL import Image")
     assert pil["ok"] and pil["packages"] == ["pillow"]
