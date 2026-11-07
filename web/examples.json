@@ -866,6 +866,14 @@
    0
   ]
  },
+ "web-scraping/header-inspector": {
+  "values": {
+   "source": "headers.txt"
+  },
+  "exit": [
+   0
+  ]
+ },
  "web-scraping/link-extractor": {
   "values": {
    "source": "page.html",
