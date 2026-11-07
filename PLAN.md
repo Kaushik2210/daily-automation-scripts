@@ -115,7 +115,7 @@ Difficulty: easy on days 1-10, medium on days 11-20, more advanced on days 21-30
 ## Day 10 - Web basics
 - [x] 01. bulk-url-checker - Check HTTP status for a list of URLs (web-scraping)
 - [x] 02. link-extractor - Extract all links from a web page (web-scraping)
-- [ ] 03. robots-checker - Check whether a path is allowed by robots.txt (web-scraping)
+- [x] 03. robots-checker - Check whether a path is allowed by robots.txt (web-scraping)
 - [ ] 04. rss-digest - Turn RSS feeds into a daily markdown digest (web-scraping)
 - [ ] 05. header-inspector - Print HTTP response headers for a URL (web-scraping)
 - [ ] 06. page-title-fetcher - Fetch titles for a list of URLs (web-scraping)

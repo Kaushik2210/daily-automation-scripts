@@ -874,5 +874,19 @@
   "exit": [
    0
   ]
+ },
+ "web-scraping/robots-checker": {
+  "values": {
+   "targets": [
+    "/private/public/page",
+    "/private/secret",
+    "/admin/panel",
+    "/products"
+   ],
+   "robots": "robots.txt"
+  },
+  "exit": [
+   1
+  ]
  }
 }
