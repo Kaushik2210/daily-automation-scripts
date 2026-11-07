@@ -939,5 +939,17 @@
   "exit": [
    0
   ]
+ },
+ "web-scraping/url-expander": {
+  "values": {
+   "urls": [
+    "http://Example.org/page?utm_source=news&id=7&fbclid=abc"
+   ],
+   "clean": true,
+   "no_follow": true
+  },
+  "exit": [
+   0
+  ]
  }
 }
