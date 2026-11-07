@@ -739,6 +739,14 @@
    1
   ]
  },
+ "system/ping-checker": {
+  "values": {
+   "parse": "ping.txt"
+  },
+  "exit": [
+   0
+  ]
+ },
  "system/python-env-reporter": {
   "values": {},
   "exit": [
