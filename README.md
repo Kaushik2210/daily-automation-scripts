@@ -51,7 +51,7 @@ The table below is rebuilt by `python tools/update_index.py` from `PLAN.md` and 
 
 <!-- INDEX:START -->
 
-**Progress: 96/300 done**
+**Progress: 97/300 done**
 
 | Day | # | Script | Category | Source | Live |
 | --- | --- | --- | --- | --- | --- |
@@ -151,6 +151,7 @@ The table below is rebuilt by `python tools/update_index.py` from `PLAN.md` and 
 | 10 | 04 | rss-digest | web-scraping | [rss-digest](scripts/web-scraping/rss-digest/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/web-scraping/rss-digest/) |
 | 10 | 05 | header-inspector | web-scraping | [header-inspector](scripts/web-scraping/header-inspector/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/web-scraping/header-inspector/) |
 | 10 | 06 | page-title-fetcher | web-scraping | [page-title-fetcher](scripts/web-scraping/page-title-fetcher/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/web-scraping/page-title-fetcher/) |
+| 10 | 07 | broken-link-finder | web-scraping | [broken-link-finder](scripts/web-scraping/broken-link-finder/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/web-scraping/broken-link-finder/) |
 
 <!-- INDEX:END -->
 

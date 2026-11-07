@@ -855,6 +855,16 @@
    0
   ]
  },
+ "web-scraping/broken-link-finder": {
+  "values": {
+   "page": "page.html",
+   "base": "https://example.com/",
+   "plan": true
+  },
+  "exit": [
+   0
+  ]
+ },
  "web-scraping/bulk-url-checker": {
   "values": {
    "urls": [

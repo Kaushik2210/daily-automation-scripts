@@ -119,7 +119,7 @@ Difficulty: easy on days 1-10, medium on days 11-20, more advanced on days 21-30
 - [x] 04. rss-digest - Turn RSS feeds into a daily markdown digest (web-scraping)
 - [x] 05. header-inspector - Print HTTP response headers for a URL (web-scraping)
 - [x] 06. page-title-fetcher - Fetch titles for a list of URLs (web-scraping)
-- [ ] 07. broken-link-finder - Find broken links on a single page (web-scraping)
+- [x] 07. broken-link-finder - Find broken links on a single page (web-scraping)
 - [ ] 08. sitemap-lister - List all URLs from a sitemap.xml (web-scraping)
 - [ ] 09. url-expander - Follow redirects and show the final URL (web-scraping)
 - [ ] 10. ping-checker - Ping hosts and log response times (system)
