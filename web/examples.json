@@ -883,6 +883,18 @@
    0
   ]
  },
+ "web-scraping/page-title-fetcher": {
+  "values": {
+   "sources": [
+    "page.html",
+    "page-two.html"
+   ],
+   "description": true
+  },
+  "exit": [
+   0
+  ]
+ },
  "web-scraping/robots-checker": {
   "values": {
    "targets": [
