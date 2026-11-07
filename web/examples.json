@@ -930,5 +930,14 @@
   "exit": [
    0
   ]
+ },
+ "web-scraping/sitemap-lister": {
+  "values": {
+   "sitemap": "sitemap.xml",
+   "newer_than": "2025-12-01"
+  },
+  "exit": [
+   0
+  ]
  }
 }
