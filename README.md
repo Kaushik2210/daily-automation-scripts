@@ -51,7 +51,7 @@ The table below is rebuilt by `python tools/update_index.py` from `PLAN.md` and 
 
 <!-- INDEX:START -->
 
-**Progress: 93/300 done**
+**Progress: 94/300 done**
 
 | Day | # | Script | Category | Source | Live |
 | --- | --- | --- | --- | --- | --- |
@@ -148,6 +148,7 @@ The table below is rebuilt by `python tools/update_index.py` from `PLAN.md` and 
 | 10 | 01 | bulk-url-checker | web-scraping | [bulk-url-checker](scripts/web-scraping/bulk-url-checker/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/web-scraping/bulk-url-checker/) |
 | 10 | 02 | link-extractor | web-scraping | [link-extractor](scripts/web-scraping/link-extractor/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/web-scraping/link-extractor/) |
 | 10 | 03 | robots-checker | web-scraping | [robots-checker](scripts/web-scraping/robots-checker/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/web-scraping/robots-checker/) |
+| 10 | 04 | rss-digest | web-scraping | [rss-digest](scripts/web-scraping/rss-digest/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/web-scraping/rss-digest/) |
 
 <!-- INDEX:END -->
 

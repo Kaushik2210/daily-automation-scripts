@@ -888,5 +888,17 @@
   "exit": [
    1
   ]
+ },
+ "web-scraping/rss-digest": {
+  "values": {
+   "feeds": [
+    "feed.xml"
+   ],
+   "since": "2026-01-01",
+   "limit": "3"
+  },
+  "exit": [
+   0
+  ]
  }
 }
