@@ -51,7 +51,7 @@ The table below is rebuilt by `python tools/update_index.py` from `PLAN.md` and 
 
 <!-- INDEX:START -->
 
-**Progress: 90/300 done**
+**Progress: 91/300 done**
 
 | Day | # | Script | Category | Source | Live |
 | --- | --- | --- | --- | --- | --- |
@@ -145,6 +145,7 @@ The table below is rebuilt by `python tools/update_index.py` from `PLAN.md` and 
 | 09 | 08 | pdf-metadata-viewer | pdf-docs | [pdf-metadata-viewer](scripts/pdf-docs/pdf-metadata-viewer/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/pdf-docs/pdf-metadata-viewer/) |
 | 09 | 09 | docx-text-extractor | pdf-docs | [docx-text-extractor](scripts/pdf-docs/docx-text-extractor/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/pdf-docs/docx-text-extractor/) |
 | 09 | 10 | images-to-pdf | pdf-docs | [images-to-pdf](scripts/pdf-docs/images-to-pdf/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/pdf-docs/images-to-pdf/) |
+| 10 | 01 | bulk-url-checker | web-scraping | [bulk-url-checker](scripts/web-scraping/bulk-url-checker/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/web-scraping/bulk-url-checker/) |
 
 <!-- INDEX:END -->
 

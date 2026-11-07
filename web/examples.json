@@ -854,5 +854,16 @@
   "exit": [
    0
   ]
+ },
+ "web-scraping/bulk-url-checker": {
+  "values": {
+   "urls": [
+    "urls.txt"
+   ],
+   "plan": true
+  },
+  "exit": [
+   0
+  ]
  }
 }
