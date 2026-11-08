@@ -910,6 +910,15 @@
    0
   ]
  },
+ "web-scraping/page-change-detector": {
+  "values": {
+   "source": "jobs.html",
+   "previous": "jobs-old.html"
+  },
+  "exit": [
+   1
+  ]
+ },
  "web-scraping/page-title-fetcher": {
   "values": {
    "sources": [
