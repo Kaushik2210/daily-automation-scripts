@@ -959,5 +959,19 @@
   "exit": [
    0
   ]
+ },
+ "web-scraping/web-scraper": {
+  "values": {
+   "source": "page.html",
+   "selector": [
+    "link=a",
+    "internal=nav a"
+   ],
+   "attr": "href",
+   "base": "https://example.com/"
+  },
+  "exit": [
+   0
+  ]
  }
 }
