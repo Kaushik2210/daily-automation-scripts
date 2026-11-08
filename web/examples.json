@@ -925,6 +925,16 @@
    0
   ]
  },
+ "web-scraping/job-listing-watcher": {
+  "values": {
+   "source": "jobs.html",
+   "previous": "jobs-old.html",
+   "base": "https://acme.test/"
+  },
+  "exit": [
+   1
+  ]
+ },
  "web-scraping/link-extractor": {
   "values": {
    "source": "page.html",

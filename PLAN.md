@@ -134,7 +134,7 @@ Difficulty: easy on days 1-10, medium on days 11-20, more advanced on days 21-30
 - [x] 07. headline-collector - Collect headlines from news sites into a file (web-scraping)
 - [x] 08. wayback-checker - Look up Wayback Machine snapshots for URLs (web-scraping)
 - [x] 09. page-text-extractor - Save readable article text from a URL (web-scraping)
-- [ ] 10. job-listing-watcher - Watch a careers page for new postings (web-scraping)
+- [x] 10. job-listing-watcher - Watch a careers page for new postings (web-scraping)
 
 ## Day 12 - Email (read-only)
 - [ ] 01. email-digest - Summarize recent unread mail over IMAP, read-only (email)
