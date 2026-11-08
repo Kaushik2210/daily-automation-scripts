@@ -51,7 +51,7 @@ The table below is rebuilt by `python tools/update_index.py` from `PLAN.md` and 
 
 <!-- INDEX:START -->
 
-**Progress: 106/300 done**
+**Progress: 107/300 done**
 
 | Day | # | Script | Category | Source | Live |
 | --- | --- | --- | --- | --- | --- |
@@ -161,6 +161,7 @@ The table below is rebuilt by `python tools/update_index.py` from `PLAN.md` and 
 | 11 | 04 | page-change-detector | web-scraping | [page-change-detector](scripts/web-scraping/page-change-detector/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/web-scraping/page-change-detector/) |
 | 11 | 05 | meta-tag-auditor | web-scraping | [meta-tag-auditor](scripts/web-scraping/meta-tag-auditor/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/web-scraping/meta-tag-auditor/) |
 | 11 | 06 | image-downloader | web-scraping | [image-downloader](scripts/web-scraping/image-downloader/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/web-scraping/image-downloader/) |
+| 11 | 07 | headline-collector | web-scraping | [headline-collector](scripts/web-scraping/headline-collector/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/web-scraping/headline-collector/) |
 
 <!-- INDEX:END -->
 

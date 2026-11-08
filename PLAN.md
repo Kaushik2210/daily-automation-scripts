@@ -131,7 +131,7 @@ Difficulty: easy on days 1-10, medium on days 11-20, more advanced on days 21-30
 - [x] 04. page-change-detector - Alert when a page's content changes (web-scraping)
 - [x] 05. meta-tag-auditor - Audit title, description and Open Graph tags (web-scraping)
 - [x] 06. image-downloader - Download all images from a page (web-scraping)
-- [ ] 07. headline-collector - Collect headlines from news sites into a file (web-scraping)
+- [x] 07. headline-collector - Collect headlines from news sites into a file (web-scraping)
 - [ ] 08. wayback-checker - Look up Wayback Machine snapshots for URLs (web-scraping)
 - [ ] 09. page-text-extractor - Save readable article text from a URL (web-scraping)
 - [ ] 10. job-listing-watcher - Watch a careers page for new postings (web-scraping)

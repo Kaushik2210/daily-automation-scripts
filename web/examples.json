@@ -892,6 +892,17 @@
    0
   ]
  },
+ "web-scraping/headline-collector": {
+  "values": {
+   "sources": [
+    "news.html"
+   ],
+   "base": "https://dailyexample.test/"
+  },
+  "exit": [
+   0
+  ]
+ },
  "web-scraping/html-table-extractor": {
   "values": {
    "source": "tables.html",
