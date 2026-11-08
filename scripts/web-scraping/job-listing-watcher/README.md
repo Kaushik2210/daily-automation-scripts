@@ -18,7 +18,7 @@ A link counts as a posting when its address contains words like `job`, `career`,
 python job_listing_watcher.py jobs.html --previous jobs-old.html --base https://acme.test/
 ```
 ```
-NEW     Product Designer  <https://acme.test/jobs/102-designer>
+  NEW     Product Designer  <https://acme.test/jobs/102-designer>
   NEW     Data Analyst  <https://acme.test/jobs/103-data-analyst>
   CLOSED  Summer Intern
 2 new, 1 closed, 1 unchanged.
