@@ -35,6 +35,15 @@ def test_parse_levels():
             hc.parse_levels(bad)
 
 
+def test_levels_option_accepts_text_like_the_web_form_sends(tmp_path, capsys):
+    page = tmp_path / "n.html"
+    page.write_text("<h1>The big site title</h1><h2>An ordinary story headline</h2>")
+    assert hc.main([str(page), "--levels", "2-3"]) == 0
+    assert "The big site title" not in capsys.readouterr().out
+    assert hc.main([str(page), "--levels", "1-6"]) == 0
+    assert "The big site title" in capsys.readouterr().out
+
+
 def test_csv_collects_only_new_headlines(tmp_path, capsys):
     page, log = tmp_path / "news.html", tmp_path / "heads.csv"
     page.write_text(PAGE)

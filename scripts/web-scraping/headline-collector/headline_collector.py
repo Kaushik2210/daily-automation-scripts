@@ -106,7 +106,7 @@ def load(source):
 def main(argv=None):
     parser = argparse.ArgumentParser(description="Collect headlines from news pages.")
     parser.add_argument("sources", nargs="+", help="page URLs or saved .html files")
-    parser.add_argument("--levels", type=parse_levels, default=(2, 3),
+    parser.add_argument("--levels", type=parse_levels, default="2-3",
                         help="heading levels to take, e.g. 2-3 (default) or 1-6")
     parser.add_argument("--min-words", type=int, default=3, help="skip shorter headings (3)")
     parser.add_argument("--base", default="", help="address to resolve links in saved files")
