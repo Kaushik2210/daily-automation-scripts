@@ -1024,6 +1024,14 @@
    0
   ]
  },
+ "web-scraping/wayback-checker": {
+  "values": {
+   "response": "wayback.json"
+  },
+  "exit": [
+   1
+  ]
+ },
  "web-scraping/web-scraper": {
   "values": {
    "source": "page.html",
