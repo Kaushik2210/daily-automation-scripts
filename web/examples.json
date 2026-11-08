@@ -910,6 +910,17 @@
    0
   ]
  },
+ "web-scraping/meta-tag-auditor": {
+  "values": {
+   "sources": [
+    "seo-page.html"
+   ],
+   "problems_only": true
+  },
+  "exit": [
+   1
+  ]
+ },
  "web-scraping/page-change-detector": {
   "values": {
    "source": "jobs.html",
