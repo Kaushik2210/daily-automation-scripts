@@ -913,6 +913,17 @@
    0
   ]
  },
+ "web-scraping/price-tracker": {
+  "values": {
+   "source": "product.html",
+   "history": "prices.csv",
+   "no_record": true,
+   "target": 80
+  },
+  "exit": [
+   0
+  ]
+ },
  "web-scraping/robots-checker": {
   "values": {
    "targets": [
