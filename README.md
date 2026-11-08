@@ -51,7 +51,7 @@ The table below is rebuilt by `python tools/update_index.py` from `PLAN.md` and 
 
 <!-- INDEX:START -->
 
-**Progress: 102/300 done**
+**Progress: 103/300 done**
 
 | Day | # | Script | Category | Source | Live |
 | --- | --- | --- | --- | --- | --- |
@@ -157,6 +157,7 @@ The table below is rebuilt by `python tools/update_index.py` from `PLAN.md` and 
 | 10 | 10 | ping-checker | system | [ping-checker](scripts/system/ping-checker/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/system/ping-checker/) |
 | 11 | 01 | web-scraper | web-scraping | [web-scraper](scripts/web-scraping/web-scraper/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/web-scraping/web-scraper/) |
 | 11 | 02 | price-tracker | web-scraping | [price-tracker](scripts/web-scraping/price-tracker/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/web-scraping/price-tracker/) |
+| 11 | 03 | html-table-extractor | web-scraping | [html-table-extractor](scripts/web-scraping/html-table-extractor/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/web-scraping/html-table-extractor/) |
 
 <!-- INDEX:END -->
 

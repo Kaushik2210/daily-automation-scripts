@@ -892,6 +892,15 @@
    0
   ]
  },
+ "web-scraping/html-table-extractor": {
+  "values": {
+   "source": "tables.html",
+   "preview": 2
+  },
+  "exit": [
+   0
+  ]
+ },
  "web-scraping/link-extractor": {
   "values": {
    "source": "page.html",

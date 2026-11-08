@@ -127,7 +127,7 @@ Difficulty: easy on days 1-10, medium on days 11-20, more advanced on days 21-30
 ## Day 11 - Polite scraping
 - [x] 01. web-scraper - Scrape chosen CSS selectors from a page, honoring robots.txt (web-scraping)
 - [x] 02. price-tracker - Track a product price over time and flag drops (web-scraping)
-- [ ] 03. html-table-extractor - Export HTML tables to CSV (web-scraping)
+- [x] 03. html-table-extractor - Export HTML tables to CSV (web-scraping)
 - [ ] 04. page-change-detector - Alert when a page's content changes (web-scraping)
 - [ ] 05. meta-tag-auditor - Audit title, description and Open Graph tags (web-scraping)
 - [ ] 06. image-downloader - Download all images from a page (web-scraping)
