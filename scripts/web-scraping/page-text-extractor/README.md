@@ -31,9 +31,7 @@ understood in a single sitting.
 ## Three habits
 
 - Name things plainly
-
 - Print what you did
-
 - Keep a dry-run mode
 
 Start with the smallest version that solves your problem and grow from

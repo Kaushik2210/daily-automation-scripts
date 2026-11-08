@@ -84,10 +84,13 @@ def extract(html):
 
 
 def render(blocks, width=80):
-    lines = []
+    lines, previous = [], ""
     for block in blocks:
         kind, text = block["kind"], block["text"]
-        if kind[0] == "h" and kind[1:].isdigit():
+        if kind == "li" and previous == "li":
+            lines[-1] += "\n" + textwrap.fill(text, width, initial_indent="- ",
+                                              subsequent_indent="  ")
+        elif kind[0] == "h" and kind[1:].isdigit():
             lines.append("#" * int(kind[1:]) + " " + text)
         elif kind == "li":
             lines.append(textwrap.fill(text, width, initial_indent="- ", subsequent_indent="  "))
@@ -97,6 +100,7 @@ def render(blocks, width=80):
             lines.append(text)
         else:
             lines.append(textwrap.fill(text, width))
+        previous = kind
     return "\n\n".join(lines)
 
 
