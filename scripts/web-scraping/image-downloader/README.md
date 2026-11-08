@@ -18,9 +18,9 @@ python image_downloader.py gallery.html --base https://example.com/shop/ --ext j
 ```
 ```
 1. would download https://cdn.example.com/cover.jpg
-  2. would download https://example.com/img/a.jpg
-  3. would download https://example.com/img/lazy.webp
-  4. would download https://example.com/img/large.jpg
+2. would download https://example.com/img/a.jpg
+3. would download https://example.com/img/lazy.webp
+4. would download https://example.com/img/large.jpg
 4 image(s) found. Dry run - add --apply to download them to images.
 ```
 

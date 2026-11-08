@@ -137,15 +137,15 @@ def main(argv=None):
     failed = 0
     for number, url in enumerate(urls, 1):
         if not args.apply:
-            print(f"{number:>3}. would download {url}")
+            print(f"{number}. would download {url}")
             continue
         try:
             args.out.mkdir(parents=True, exist_ok=True)
             target, size = download(url, args.out)
-            print(f"{number:>3}. saved {target} ({size:,} bytes)")
+            print(f"{number}. saved {target} ({size:,} bytes)")
         except (urllib.error.URLError, OSError, ValueError) as err:
             failed += 1
-            print(f"{number:>3}. failed {url}: {getattr(err, 'reason', err)}")
+            print(f"{number}. failed {url}: {getattr(err, 'reason', err)}")
     if not args.apply:
         print(f"{len(urls)} image(s) found. Dry run - add --apply to download them to {args.out}.")
     else:
