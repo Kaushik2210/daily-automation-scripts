@@ -901,6 +901,19 @@
    0
   ]
  },
+ "web-scraping/image-downloader": {
+  "values": {
+   "source": "gallery.html",
+   "base": "https://example.com/shop/",
+   "ext": [
+    "jpg",
+    "webp"
+   ]
+  },
+  "exit": [
+   0
+  ]
+ },
  "web-scraping/link-extractor": {
   "values": {
    "source": "page.html",
