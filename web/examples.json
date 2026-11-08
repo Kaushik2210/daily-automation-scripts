@@ -954,6 +954,15 @@
    1
   ]
  },
+ "web-scraping/page-text-extractor": {
+  "values": {
+   "source": "article.html",
+   "width": 70
+  },
+  "exit": [
+   0
+  ]
+ },
  "web-scraping/page-title-fetcher": {
   "values": {
    "sources": [
