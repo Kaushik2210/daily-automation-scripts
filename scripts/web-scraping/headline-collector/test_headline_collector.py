@@ -42,6 +42,8 @@ def test_levels_option_accepts_text_like_the_web_form_sends(tmp_path, capsys):
     assert "The big site title" not in capsys.readouterr().out
     assert hc.main([str(page), "--levels", "1-6"]) == 0
     assert "The big site title" in capsys.readouterr().out
+    with pytest.raises(SystemExit):
+        hc.main([str(page), "--levels", "2,3"])
 
 
 def test_csv_collects_only_new_headlines(tmp_path, capsys):
