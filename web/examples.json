@@ -114,6 +114,15 @@
    0
   ]
  },
+ "email/sender-stats": {
+  "values": {
+   "mbox": "inbox.mbox",
+   "by": "domain"
+  },
+  "exit": [
+   0
+  ]
+ },
  "email/unsubscribe-finder": {
   "values": {
    "mbox": "inbox.mbox"
