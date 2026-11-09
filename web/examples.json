@@ -105,6 +105,14 @@
    0
   ]
  },
+ "email/unsubscribe-finder": {
+  "values": {
+   "mbox": "inbox.mbox"
+  },
+  "exit": [
+   0
+  ]
+ },
  "files/bulk-file-renamer": {
   "values": {
    "folder": ".",
