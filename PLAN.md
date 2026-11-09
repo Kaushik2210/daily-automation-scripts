@@ -146,7 +146,7 @@ Difficulty: easy on days 1-10, medium on days 11-20, more advanced on days 21-30
 - [x] 07. eml-to-text - Convert .eml files to plain text (email)
 - [x] 08. email-validator - Validate addresses by syntax and MX record (email)
 - [x] 09. header-analyzer - Trace the hops in an email's headers (email)
-- [ ] 10. mbox-splitter - Split an mbox export by month (email)
+- [x] 10. mbox-splitter - Split an mbox export by month (email)
 
 ## Day 13 - GitHub reporting
 - [ ] 01. github-stats-reporter - Report stars, forks and activity for a user or repo (github)

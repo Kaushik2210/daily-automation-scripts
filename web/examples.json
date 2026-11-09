@@ -152,6 +152,15 @@
    0
   ]
  },
+ "email/mbox-splitter": {
+  "values": {
+   "source": "inbox.mbox",
+   "out_dir": "pieces"
+  },
+  "exit": [
+   0
+  ]
+ },
  "email/sender-stats": {
   "values": {
    "mbox": "inbox.mbox",
