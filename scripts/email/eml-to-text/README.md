@@ -26,7 +26,8 @@ Good morning!
 
 Here is your Monday brief.
 
-- Council approves budget - Bridge reopens
+- Council approves budget
+- Bridge reopens
 
 Unsubscribe: https://brief.example/unsub?u=1
 ```

@@ -44,6 +44,12 @@ def test_attachments_are_listed_and_wrapping_works():
     assert max(len(line) for line in body.splitlines()) <= 30
 
 
+def test_wrapping_keeps_each_line_and_bullet_on_its_own_line():
+    text = et.convert(make(plain="Intro\n\n- first item\n- second item that is rather long"),
+                      width=20)
+    assert "Intro\n\n- first item\n- second item that\n  is rather long" in text
+
+
 def test_empty_message():
     msg = EmailMessage()
     msg["Subject"] = "Nothing"

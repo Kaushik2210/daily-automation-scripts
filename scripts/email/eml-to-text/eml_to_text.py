@@ -70,7 +70,8 @@ def convert(raw, width=0):
             if msg[label]]
     body = body_text(msg)
     if width:
-        body = "\n\n".join(textwrap.fill(p, width) for p in body.split("\n\n"))
+        body = "\n".join(textwrap.fill(line, width, subsequent_indent="  " * line.startswith("- "))
+                         for line in body.splitlines())
     files = [part.get_filename() for part in msg.walk() if part.get_filename()]
     out = "\n".join(head) + "\n\n" + (body or "(no text in this message)")
     if files:
