@@ -350,6 +350,15 @@
    0
   ]
  },
+ "github/language-breakdown": {
+  "values": {
+   "from_file": "gh-repos.json",
+   "weight": "size"
+  },
+  "exit": [
+   0
+  ]
+ },
  "github/pr-review-queue": {
   "values": {
    "from_file": "gh-review-prs.json",
