@@ -134,6 +134,14 @@
    0
   ]
  },
+ "email/header-analyzer": {
+  "values": {
+   "source": "message.eml"
+  },
+  "exit": [
+   1
+  ]
+ },
  "email/mailbox-size-reporter": {
   "values": {
    "mbox": [

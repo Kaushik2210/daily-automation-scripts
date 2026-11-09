@@ -51,7 +51,7 @@ The table below is rebuilt by `python tools/update_index.py` from `PLAN.md` and 
 
 <!-- INDEX:START -->
 
-**Progress: 118/300 done**
+**Progress: 119/300 done**
 
 | Day | # | Script | Category | Source | Live |
 | --- | --- | --- | --- | --- | --- |
@@ -173,6 +173,7 @@ The table below is rebuilt by `python tools/update_index.py` from `PLAN.md` and 
 | 12 | 06 | mailbox-size-reporter | email | [mailbox-size-reporter](scripts/email/mailbox-size-reporter/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/email/mailbox-size-reporter/) |
 | 12 | 07 | eml-to-text | email | [eml-to-text](scripts/email/eml-to-text/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/email/eml-to-text/) |
 | 12 | 08 | email-validator | email | [email-validator](scripts/email/email-validator/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/email/email-validator/) |
+| 12 | 09 | header-analyzer | email | [header-analyzer](scripts/email/header-analyzer/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/email/header-analyzer/) |
 
 <!-- INDEX:END -->
 
