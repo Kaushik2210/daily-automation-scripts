@@ -304,6 +304,16 @@
    1
   ]
  },
+ "github/contributor-leaderboard": {
+  "values": {
+   "from_file": "gh-contributors.json",
+   "top": 5,
+   "exclude_bots": true
+  },
+  "exit": [
+   0
+  ]
+ },
  "github/git-author-stats": {
   "values": {
    "log": "git-log.txt"

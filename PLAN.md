@@ -156,7 +156,7 @@ Difficulty: easy on days 1-10, medium on days 11-20, more advanced on days 21-30
 - [x] 05. star-tracker - Log star counts of your repos over time (github)
 - [x] 06. language-breakdown - Show language share across your repositories (github)
 - [x] 07. release-notifier - Check repos for new releases since last run (github)
-- [ ] 08. contributor-leaderboard - Rank contributors of a repo (github)
+- [x] 08. contributor-leaderboard - Rank contributors of a repo (github)
 - [ ] 09. rate-limit-checker - Show your GitHub API rate limit status (github)
 - [ ] 10. label-auditor - Compare issue labels across repositories (github)
 
