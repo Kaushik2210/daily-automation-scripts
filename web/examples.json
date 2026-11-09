@@ -114,6 +114,15 @@
    0
   ]
  },
+ "email/email-validator": {
+  "values": {
+   "file": "emails.txt",
+   "no_mx": true
+  },
+  "exit": [
+   1
+  ]
+ },
  "email/eml-to-text": {
   "values": {
    "paths": [
