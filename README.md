@@ -51,7 +51,7 @@ The table below is rebuilt by `python tools/update_index.py` from `PLAN.md` and 
 
 <!-- INDEX:START -->
 
-**Progress: 114/300 done**
+**Progress: 115/300 done**
 
 | Day | # | Script | Category | Source | Live |
 | --- | --- | --- | --- | --- | --- |
@@ -169,6 +169,7 @@ The table below is rebuilt by `python tools/update_index.py` from `PLAN.md` and 
 | 12 | 02 | unsubscribe-finder | email | [unsubscribe-finder](scripts/email/unsubscribe-finder/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/email/unsubscribe-finder/) |
 | 12 | 03 | attachment-lister | email | [attachment-lister](scripts/email/attachment-lister/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/email/attachment-lister/) |
 | 12 | 04 | sender-stats | email | [sender-stats](scripts/email/sender-stats/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/email/sender-stats/) |
+| 12 | 05 | subject-search | email | [subject-search](scripts/email/subject-search/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/email/subject-search/) |
 
 <!-- INDEX:END -->
 

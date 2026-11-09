@@ -123,6 +123,19 @@
    0
   ]
  },
+ "email/subject-search": {
+  "values": {
+   "words": [
+    "invoice"
+   ],
+   "mbox": [
+    "inbox.mbox"
+   ]
+  },
+  "exit": [
+   0
+  ]
+ },
  "email/unsubscribe-finder": {
   "values": {
    "mbox": "inbox.mbox"
