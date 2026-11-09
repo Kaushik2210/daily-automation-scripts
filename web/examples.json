@@ -357,6 +357,16 @@
    0
   ]
  },
+ "github/stale-branch-cleaner": {
+  "values": {
+   "refs": "branches.txt",
+   "merged": "merged.txt",
+   "today": "2026-01-13"
+  },
+  "exit": [
+   0
+  ]
+ },
  "github/standup-generator": {
   "values": {
    "log": "git-log.txt",

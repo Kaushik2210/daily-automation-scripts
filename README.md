@@ -51,7 +51,7 @@ The table below is rebuilt by `python tools/update_index.py` from `PLAN.md` and 
 
 <!-- INDEX:START -->
 
-**Progress: 121/300 done**
+**Progress: 122/300 done**
 
 | Day | # | Script | Category | Source | Live |
 | --- | --- | --- | --- | --- | --- |
@@ -176,6 +176,7 @@ The table below is rebuilt by `python tools/update_index.py` from `PLAN.md` and 
 | 12 | 09 | header-analyzer | email | [header-analyzer](scripts/email/header-analyzer/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/email/header-analyzer/) |
 | 12 | 10 | mbox-splitter | email | [mbox-splitter](scripts/email/mbox-splitter/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/email/mbox-splitter/) |
 | 13 | 01 | github-stats-reporter | github | [github-stats-reporter](scripts/github/github-stats-reporter/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/github/github-stats-reporter/) |
+| 13 | 02 | stale-branch-cleaner | github | [stale-branch-cleaner](scripts/github/stale-branch-cleaner/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/github/stale-branch-cleaner/) |
 
 <!-- INDEX:END -->
 
