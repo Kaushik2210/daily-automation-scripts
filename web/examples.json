@@ -114,6 +114,17 @@
    0
   ]
  },
+ "email/eml-to-text": {
+  "values": {
+   "paths": [
+    "message.eml"
+   ],
+   "width": 60
+  },
+  "exit": [
+   0
+  ]
+ },
  "email/mailbox-size-reporter": {
   "values": {
    "mbox": [
