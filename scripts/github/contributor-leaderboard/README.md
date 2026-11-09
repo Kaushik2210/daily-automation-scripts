@@ -18,7 +18,7 @@ Public repositories work without a login (60 requests an hour). For private ones
 python contributor_leaderboard.py --from-file gh-contributors.json --top 5 --exclude-bots
 ```
 ```
-1. sam      412   50.2%  ########################
+  1. sam      412   50.2%  ########################
   2. mira     268   32.6%  ################
   3. tom       97   11.8%  ######
   4. lee       41    5.0%  ##

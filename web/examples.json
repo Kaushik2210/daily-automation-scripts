@@ -378,6 +378,15 @@
    0
   ]
  },
+ "github/rate-limit-checker": {
+  "values": {
+   "from_file": "gh-rate-limit.json",
+   "now": "2026-11-09T11:18:30"
+  },
+  "exit": [
+   1
+  ]
+ },
  "github/release-notifier": {
   "values": {
    "releases": "gh-releases.json",

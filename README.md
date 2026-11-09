@@ -51,7 +51,7 @@ The table below is rebuilt by `python tools/update_index.py` from `PLAN.md` and 
 
 <!-- INDEX:START -->
 
-**Progress: 128/300 done**
+**Progress: 129/300 done**
 
 | Day | # | Script | Category | Source | Live |
 | --- | --- | --- | --- | --- | --- |
@@ -183,6 +183,7 @@ The table below is rebuilt by `python tools/update_index.py` from `PLAN.md` and 
 | 13 | 06 | language-breakdown | github | [language-breakdown](scripts/github/language-breakdown/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/github/language-breakdown/) |
 | 13 | 07 | release-notifier | github | [release-notifier](scripts/github/release-notifier/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/github/release-notifier/) |
 | 13 | 08 | contributor-leaderboard | github | [contributor-leaderboard](scripts/github/contributor-leaderboard/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/github/contributor-leaderboard/) |
+| 13 | 09 | rate-limit-checker | github | [rate-limit-checker](scripts/github/rate-limit-checker/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/github/rate-limit-checker/) |
 
 <!-- INDEX:END -->
 
