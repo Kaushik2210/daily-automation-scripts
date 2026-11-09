@@ -350,6 +350,15 @@
    0
   ]
  },
+ "github/pr-review-queue": {
+  "values": {
+   "from_file": "gh-review-prs.json",
+   "today": "2026-11-09"
+  },
+  "exit": [
+   0
+  ]
+ },
  "github/repo-readme-generator": {
   "values": {
    "folder": "demo-project"
