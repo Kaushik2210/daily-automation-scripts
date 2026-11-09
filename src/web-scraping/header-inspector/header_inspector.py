@@ -78,9 +78,19 @@ class NoRedirect(urllib.request.HTTPRedirectHandler):
         return None
 
 
+class KeepHead(urllib.request.HTTPRedirectHandler):
+    """Follow redirects but keep asking with HEAD (Python before 3.13 switches to GET)."""
+
+    def redirect_request(self, req, fp, code, msg, headers, newurl):
+        new = super().redirect_request(req, fp, code, msg, headers, newurl)
+        if new is not None:
+            new.method = req.get_method()
+        return new
+
+
 def fetch_headers(url, follow=False, timeout=15):
     """Return a raw header dump (status line plus headers) for the URL."""
-    opener = urllib.request.build_opener() if follow else urllib.request.build_opener(NoRedirect)
+    opener = urllib.request.build_opener(KeepHead if follow else NoRedirect)
     request = urllib.request.Request(url, method="HEAD", headers={"User-Agent": USER_AGENT})
     try:
         response = opener.open(request, timeout=timeout)
