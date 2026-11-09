@@ -320,6 +320,15 @@
    0
   ]
  },
+ "github/github-stats-reporter": {
+  "values": {
+   "from_file": "gh-repos.json",
+   "today": "2026-11-09"
+  },
+  "exit": [
+   0
+  ]
+ },
  "github/gitignore-generator": {
   "values": {
    "stacks": [

@@ -149,7 +149,7 @@ Difficulty: easy on days 1-10, medium on days 11-20, more advanced on days 21-30
 - [x] 10. mbox-splitter - Split an mbox export by month (email)
 
 ## Day 13 - GitHub reporting
-- [ ] 01. github-stats-reporter - Report stars, forks and activity for a user or repo (github)
+- [x] 01. github-stats-reporter - Report stars, forks and activity for a user or repo (github)
 - [ ] 02. stale-branch-cleaner - Find and optionally delete merged stale branches (github)
 - [ ] 03. issue-exporter - Export issues from a repo to CSV (github)
 - [ ] 04. pr-review-queue - List open PRs waiting on your review (github)
