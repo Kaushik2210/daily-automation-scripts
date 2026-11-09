@@ -360,6 +360,14 @@
    0
   ]
  },
+ "github/label-auditor": {
+  "values": {
+   "from_file": "gh-labels.json"
+  },
+  "exit": [
+   1
+  ]
+ },
  "github/language-breakdown": {
   "values": {
    "from_file": "gh-repos.json",

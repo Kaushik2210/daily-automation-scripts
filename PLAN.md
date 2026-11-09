@@ -158,7 +158,7 @@ Difficulty: easy on days 1-10, medium on days 11-20, more advanced on days 21-30
 - [x] 07. release-notifier - Check repos for new releases since last run (github)
 - [x] 08. contributor-leaderboard - Rank contributors of a repo (github)
 - [x] 09. rate-limit-checker - Show your GitHub API rate limit status (github)
-- [ ] 10. label-auditor - Compare issue labels across repositories (github)
+- [x] 10. label-auditor - Compare issue labels across repositories (github)
 
 ## Day 14 - Notion and organization
 - [ ] 01. notion-db-sync - Sync a CSV with a Notion database (notion-productivity)
