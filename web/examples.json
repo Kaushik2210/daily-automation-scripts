@@ -96,6 +96,15 @@
    0
   ]
  },
+ "email/email-digest": {
+  "values": {
+   "mbox": "inbox.mbox",
+   "limit": 3
+  },
+  "exit": [
+   0
+  ]
+ },
  "files/bulk-file-renamer": {
   "values": {
    "folder": ".",
