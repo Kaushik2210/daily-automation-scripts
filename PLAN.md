@@ -153,7 +153,7 @@ Difficulty: easy on days 1-10, medium on days 11-20, more advanced on days 21-30
 - [x] 02. stale-branch-cleaner - Find and optionally delete merged stale branches (github)
 - [x] 03. issue-exporter - Export issues from a repo to CSV (github)
 - [x] 04. pr-review-queue - List open PRs waiting on your review (github)
-- [ ] 05. star-tracker - Log star counts of your repos over time (github)
+- [x] 05. star-tracker - Log star counts of your repos over time (github)
 - [ ] 06. language-breakdown - Show language share across your repositories (github)
 - [ ] 07. release-notifier - Check repos for new releases since last run (github)
 - [ ] 08. contributor-leaderboard - Rank contributors of a repo (github)

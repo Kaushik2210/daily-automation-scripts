@@ -51,7 +51,7 @@ The table below is rebuilt by `python tools/update_index.py` from `PLAN.md` and 
 
 <!-- INDEX:START -->
 
-**Progress: 124/300 done**
+**Progress: 125/300 done**
 
 | Day | # | Script | Category | Source | Live |
 | --- | --- | --- | --- | --- | --- |
@@ -179,6 +179,7 @@ The table below is rebuilt by `python tools/update_index.py` from `PLAN.md` and 
 | 13 | 02 | stale-branch-cleaner | github | [stale-branch-cleaner](scripts/github/stale-branch-cleaner/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/github/stale-branch-cleaner/) |
 | 13 | 03 | issue-exporter | github | [issue-exporter](scripts/github/issue-exporter/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/github/issue-exporter/) |
 | 13 | 04 | pr-review-queue | github | [pr-review-queue](scripts/github/pr-review-queue/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/github/pr-review-queue/) |
+| 13 | 05 | star-tracker | github | [star-tracker](scripts/github/star-tracker/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/github/star-tracker/) |
 
 <!-- INDEX:END -->
 

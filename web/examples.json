@@ -395,6 +395,17 @@
    0
   ]
  },
+ "github/star-tracker": {
+  "values": {
+   "from_file": "gh-repos.json",
+   "log": "stars.csv",
+   "no_record": true,
+   "today": "2026-11-09"
+  },
+  "exit": [
+   0
+  ]
+ },
  "github/todo-comment-finder": {
   "values": {
    "folder": "demo-project"
