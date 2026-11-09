@@ -341,6 +341,15 @@
    0
   ]
  },
+ "github/issue-exporter": {
+  "values": {
+   "from_file": "gh-issues.json",
+   "state": "open"
+  },
+  "exit": [
+   0
+  ]
+ },
  "github/repo-readme-generator": {
   "values": {
    "folder": "demo-project"

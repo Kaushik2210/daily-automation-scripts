@@ -151,7 +151,7 @@ Difficulty: easy on days 1-10, medium on days 11-20, more advanced on days 21-30
 ## Day 13 - GitHub reporting
 - [x] 01. github-stats-reporter - Report stars, forks and activity for a user or repo (github)
 - [x] 02. stale-branch-cleaner - Find and optionally delete merged stale branches (github)
-- [ ] 03. issue-exporter - Export issues from a repo to CSV (github)
+- [x] 03. issue-exporter - Export issues from a repo to CSV (github)
 - [ ] 04. pr-review-queue - List open PRs waiting on your review (github)
 - [ ] 05. star-tracker - Log star counts of your repos over time (github)
 - [ ] 06. language-breakdown - Show language share across your repositories (github)
