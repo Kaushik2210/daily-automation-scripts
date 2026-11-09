@@ -139,7 +139,7 @@ Difficulty: easy on days 1-10, medium on days 11-20, more advanced on days 21-30
 ## Day 12 - Email (read-only)
 - [x] 01. email-digest - Summarize recent unread mail over IMAP, read-only (email)
 - [x] 02. unsubscribe-finder - Find newsletters with List-Unsubscribe headers (email)
-- [ ] 03. attachment-lister - List messages with attachments and their sizes (email)
+- [x] 03. attachment-lister - List messages with attachments and their sizes (email)
 - [ ] 04. sender-stats - Rank the senders filling your inbox (email)
 - [ ] 05. subject-search - Search subjects across folders over IMAP (email)
 - [ ] 06. mailbox-size-reporter - Report message counts and size per folder (email)

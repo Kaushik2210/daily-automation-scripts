@@ -96,6 +96,15 @@
    0
   ]
  },
+ "email/attachment-lister": {
+  "values": {
+   "mbox": "inbox.mbox",
+   "min_kb": 3
+  },
+  "exit": [
+   0
+  ]
+ },
  "email/email-digest": {
   "values": {
    "mbox": "inbox.mbox",
