@@ -114,6 +114,16 @@
    0
   ]
  },
+ "email/mailbox-size-reporter": {
+  "values": {
+   "mbox": [
+    "inbox.mbox"
+   ]
+  },
+  "exit": [
+   0
+  ]
+ },
  "email/sender-stats": {
   "values": {
    "mbox": "inbox.mbox",
