@@ -51,7 +51,7 @@ The table below is rebuilt by `python tools/update_index.py` from `PLAN.md` and 
 
 <!-- INDEX:START -->
 
-**Progress: 126/300 done**
+**Progress: 127/300 done**
 
 | Day | # | Script | Category | Source | Live |
 | --- | --- | --- | --- | --- | --- |
@@ -181,6 +181,7 @@ The table below is rebuilt by `python tools/update_index.py` from `PLAN.md` and 
 | 13 | 04 | pr-review-queue | github | [pr-review-queue](scripts/github/pr-review-queue/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/github/pr-review-queue/) |
 | 13 | 05 | star-tracker | github | [star-tracker](scripts/github/star-tracker/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/github/star-tracker/) |
 | 13 | 06 | language-breakdown | github | [language-breakdown](scripts/github/language-breakdown/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/github/language-breakdown/) |
+| 13 | 07 | release-notifier | github | [release-notifier](scripts/github/release-notifier/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/github/release-notifier/) |
 
 <!-- INDEX:END -->
 

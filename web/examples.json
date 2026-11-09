@@ -368,6 +368,16 @@
    0
   ]
  },
+ "github/release-notifier": {
+  "values": {
+   "releases": "gh-releases.json",
+   "state": "release-state.json",
+   "no_update": true
+  },
+  "exit": [
+   1
+  ]
+ },
  "github/repo-readme-generator": {
   "values": {
    "folder": "demo-project"
