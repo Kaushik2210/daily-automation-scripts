@@ -619,6 +619,15 @@
    0
   ]
  },
+ "notion-productivity/notion-page-exporter": {
+  "values": {
+   "from_file": "notion-blocks.json",
+   "title": "Project plan"
+  },
+  "exit": [
+   0
+  ]
+ },
  "notion-productivity/pomodoro-timer": {
   "values": {
    "plan": true,
