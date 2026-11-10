@@ -163,7 +163,7 @@ Difficulty: easy on days 1-10, medium on days 11-20, more advanced on days 21-30
 ## Day 14 - Notion and organization
 - [x] 01. notion-db-sync - Sync a CSV with a Notion database (notion-productivity)
 - [x] 02. notion-page-exporter - Export Notion pages to markdown (notion-productivity)
-- [ ] 03. notion-task-importer - Import tasks from a text file into Notion (notion-productivity)
+- [x] 03. notion-task-importer - Import tasks from a text file into Notion (notion-productivity)
 - [ ] 04. markdown-to-notion - Push a markdown file to a Notion page (notion-productivity)
 - [ ] 05. notion-db-backup - Back up a Notion database to JSON (notion-productivity)
 - [ ] 06. ics-generator - Create calendar .ics events from a CSV (notion-productivity)

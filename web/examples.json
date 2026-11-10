@@ -628,6 +628,16 @@
    0
   ]
  },
+ "notion-productivity/notion-task-importer": {
+  "values": {
+   "file": "tasks.txt",
+   "existing": "notion-db.json",
+   "today": "2026-11-09"
+  },
+  "exit": [
+   0
+  ]
+ },
  "notion-productivity/pomodoro-timer": {
   "values": {
    "plan": true,

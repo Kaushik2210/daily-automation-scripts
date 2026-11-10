@@ -51,7 +51,7 @@ The table below is rebuilt by `python tools/update_index.py` from `PLAN.md` and 
 
 <!-- INDEX:START -->
 
-**Progress: 132/300 done**
+**Progress: 133/300 done**
 
 | Day | # | Script | Category | Source | Live |
 | --- | --- | --- | --- | --- | --- |
@@ -187,6 +187,7 @@ The table below is rebuilt by `python tools/update_index.py` from `PLAN.md` and 
 | 13 | 10 | label-auditor | github | [label-auditor](scripts/github/label-auditor/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/github/label-auditor/) |
 | 14 | 01 | notion-db-sync | notion-productivity | [notion-db-sync](scripts/notion-productivity/notion-db-sync/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/notion-productivity/notion-db-sync/) |
 | 14 | 02 | notion-page-exporter | notion-productivity | [notion-page-exporter](scripts/notion-productivity/notion-page-exporter/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/notion-productivity/notion-page-exporter/) |
+| 14 | 03 | notion-task-importer | notion-productivity | [notion-task-importer](scripts/notion-productivity/notion-task-importer/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/notion-productivity/notion-task-importer/) |
 
 <!-- INDEX:END -->
 
