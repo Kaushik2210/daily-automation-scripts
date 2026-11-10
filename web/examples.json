@@ -601,6 +601,16 @@
    0
   ]
  },
+ "notion-productivity/ics-agenda": {
+  "values": {
+   "calendar": "agenda.ics",
+   "date": "2026-11-16",
+   "days": 3
+  },
+  "exit": [
+   0
+  ]
+ },
  "notion-productivity/ics-generator": {
   "values": {
    "csv": "events.csv",
