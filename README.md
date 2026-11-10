@@ -51,7 +51,7 @@ The table below is rebuilt by `python tools/update_index.py` from `PLAN.md` and 
 
 <!-- INDEX:START -->
 
-**Progress: 130/300 done**
+**Progress: 131/300 done**
 
 | Day | # | Script | Category | Source | Live |
 | --- | --- | --- | --- | --- | --- |
@@ -185,6 +185,7 @@ The table below is rebuilt by `python tools/update_index.py` from `PLAN.md` and 
 | 13 | 08 | contributor-leaderboard | github | [contributor-leaderboard](scripts/github/contributor-leaderboard/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/github/contributor-leaderboard/) |
 | 13 | 09 | rate-limit-checker | github | [rate-limit-checker](scripts/github/rate-limit-checker/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/github/rate-limit-checker/) |
 | 13 | 10 | label-auditor | github | [label-auditor](scripts/github/label-auditor/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/github/label-auditor/) |
+| 14 | 01 | notion-db-sync | notion-productivity | [notion-db-sync](scripts/notion-productivity/notion-db-sync/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/notion-productivity/notion-db-sync/) |
 
 <!-- INDEX:END -->
 

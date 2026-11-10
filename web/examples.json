@@ -610,6 +610,15 @@
    0
   ]
  },
+ "notion-productivity/notion-db-sync": {
+  "values": {
+   "csv": "notion-tasks.csv",
+   "existing": "notion-db.json"
+  },
+  "exit": [
+   0
+  ]
+ },
  "notion-productivity/pomodoro-timer": {
   "values": {
    "plan": true,

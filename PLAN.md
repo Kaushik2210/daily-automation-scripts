@@ -161,7 +161,7 @@ Difficulty: easy on days 1-10, medium on days 11-20, more advanced on days 21-30
 - [x] 10. label-auditor - Compare issue labels across repositories (github)
 
 ## Day 14 - Notion and organization
-- [ ] 01. notion-db-sync - Sync a CSV with a Notion database (notion-productivity)
+- [x] 01. notion-db-sync - Sync a CSV with a Notion database (notion-productivity)
 - [ ] 02. notion-page-exporter - Export Notion pages to markdown (notion-productivity)
 - [ ] 03. notion-task-importer - Import tasks from a text file into Notion (notion-productivity)
 - [ ] 04. markdown-to-notion - Push a markdown file to a Notion page (notion-productivity)
