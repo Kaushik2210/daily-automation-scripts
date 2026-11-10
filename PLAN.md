@@ -170,7 +170,7 @@ Difficulty: easy on days 1-10, medium on days 11-20, more advanced on days 21-30
 - [x] 07. ics-agenda - Print a daily agenda from an .ics file (notion-productivity)
 - [x] 08. weekly-review - Generate a weekly review template from your notes (notion-productivity)
 - [x] 09. reading-list-manager - Manage a reading list with statuses (notion-productivity)
-- [ ] 10. bookmark-deduper - Remove duplicate bookmarks from an HTML export (notion-productivity)
+- [x] 10. bookmark-deduper - Remove duplicate bookmarks from an HTML export (notion-productivity)
 
 ## Day 15 - Backups and sync
 - [ ] 01. backup-script - Copy folders to a timestamped backup location (files)
