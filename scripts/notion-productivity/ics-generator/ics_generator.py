@@ -140,7 +140,7 @@ def main(argv=None):
         args.out.write_text(text, encoding="utf-8", newline="")
         print(f"Wrote {made} event(s) to {args.out}.")
     else:
-        print(text, end="")
+        print(text.replace("\r\n", "\n"), end="")  # the terminal adds its own line endings
     return 1 if problems else 0
 
 

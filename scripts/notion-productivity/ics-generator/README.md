@@ -21,35 +21,35 @@ python ics_generator.py events.csv --tz Europe/London --utc --alarm 10 --stamp 2
 ```
 ```
 BEGIN:VCALENDAR
-
 VERSION:2.0
-
 PRODID:-//daily-automation-scripts//ics-generator//EN
-
 CALSCALE:GREGORIAN
-
 X-WR-CALNAME:Events
-
 BEGIN:VEVENT
-
 UID:cae0c59315b3230a4541@daily-automation-scripts
-
 DTSTAMP:20261101T080000Z
-
 DTSTART:20261116T093000Z
-
 DTEND:20261116T094500Z
-
 SUMMARY:Team standup
-
 LOCATION:Zoom
-
 DESCRIPTION:Daily sync
-
 BEGIN:VALARM
-
 ACTION:DISPLAY
-
+DESCRIPTION:Team standup
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:ffa5261e8c0242691dfd@daily-automation-scripts
+DTSTAMP:20261101T080000Z
+DTSTART:20261116T123000Z
+DTEND:20261116T133000Z
+SUMMARY:Lunch\, with Alice
+LOCATION:Cafe Roma
+DESCRIPTION:Bring the contract\; discuss pricing
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Lunch\, with Alice
 ```
 
 ## Notes
