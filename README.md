@@ -51,7 +51,7 @@ The table below is rebuilt by `python tools/update_index.py` from `PLAN.md` and 
 
 <!-- INDEX:START -->
 
-**Progress: 137/300 done**
+**Progress: 138/300 done**
 
 | Day | # | Script | Category | Source | Live |
 | --- | --- | --- | --- | --- | --- |
@@ -192,6 +192,7 @@ The table below is rebuilt by `python tools/update_index.py` from `PLAN.md` and 
 | 14 | 05 | notion-db-backup | notion-productivity | [notion-db-backup](scripts/notion-productivity/notion-db-backup/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/notion-productivity/notion-db-backup/) |
 | 14 | 06 | ics-generator | notion-productivity | [ics-generator](scripts/notion-productivity/ics-generator/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/notion-productivity/ics-generator/) |
 | 14 | 07 | ics-agenda | notion-productivity | [ics-agenda](scripts/notion-productivity/ics-agenda/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/notion-productivity/ics-agenda/) |
+| 14 | 08 | weekly-review | notion-productivity | [weekly-review](scripts/notion-productivity/weekly-review/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/notion-productivity/weekly-review/) |
 
 <!-- INDEX:END -->
 

@@ -168,7 +168,7 @@ Difficulty: easy on days 1-10, medium on days 11-20, more advanced on days 21-30
 - [x] 05. notion-db-backup - Back up a Notion database to JSON (notion-productivity)
 - [x] 06. ics-generator - Create calendar .ics events from a CSV (notion-productivity)
 - [x] 07. ics-agenda - Print a daily agenda from an .ics file (notion-productivity)
-- [ ] 08. weekly-review - Generate a weekly review template from your notes (notion-productivity)
+- [x] 08. weekly-review - Generate a weekly review template from your notes (notion-productivity)
 - [ ] 09. reading-list-manager - Manage a reading list with statuses (notion-productivity)
 - [ ] 10. bookmark-deduper - Remove duplicate bookmarks from an HTML export (notion-productivity)
 

@@ -734,6 +734,18 @@
    0
   ]
  },
+ "notion-productivity/weekly-review": {
+  "values": {
+   "week_of": "2026-01-07",
+   "journal": "journal.md",
+   "habits": "habits.json",
+   "todos": "todos.json",
+   "notes": "notes.json"
+  },
+  "exit": [
+   0
+  ]
+ },
  "pdf-docs/docx-text-extractor": {
   "values": {
    "files": [
