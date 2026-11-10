@@ -601,6 +601,18 @@
    0
   ]
  },
+ "notion-productivity/ics-generator": {
+  "values": {
+   "csv": "events.csv",
+   "tz": "Europe/London",
+   "utc": true,
+   "alarm": 10,
+   "stamp": "2026-11-01T08:00"
+  },
+  "exit": [
+   0
+  ]
+ },
  "notion-productivity/journal-cli": {
   "values": {
    "file": "journal.md",
