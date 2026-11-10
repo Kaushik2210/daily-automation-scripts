@@ -610,6 +610,14 @@
    0
   ]
  },
+ "notion-productivity/markdown-to-notion": {
+  "values": {
+   "file": "meeting-notes.md"
+  },
+  "exit": [
+   0
+  ]
+ },
  "notion-productivity/notion-db-sync": {
   "values": {
    "csv": "notion-tasks.csv",
