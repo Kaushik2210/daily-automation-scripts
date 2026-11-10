@@ -10,6 +10,8 @@ from pathlib import Path
 
 API = os.environ.get("NOTION_API_URL", "https://api.notion.com/v1").rstrip("/")
 VERSION = "2022-06-28"
+LIST_GROUPS = {"bulleted_list_item": "list", "to_do": "list", "toggle": "list",
+               "numbered_list_item": "numbered"}
 
 
 def notion_get(path):
@@ -73,12 +75,16 @@ def media_url(data):
 
 def blocks_to_markdown(blocks, children=None, depth=0):
     """Convert Notion blocks to markdown lines. `children(block_id)` loads nested blocks."""
-    lines, number = [], 0
+    lines, number, previous = [], 0, ""
     pad = "  " * depth
     for block in blocks:
         kind = block.get("type", "")
         data = block.get(kind) or {}
         number = number + 1 if kind == "numbered_list_item" else 0
+        group = LIST_GROUPS.get(kind, kind)
+        if lines and lines[-1] != "" and group != previous:
+            lines.append("")  # blank line between a list and whatever comes next
+        previous = group
         text = rich(data.get("rich_text"))
         if kind in ("heading_1", "heading_2", "heading_3"):
             lines += [f"{'#' * int(kind[-1])} {text}", ""]

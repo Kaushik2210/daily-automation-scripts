@@ -622,7 +622,7 @@
  "notion-productivity/notion-page-exporter": {
   "values": {
    "from_file": "notion-blocks.json",
-   "title": "Project plan"
+   "title": "Team wiki"
   },
   "exit": [
    0

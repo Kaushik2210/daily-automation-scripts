@@ -17,10 +17,10 @@ Create an integration at notion.so/my-integrations, copy its token, and share ea
 
 ## Example
 ```bash
-python notion_page_exporter.py --from-file notion-blocks.json --title "Project plan"
+python notion_page_exporter.py --from-file notion-blocks.json --title "Team wiki"
 ```
 ````
-# Project plan
+# Team wiki
 
 # Project plan
 
@@ -30,10 +30,13 @@ We ship on **Friday**. Details in the [spec](https://example.com/spec) and the `
 
 - Launch the beta
 - Collect feedback from *ten users*
+
 1. Draft the announcement
 2. Send it to the team
+
 - [x] Book the venue
 - [ ] Order snacks
+
 > Perfect is the enemy of good.
 
 ```python
