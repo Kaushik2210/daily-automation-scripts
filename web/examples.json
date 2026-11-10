@@ -618,6 +618,16 @@
    0
   ]
  },
+ "notion-productivity/notion-db-backup": {
+  "values": {
+   "from_file": "notion-db.json",
+   "format": "simple",
+   "stdout": true
+  },
+  "exit": [
+   0
+  ]
+ },
  "notion-productivity/notion-db-sync": {
   "values": {
    "csv": "notion-tasks.csv",

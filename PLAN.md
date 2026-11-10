@@ -165,7 +165,7 @@ Difficulty: easy on days 1-10, medium on days 11-20, more advanced on days 21-30
 - [x] 02. notion-page-exporter - Export Notion pages to markdown (notion-productivity)
 - [x] 03. notion-task-importer - Import tasks from a text file into Notion (notion-productivity)
 - [x] 04. markdown-to-notion - Push a markdown file to a Notion page (notion-productivity)
-- [ ] 05. notion-db-backup - Back up a Notion database to JSON (notion-productivity)
+- [x] 05. notion-db-backup - Back up a Notion database to JSON (notion-productivity)
 - [ ] 06. ics-generator - Create calendar .ics events from a CSV (notion-productivity)
 - [ ] 07. ics-agenda - Print a daily agenda from an .ics file (notion-productivity)
 - [ ] 08. weekly-review - Generate a weekly review template from your notes (notion-productivity)
