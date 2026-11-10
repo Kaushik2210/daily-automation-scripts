@@ -697,6 +697,15 @@
    0
   ]
  },
+ "notion-productivity/reading-list-manager": {
+  "values": {
+   "action": "list",
+   "file": "reading-list.json"
+  },
+  "exit": [
+   0
+  ]
+ },
  "notion-productivity/timezone-converter": {
   "values": {
    "time": "12:00",
