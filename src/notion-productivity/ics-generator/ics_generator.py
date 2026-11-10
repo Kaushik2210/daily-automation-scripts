@@ -1,11 +1,15 @@
 """Create a calendar (.ics) file with events from a CSV, ready for any calendar app."""
 import argparse
+import contextlib
 import csv
 import hashlib
 import sys
 from datetime import UTC, date, datetime, timedelta
 from pathlib import Path
 from zoneinfo import ZoneInfo, ZoneInfoNotFoundError
+
+with contextlib.suppress(ImportError):
+    import tzdata  # noqa: F401  (supplies the zone database on Windows and in the browser)
 
 ALIASES = {"title": ("title", "summary", "name", "event"), "start": ("start", "begin", "date"),
            "end": ("end", "finish"), "location": ("location", "place", "where"),
