@@ -1,10 +1,14 @@
 """Print a daily agenda from an .ics calendar file, including simple repeating events."""
 import argparse
+import contextlib
 import re
 import sys
 from datetime import UTC, date, datetime, time, timedelta
 from pathlib import Path
 from zoneinfo import ZoneInfo, ZoneInfoNotFoundError
+
+with contextlib.suppress(ImportError):
+    import tzdata  # noqa: F401  (supplies the zone database on Windows and in the browser)
 
 DAYS = ["MO", "TU", "WE", "TH", "FR", "SA", "SU"]
 MAX_STEPS = 5000
