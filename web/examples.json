@@ -275,6 +275,18 @@
    0
   ]
  },
+ "files/incremental-backup": {
+  "values": {
+   "source": "demo-project",
+   "dest": "mirror",
+   "exclude": [
+    "LICENSE"
+   ]
+  },
+  "exit": [
+   0
+  ]
+ },
  "files/old-file-finder": {
   "values": {
    "folder": ".",
