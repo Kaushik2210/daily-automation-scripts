@@ -173,7 +173,7 @@ Difficulty: easy on days 1-10, medium on days 11-20, more advanced on days 21-30
 - [x] 10. bookmark-deduper - Remove duplicate bookmarks from an HTML export (notion-productivity)
 
 ## Day 15 - Backups and sync
-- [ ] 01. backup-script - Copy folders to a timestamped backup location (files)
+- [x] 01. backup-script - Copy folders to a timestamped backup location (files)
 - [ ] 02. incremental-backup - Back up only files changed since the last run (files)
 - [ ] 03. zip-archiver - Zip folders with exclude patterns (files)
 - [ ] 04. backup-rotator - Keep the newest N backups and prune the rest (files)

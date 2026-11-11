@@ -191,6 +191,21 @@
    0
   ]
  },
+ "files/backup-script": {
+  "values": {
+   "sources": [
+    "demo-project"
+   ],
+   "dest": "backups-new",
+   "exclude": [
+    "LICENSE"
+   ],
+   "now": "2026-11-10T09:30:00"
+  },
+  "exit": [
+   0
+  ]
+ },
  "files/bulk-file-renamer": {
   "values": {
    "folder": ".",
