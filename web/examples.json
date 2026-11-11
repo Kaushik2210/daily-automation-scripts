@@ -216,6 +216,15 @@
    0
   ]
  },
+ "files/backup-verifier": {
+  "values": {
+   "source": "demo-project",
+   "backup": "demo-backup"
+  },
+  "exit": [
+   1
+  ]
+ },
  "files/bulk-file-renamer": {
   "values": {
    "folder": ".",

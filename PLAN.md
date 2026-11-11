@@ -177,7 +177,7 @@ Difficulty: easy on days 1-10, medium on days 11-20, more advanced on days 21-30
 - [x] 02. incremental-backup - Back up only files changed since the last run (files)
 - [x] 03. zip-archiver - Zip folders with exclude patterns (files)
 - [x] 04. backup-rotator - Keep the newest N backups and prune the rest (files)
-- [ ] 05. backup-verifier - Verify a backup against its source by hash (files)
+- [x] 05. backup-verifier - Verify a backup against its source by hash (files)
 - [ ] 06. folder-sync - One-way sync between two folders (files)
 - [ ] 07. snapshot-differ - Compare two folder snapshots (files)
 - [ ] 08. tar-archiver - Create compressed tar archives with a manifest (files)
