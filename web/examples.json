@@ -350,6 +350,14 @@
    1
   ]
  },
+ "files/sync-conflict-finder": {
+  "values": {
+   "folder": "cloud"
+  },
+  "exit": [
+   1
+  ]
+ },
  "files/tar-archiver": {
   "values": {
    "action": "create",
