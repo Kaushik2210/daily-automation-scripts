@@ -325,6 +325,18 @@
    0
   ]
  },
+ "files/snapshot-differ": {
+  "values": {
+   "action": "compare",
+   "paths": [
+    "snapshot-old.json",
+    "snapshot-new.json"
+   ]
+  },
+  "exit": [
+   1
+  ]
+ },
  "files/tree-printer": {
   "values": {
    "folder": "."

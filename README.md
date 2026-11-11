@@ -51,7 +51,7 @@ The table below is rebuilt by `python tools/update_index.py` from `PLAN.md` and 
 
 <!-- INDEX:START -->
 
-**Progress: 146/300 done**
+**Progress: 147/300 done**
 
 | Day | # | Script | Category | Source | Live |
 | --- | --- | --- | --- | --- | --- |
@@ -201,6 +201,7 @@ The table below is rebuilt by `python tools/update_index.py` from `PLAN.md` and 
 | 15 | 04 | backup-rotator | files | [backup-rotator](scripts/files/backup-rotator/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/files/backup-rotator/) |
 | 15 | 05 | backup-verifier | files | [backup-verifier](scripts/files/backup-verifier/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/files/backup-verifier/) |
 | 15 | 06 | folder-sync | files | [folder-sync](scripts/files/folder-sync/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/files/folder-sync/) |
+| 15 | 07 | snapshot-differ | files | [snapshot-differ](scripts/files/snapshot-differ/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/files/snapshot-differ/) |
 
 <!-- INDEX:END -->
 
