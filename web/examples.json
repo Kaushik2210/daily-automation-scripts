@@ -304,6 +304,21 @@
    0
   ]
  },
+ "files/zip-archiver": {
+  "values": {
+   "sources": [
+    "demo-project"
+   ],
+   "out": "demo.zip",
+   "exclude": [
+    "*.md",
+    "LICENSE"
+   ]
+  },
+  "exit": [
+   0
+  ]
+ },
  "github/branch-lister": {
   "values": {
    "refs": "branches.txt",

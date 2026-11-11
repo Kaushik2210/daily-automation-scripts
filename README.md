@@ -51,7 +51,7 @@ The table below is rebuilt by `python tools/update_index.py` from `PLAN.md` and 
 
 <!-- INDEX:START -->
 
-**Progress: 142/300 done**
+**Progress: 143/300 done**
 
 | Day | # | Script | Category | Source | Live |
 | --- | --- | --- | --- | --- | --- |
@@ -197,6 +197,7 @@ The table below is rebuilt by `python tools/update_index.py` from `PLAN.md` and 
 | 14 | 10 | bookmark-deduper | notion-productivity | [bookmark-deduper](scripts/notion-productivity/bookmark-deduper/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/notion-productivity/bookmark-deduper/) |
 | 15 | 01 | backup-script | files | [backup-script](scripts/files/backup-script/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/files/backup-script/) |
 | 15 | 02 | incremental-backup | files | [incremental-backup](scripts/files/incremental-backup/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/files/incremental-backup/) |
+| 15 | 03 | zip-archiver | files | [zip-archiver](scripts/files/zip-archiver/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/files/zip-archiver/) |
 
 <!-- INDEX:END -->
 
