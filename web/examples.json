@@ -191,6 +191,16 @@
    0
   ]
  },
+ "files/backup-rotator": {
+  "values": {
+   "folder": "backups",
+   "pattern": "project-*",
+   "keep": 3
+  },
+  "exit": [
+   0
+  ]
+ },
  "files/backup-script": {
   "values": {
    "sources": [
