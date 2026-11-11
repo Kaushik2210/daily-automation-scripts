@@ -181,7 +181,7 @@ Difficulty: easy on days 1-10, medium on days 11-20, more advanced on days 21-30
 - [x] 06. folder-sync - One-way sync between two folders (files)
 - [x] 07. snapshot-differ - Compare two folder snapshots (files)
 - [x] 08. tar-archiver - Create compressed tar archives with a manifest (files)
-- [ ] 09. backup-size-estimator - Estimate size before running a backup (files)
+- [x] 09. backup-size-estimator - Estimate size before running a backup (files)
 - [ ] 10. sync-conflict-finder - Find sync-conflict copies left by cloud tools (files)
 
 ## Day 16 - Logs

@@ -51,7 +51,7 @@ The table below is rebuilt by `python tools/update_index.py` from `PLAN.md` and 
 
 <!-- INDEX:START -->
 
-**Progress: 148/300 done**
+**Progress: 149/300 done**
 
 | Day | # | Script | Category | Source | Live |
 | --- | --- | --- | --- | --- | --- |
@@ -203,6 +203,7 @@ The table below is rebuilt by `python tools/update_index.py` from `PLAN.md` and 
 | 15 | 06 | folder-sync | files | [folder-sync](scripts/files/folder-sync/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/files/folder-sync/) |
 | 15 | 07 | snapshot-differ | files | [snapshot-differ](scripts/files/snapshot-differ/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/files/snapshot-differ/) |
 | 15 | 08 | tar-archiver | files | [tar-archiver](scripts/files/tar-archiver/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/files/tar-archiver/) |
+| 15 | 09 | backup-size-estimator | files | [backup-size-estimator](scripts/files/backup-size-estimator/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/files/backup-size-estimator/) |
 
 <!-- INDEX:END -->
 

@@ -216,6 +216,19 @@
    0
   ]
  },
+ "files/backup-size-estimator": {
+  "values": {
+   "folders": [
+    "demo-project"
+   ],
+   "exclude": [
+    "*.md"
+   ]
+  },
+  "exit": [
+   0
+  ]
+ },
  "files/backup-verifier": {
   "values": {
    "source": "demo-project",
