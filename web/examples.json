@@ -294,6 +294,16 @@
    0
   ]
  },
+ "files/folder-sync": {
+  "values": {
+   "source": "sync-source",
+   "target": "sync-target",
+   "delete": true
+  },
+  "exit": [
+   0
+  ]
+ },
  "files/incremental-backup": {
   "values": {
    "source": "demo-project",
