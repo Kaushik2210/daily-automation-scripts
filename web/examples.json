@@ -337,6 +337,21 @@
    1
   ]
  },
+ "files/tar-archiver": {
+  "values": {
+   "action": "create",
+   "paths": [
+    "demo-project"
+   ],
+   "out": "demo.tar.gz",
+   "exclude": [
+    "*.md"
+   ]
+  },
+  "exit": [
+   0
+  ]
+ },
  "files/tree-printer": {
   "values": {
    "folder": "."
