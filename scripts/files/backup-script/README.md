@@ -17,7 +17,7 @@ python backup_script.py FOLDER [FOLDER ...] --dest BACKUPS [--exclude PATTERN ..
 python backup_script.py demo-project --dest backups-new --exclude LICENSE --now 2026-11-10T09:30:00
 ```
 ```
-demo-project -> backups-new\demo-project-20261110-093000
+demo-project -> backups-new/demo-project-20261110-093000
   4 file(s), 681 B, 1 skipped
     would copy package.json
     would copy src/app.js

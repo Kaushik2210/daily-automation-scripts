@@ -98,7 +98,8 @@ def main(argv=None):
             continue
         target = dest / backup_name(real, now)
         files, folders, skipped, total = scan(real, args.exclude)
-        print(f"{source} -> {args.dest / target.name}\n  {len(files)} file(s), {human_size(total)}"
+        shown = (args.dest / target.name).as_posix()
+        print(f"{source} -> {shown}\n  {len(files)} file(s), {human_size(total)}"
               + (f", {skipped} skipped" if skipped else ""))
         if target.exists():
             print("  that backup folder already exists - wait a second or change --now")
