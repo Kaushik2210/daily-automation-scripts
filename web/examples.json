@@ -1098,6 +1098,17 @@
    0
   ]
  },
+ "system/error-extractor": {
+  "values": {
+   "files": [
+    "app.log"
+   ],
+   "before": 1
+  },
+  "exit": [
+   0
+  ]
+ },
  "system/folder-size-history": {
   "values": {
    "folder": ".",
