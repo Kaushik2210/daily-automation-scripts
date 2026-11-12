@@ -1227,6 +1227,16 @@
    0
   ]
  },
+ "system/status-code-counter": {
+  "values": {
+   "files": [
+    "access.log"
+   ]
+  },
+  "exit": [
+   0
+  ]
+ },
  "system/system-info-report": {
   "values": {},
   "exit": [

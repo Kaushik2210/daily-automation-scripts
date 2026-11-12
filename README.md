@@ -51,7 +51,7 @@ The table below is rebuilt by `python tools/update_index.py` from `PLAN.md` and 
 
 <!-- INDEX:START -->
 
-**Progress: 157/300 done**
+**Progress: 158/300 done**
 
 | Day | # | Script | Category | Source | Live |
 | --- | --- | --- | --- | --- | --- |
@@ -212,6 +212,7 @@ The table below is rebuilt by `python tools/update_index.py` from `PLAN.md` and 
 | 16 | 05 | log-rotator | system | [log-rotator](scripts/system/log-rotator/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/system/log-rotator/) |
 | 16 | 06 | log-timeline | system | [log-timeline](scripts/system/log-timeline/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/system/log-timeline/) |
 | 16 | 07 | top-ips-reporter | system | [top-ips-reporter](scripts/system/top-ips-reporter/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/system/top-ips-reporter/) |
+| 16 | 08 | status-code-counter | system | [status-code-counter](scripts/system/status-code-counter/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/system/status-code-counter/) |
 
 <!-- INDEX:END -->
 
