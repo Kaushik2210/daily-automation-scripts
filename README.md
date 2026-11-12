@@ -51,7 +51,7 @@ The table below is rebuilt by `python tools/update_index.py` from `PLAN.md` and 
 
 <!-- INDEX:START -->
 
-**Progress: 150/300 done**
+**Progress: 151/300 done**
 
 | Day | # | Script | Category | Source | Live |
 | --- | --- | --- | --- | --- | --- |
@@ -205,6 +205,7 @@ The table below is rebuilt by `python tools/update_index.py` from `PLAN.md` and 
 | 15 | 08 | tar-archiver | files | [tar-archiver](scripts/files/tar-archiver/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/files/tar-archiver/) |
 | 15 | 09 | backup-size-estimator | files | [backup-size-estimator](scripts/files/backup-size-estimator/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/files/backup-size-estimator/) |
 | 15 | 10 | sync-conflict-finder | files | [sync-conflict-finder](scripts/files/sync-conflict-finder/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/files/sync-conflict-finder/) |
+| 16 | 01 | log-analyzer | system | [log-analyzer](scripts/system/log-analyzer/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/system/log-analyzer/) |
 
 <!-- INDEX:END -->
 

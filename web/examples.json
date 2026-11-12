@@ -1135,6 +1135,17 @@
    0
   ]
  },
+ "system/log-analyzer": {
+  "values": {
+   "files": [
+    "app.log"
+   ],
+   "top": 3
+  },
+  "exit": [
+   0
+  ]
+ },
  "system/path-checker": {
   "values": {
    "path": "/usr/bin:/definitely/missing:/usr/bin:",
