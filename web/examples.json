@@ -1168,6 +1168,18 @@
    0
   ]
  },
+ "system/nginx-log-parser": {
+  "values": {
+   "files": [
+    "access.log"
+   ],
+   "status": "5xx",
+   "columns": "time,ip,method,path,status"
+  },
+  "exit": [
+   0
+  ]
+ },
  "system/path-checker": {
   "values": {
    "path": "/usr/bin:/definitely/missing:/usr/bin:",

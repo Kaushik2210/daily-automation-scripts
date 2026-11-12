@@ -51,7 +51,7 @@ The table below is rebuilt by `python tools/update_index.py` from `PLAN.md` and 
 
 <!-- INDEX:START -->
 
-**Progress: 153/300 done**
+**Progress: 154/300 done**
 
 | Day | # | Script | Category | Source | Live |
 | --- | --- | --- | --- | --- | --- |
@@ -208,6 +208,7 @@ The table below is rebuilt by `python tools/update_index.py` from `PLAN.md` and 
 | 16 | 01 | log-analyzer | system | [log-analyzer](scripts/system/log-analyzer/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/system/log-analyzer/) |
 | 16 | 02 | error-extractor | system | [error-extractor](scripts/system/error-extractor/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/system/error-extractor/) |
 | 16 | 03 | log-tail-filter | system | [log-tail-filter](scripts/system/log-tail-filter/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/system/log-tail-filter/) |
+| 16 | 04 | nginx-log-parser | system | [nginx-log-parser](scripts/system/nginx-log-parser/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/system/nginx-log-parser/) |
 
 <!-- INDEX:END -->
 
