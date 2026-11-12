@@ -1180,6 +1180,18 @@
    0
   ]
  },
+ "system/log-timeline": {
+  "values": {
+   "files": [
+    "app.log"
+   ],
+   "bucket": "30m",
+   "width": 20
+  },
+  "exit": [
+   0
+  ]
+ },
  "system/nginx-log-parser": {
   "values": {
    "files": [
