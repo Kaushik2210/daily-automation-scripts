@@ -193,7 +193,7 @@ Difficulty: easy on days 1-10, medium on days 11-20, more advanced on days 21-30
 - [x] 06. log-timeline - Bucket log events into a timeline (system)
 - [x] 07. top-ips-reporter - Rank client IPs in an access log (system)
 - [x] 08. status-code-counter - Count HTTP status codes in an access log (system)
-- [ ] 09. pattern-counter - Count regex matches across many logs (system)
+- [x] 09. pattern-counter - Count regex matches across many logs (system)
 - [ ] 10. log-merger - Merge several logs in timestamp order (system)
 
 ## Day 17 - Network and security checks

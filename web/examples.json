@@ -1213,6 +1213,21 @@
    1
   ]
  },
+ "system/pattern-counter": {
+  "values": {
+   "paths": [
+    "logs"
+   ],
+   "pattern": [
+    "errors=ERROR",
+    "payments=payments",
+    "slowest=handled request ([0-9]+)"
+   ]
+  },
+  "exit": [
+   0
+  ]
+ },
  "system/ping-checker": {
   "values": {
    "parse": "ping.txt"
