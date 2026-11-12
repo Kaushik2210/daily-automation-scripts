@@ -20,7 +20,7 @@ By default an entry is extracted when its timestamped line has the level ERROR, 
 python error_extractor.py app.log --before 1
 ```
 ```
-8  2026-11-10 09:03:53,289 WARNING  [api] disk usage at 302%
+   8  2026-11-10 09:03:53,289 WARNING  [api] disk usage at 302%
 >  9  2026-11-10 09:06:45,240 ERROR    [worker] database connection refused
   10  Traceback (most recent call last):
   11    File "/srv/app/worker.py", line 178, in handle

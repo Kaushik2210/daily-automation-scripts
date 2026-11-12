@@ -1157,6 +1157,17 @@
    0
   ]
  },
+ "system/log-tail-filter": {
+  "values": {
+   "file": "app.log",
+   "no_follow": true,
+   "level": "ERROR",
+   "lines": 3
+  },
+  "exit": [
+   0
+  ]
+ },
  "system/path-checker": {
   "values": {
    "path": "/usr/bin:/definitely/missing:/usr/bin:",
