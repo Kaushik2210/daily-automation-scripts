@@ -1157,6 +1157,18 @@
    0
   ]
  },
+ "system/log-rotator": {
+  "values": {
+   "paths": [
+    "logs"
+   ],
+   "max_size": "2KB",
+   "keep": 3
+  },
+  "exit": [
+   0
+  ]
+ },
  "system/log-tail-filter": {
   "values": {
    "file": "app.log",

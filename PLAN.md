@@ -189,7 +189,7 @@ Difficulty: easy on days 1-10, medium on days 11-20, more advanced on days 21-30
 - [x] 02. error-extractor - Pull error lines with context from logs (system)
 - [x] 03. log-tail-filter - Follow a log file and filter by pattern (system)
 - [x] 04. nginx-log-parser - Parse access logs into a CSV (system)
-- [ ] 05. log-rotator - Rotate and compress big log files (system)
+- [x] 05. log-rotator - Rotate and compress big log files (system)
 - [ ] 06. log-timeline - Bucket log events into a timeline (system)
 - [ ] 07. top-ips-reporter - Rank client IPs in an access log (system)
 - [ ] 08. status-code-counter - Count HTTP status codes in an access log (system)
