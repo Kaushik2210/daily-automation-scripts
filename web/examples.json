@@ -1157,6 +1157,20 @@
    0
   ]
  },
+ "system/log-merger": {
+  "values": {
+   "files": [
+    "logs/server-a.log",
+    "logs/server-b.log"
+   ],
+   "label": true,
+   "since": "2026-11-10 09:02",
+   "until": "2026-11-10 09:06"
+  },
+  "exit": [
+   0
+  ]
+ },
  "system/log-rotator": {
   "values": {
    "paths": [

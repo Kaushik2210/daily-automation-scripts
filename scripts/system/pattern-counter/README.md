@@ -14,7 +14,7 @@ Name a pattern with `NAME=` so its column is readable (`-p timeouts="timeout aft
 
 ## Example
 ```bash
-python pattern_counter.py logs -p errors=ERROR -p "timeouts=timeout talking to (\w+)" -p "payment=payments"
+python pattern_counter.py logs -p errors=ERROR -p payments=payments -p "slowest=handled request ([0-9]+)"
 ```
 ```
 File            Lines  errors  payments  slowest

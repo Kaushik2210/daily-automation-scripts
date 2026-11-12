@@ -194,7 +194,7 @@ Difficulty: easy on days 1-10, medium on days 11-20, more advanced on days 21-30
 - [x] 07. top-ips-reporter - Rank client IPs in an access log (system)
 - [x] 08. status-code-counter - Count HTTP status codes in an access log (system)
 - [x] 09. pattern-counter - Count regex matches across many logs (system)
-- [ ] 10. log-merger - Merge several logs in timestamp order (system)
+- [x] 10. log-merger - Merge several logs in timestamp order (system)
 
 ## Day 17 - Network and security checks
 - [ ] 01. port-scanner - Scan ports on localhost or hosts you own (security)

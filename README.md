@@ -51,7 +51,7 @@ The table below is rebuilt by `python tools/update_index.py` from `PLAN.md` and 
 
 <!-- INDEX:START -->
 
-**Progress: 159/300 done**
+**Progress: 160/300 done**
 
 | Day | # | Script | Category | Source | Live |
 | --- | --- | --- | --- | --- | --- |
@@ -214,6 +214,7 @@ The table below is rebuilt by `python tools/update_index.py` from `PLAN.md` and 
 | 16 | 07 | top-ips-reporter | system | [top-ips-reporter](scripts/system/top-ips-reporter/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/system/top-ips-reporter/) |
 | 16 | 08 | status-code-counter | system | [status-code-counter](scripts/system/status-code-counter/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/system/status-code-counter/) |
 | 16 | 09 | pattern-counter | system | [pattern-counter](scripts/system/pattern-counter/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/system/pattern-counter/) |
+| 16 | 10 | log-merger | system | [log-merger](scripts/system/log-merger/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/system/log-merger/) |
 
 <!-- INDEX:END -->
 
