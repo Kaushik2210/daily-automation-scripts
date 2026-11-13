@@ -18,7 +18,7 @@ With no host it scans `127.0.0.1`. `--ports common` (the default) tries about fi
 python port_scanner.py --ports 22,23,80,443,3306,6379,27017 --explain
 ```
 ```
-22  ssh
+   22  ssh
    23  telnet   ! telnet sends passwords in clear text
    80  http
   443  https

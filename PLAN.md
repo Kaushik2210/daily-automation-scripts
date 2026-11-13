@@ -198,7 +198,7 @@ Difficulty: easy on days 1-10, medium on days 11-20, more advanced on days 21-30
 
 ## Day 17 - Network and security checks
 - [x] 01. port-scanner - Scan ports on localhost or hosts you own (security)
-- [ ] 02. ssl-expiry-checker - Check TLS certificate expiry for domains (security)
+- [x] 02. ssl-expiry-checker - Check TLS certificate expiry for domains (security)
 - [ ] 03. dns-lookup - Query A, MX and TXT records for a domain (security)
 - [ ] 04. integrity-monitor - Detect changed files against a stored baseline (security)
 - [ ] 05. breach-password-checker - Check a password against HIBP using k-anonymity (security)

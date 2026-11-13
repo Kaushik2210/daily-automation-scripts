@@ -1079,6 +1079,19 @@
    1
   ]
  },
+ "security/ssl-expiry-checker": {
+  "values": {
+   "targets": [
+    "fullchain.pem",
+    "expired.pem",
+    "expiring.pem"
+   ],
+   "today": "2026-11-13"
+  },
+  "exit": [
+   1
+  ]
+ },
  "security/token-generator": {
   "values": {
    "kind": "hex",
