@@ -1065,6 +1065,14 @@
    1
   ]
  },
+ "security/open-ports-lister": {
+  "values": {
+   "parse": "ss.txt"
+  },
+  "exit": [
+   0
+  ]
+ },
  "security/password-generator": {
   "values": {
    "count": "3",
