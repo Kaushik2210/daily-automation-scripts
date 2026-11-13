@@ -206,7 +206,7 @@ Difficulty: easy on days 1-10, medium on days 11-20, more advanced on days 21-30
 - [x] 07. open-ports-lister - List listening ports on this machine (security)
 - [x] 08. whois-lookup - Look up domain registration details (security)
 - [x] 09. security-header-checker - Grade a site's HTTP security headers (security)
-- [ ] 10. cert-chain-viewer - Print a site's TLS certificate chain (security)
+- [x] 10. cert-chain-viewer - Print a site's TLS certificate chain (security)
 
 ## Day 18 - Media in bulk
 - [ ] 01. image-compressor - Compress images in bulk with a quality setting (media)

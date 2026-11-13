@@ -1005,6 +1005,15 @@
    1
   ]
  },
+ "security/cert-chain-viewer": {
+  "values": {
+   "target": "fullchain.pem",
+   "today": "2026-11-13"
+  },
+  "exit": [
+   0
+  ]
+ },
  "security/checksum-manifest": {
   "values": {
    "folder": "."
