@@ -1115,6 +1115,15 @@
    1
   ]
  },
+ "security/security-header-checker": {
+  "values": {
+   "source": "site-headers.txt",
+   "min_grade": "D"
+  },
+  "exit": [
+   0
+  ]
+ },
  "security/ssh-key-auditor": {
   "values": {
    "paths": [

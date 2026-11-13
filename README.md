@@ -51,7 +51,7 @@ The table below is rebuilt by `python tools/update_index.py` from `PLAN.md` and 
 
 <!-- INDEX:START -->
 
-**Progress: 168/300 done**
+**Progress: 169/300 done**
 
 | Day | # | Script | Category | Source | Live |
 | --- | --- | --- | --- | --- | --- |
@@ -223,6 +223,7 @@ The table below is rebuilt by `python tools/update_index.py` from `PLAN.md` and 
 | 17 | 06 | ssh-key-auditor | security | [ssh-key-auditor](scripts/security/ssh-key-auditor/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/security/ssh-key-auditor/) |
 | 17 | 07 | open-ports-lister | security | [open-ports-lister](scripts/security/open-ports-lister/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/security/open-ports-lister/) |
 | 17 | 08 | whois-lookup | security | [whois-lookup](scripts/security/whois-lookup/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/security/whois-lookup/) |
+| 17 | 09 | security-header-checker | security | [security-header-checker](scripts/security/security-header-checker/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/security/security-header-checker/) |
 
 <!-- INDEX:END -->
 
