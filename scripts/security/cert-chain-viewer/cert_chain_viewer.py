@@ -4,7 +4,6 @@ import base64
 import hashlib
 import re
 import socket  # web-ok: the network is only used for live hosts; .pem files work anywhere
-import ssl
 import sys
 import urllib.error
 import urllib.request
@@ -141,6 +140,8 @@ def der_from_download(data):
 
 def fetch_chain(host, port, timeout=8):
     """The certificates the server presents: the full chain on Python 3.13+, else leaf + AIA."""
+    import ssl  # imported here because browsers running Python have no ssl module
+
     context = ssl.create_default_context()
     context.check_hostname, context.verify_mode = False, ssl.CERT_NONE
     with (socket.create_connection((host, port), timeout=timeout) as raw,
@@ -224,7 +225,7 @@ def main(argv=None):
             host, _, port = args.target.partition(":")
             ders, source = fetch_chain(host, int(port or 443), args.timeout)
         certs = [parse_certificate(der) for der in ders]
-    except (OSError, ssl.SSLError, ValueError, IndexError, KeyError) as err:
+    except (OSError, ValueError, IndexError, KeyError) as err:
         print(f"Couldn't read the certificate chain: {err}", file=sys.stderr)
         return 1
     if not certs:
