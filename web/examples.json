@@ -1004,6 +1004,15 @@
    0
   ]
  },
+ "security/dns-lookup": {
+  "values": {
+   "domain": "example.com",
+   "from_file": "dns-response.json"
+  },
+  "exit": [
+   0
+  ]
+ },
  "security/env-file-auditor": {
   "values": {
    "file": "app.env",
