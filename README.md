@@ -51,7 +51,7 @@ The table below is rebuilt by `python tools/update_index.py` from `PLAN.md` and 
 
 <!-- INDEX:START -->
 
-**Progress: 165/300 done**
+**Progress: 166/300 done**
 
 | Day | # | Script | Category | Source | Live |
 | --- | --- | --- | --- | --- | --- |
@@ -220,6 +220,7 @@ The table below is rebuilt by `python tools/update_index.py` from `PLAN.md` and 
 | 17 | 03 | dns-lookup | security | [dns-lookup](scripts/security/dns-lookup/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/security/dns-lookup/) |
 | 17 | 04 | integrity-monitor | security | [integrity-monitor](scripts/security/integrity-monitor/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/security/integrity-monitor/) |
 | 17 | 05 | breach-password-checker | security | [breach-password-checker](scripts/security/breach-password-checker/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/security/breach-password-checker/) |
+| 17 | 06 | ssh-key-auditor | security | [ssh-key-auditor](scripts/security/ssh-key-auditor/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/security/ssh-key-auditor/) |
 
 <!-- INDEX:END -->
 

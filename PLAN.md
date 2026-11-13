@@ -202,7 +202,7 @@ Difficulty: easy on days 1-10, medium on days 11-20, more advanced on days 21-30
 - [x] 03. dns-lookup - Query A, MX and TXT records for a domain (security)
 - [x] 04. integrity-monitor - Detect changed files against a stored baseline (security)
 - [x] 05. breach-password-checker - Check a password against HIBP using k-anonymity (security)
-- [ ] 06. ssh-key-auditor - Review SSH keys for age and key type (security)
+- [x] 06. ssh-key-auditor - Review SSH keys for age and key type (security)
 - [ ] 07. open-ports-lister - List listening ports on this machine (security)
 - [ ] 08. whois-lookup - Look up domain registration details (security)
 - [ ] 09. security-header-checker - Grade a site's HTTP security headers (security)

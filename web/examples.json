@@ -1107,6 +1107,16 @@
    1
   ]
  },
+ "security/ssh-key-auditor": {
+  "values": {
+   "paths": [
+    "ssh-demo"
+   ]
+  },
+  "exit": [
+   1
+  ]
+ },
  "security/ssl-expiry-checker": {
   "values": {
    "targets": [
