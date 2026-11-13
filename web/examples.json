@@ -1062,6 +1062,15 @@
    0
   ]
  },
+ "security/port-scanner": {
+  "values": {
+   "ports": "22,23,80,443,3306,6379,27017",
+   "explain": true
+  },
+  "exit": [
+   0
+  ]
+ },
  "security/secret-scanner": {
   "values": {
    "folder": "."
