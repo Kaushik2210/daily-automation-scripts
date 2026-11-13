@@ -1149,6 +1149,15 @@
    0
   ]
  },
+ "security/whois-lookup": {
+  "values": {
+   "from_file": "whois.txt",
+   "today": "2026-11-13"
+  },
+  "exit": [
+   0
+  ]
+ },
  "system/disk-usage-reporter": {
   "values": {
    "paths": [

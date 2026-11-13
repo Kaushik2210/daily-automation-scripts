@@ -204,7 +204,7 @@ Difficulty: easy on days 1-10, medium on days 11-20, more advanced on days 21-30
 - [x] 05. breach-password-checker - Check a password against HIBP using k-anonymity (security)
 - [x] 06. ssh-key-auditor - Review SSH keys for age and key type (security)
 - [x] 07. open-ports-lister - List listening ports on this machine (security)
-- [ ] 08. whois-lookup - Look up domain registration details (security)
+- [x] 08. whois-lookup - Look up domain registration details (security)
 - [ ] 09. security-header-checker - Grade a site's HTTP security headers (security)
 - [ ] 10. cert-chain-viewer - Print a site's TLS certificate chain (security)
 

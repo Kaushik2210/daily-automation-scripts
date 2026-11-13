@@ -18,7 +18,7 @@ Ports bound to `127.0.0.1` or `::1` are "this computer" only; `0.0.0.0` and `::`
 python open_ports_lister.py --parse ss.txt
 ```
 ```
-Port  Proto  Reachable from    Service       Program
+ Port  Proto  Reachable from    Service       Program
    22  tcp    all interfaces    ssh           sshd (pid 812)
    80  tcp    all interfaces    http          nginx (pid 1044)
   443  tcp    all interfaces    https         nginx (pid 1044)
