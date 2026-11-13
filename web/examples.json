@@ -1046,6 +1046,16 @@
    0
   ]
  },
+ "security/integrity-monitor": {
+  "values": {
+   "action": "check",
+   "folder": "demo-project",
+   "baseline": "integrity-baseline.json"
+  },
+  "exit": [
+   1
+  ]
+ },
  "security/password-generator": {
   "values": {
    "count": "3",

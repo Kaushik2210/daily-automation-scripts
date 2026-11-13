@@ -51,7 +51,7 @@ The table below is rebuilt by `python tools/update_index.py` from `PLAN.md` and 
 
 <!-- INDEX:START -->
 
-**Progress: 163/300 done**
+**Progress: 164/300 done**
 
 | Day | # | Script | Category | Source | Live |
 | --- | --- | --- | --- | --- | --- |
@@ -218,6 +218,7 @@ The table below is rebuilt by `python tools/update_index.py` from `PLAN.md` and 
 | 17 | 01 | port-scanner | security | [port-scanner](scripts/security/port-scanner/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/security/port-scanner/) |
 | 17 | 02 | ssl-expiry-checker | security | [ssl-expiry-checker](scripts/security/ssl-expiry-checker/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/security/ssl-expiry-checker/) |
 | 17 | 03 | dns-lookup | security | [dns-lookup](scripts/security/dns-lookup/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/security/dns-lookup/) |
+| 17 | 04 | integrity-monitor | security | [integrity-monitor](scripts/security/integrity-monitor/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/security/integrity-monitor/) |
 
 <!-- INDEX:END -->
 
