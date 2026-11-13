@@ -3,7 +3,6 @@ import argparse
 import base64
 import re
 import socket  # web-ok: the network is only used for live domains; --pem files work anywhere
-import ssl
 import sys
 from datetime import UTC, date, datetime
 from pathlib import Path
@@ -118,6 +117,8 @@ def host_matches(host, names):
 
 def fetch_certificate(host, port, timeout=8):
     """Download a server's certificate without judging it, so expired ones can still be read."""
+    import ssl  # imported here because browsers running Python have no ssl module
+
     context = ssl.create_default_context()
     context.check_hostname, context.verify_mode = False, ssl.CERT_NONE
     with (socket.create_connection((host, port), timeout=timeout) as raw,
@@ -160,7 +161,7 @@ def main(argv=None):
                 der = fetch_certificate(host, int(port or 443), args.timeout)
                 label = f"{host}:{port or 443}"
             cert = parse_certificate(der)
-        except (OSError, ssl.SSLError, ValueError, IndexError, KeyError) as err:
+        except (OSError, ValueError, IndexError, KeyError) as err:
             print(f"?  {label}: couldn't check ({err})")
             problems += 1
             continue
