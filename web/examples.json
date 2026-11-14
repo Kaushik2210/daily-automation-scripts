@@ -579,6 +579,16 @@
    0
   ]
  },
+ "media/audio-metadata-reader": {
+  "values": {
+   "paths": [
+    "audio-demo/"
+   ]
+  },
+  "exit": [
+   0
+  ]
+ },
  "media/contact-sheet-maker": {
   "values": {
    "folder": "sprites/",
@@ -716,6 +726,16 @@
    "folder": ".",
    "size": "64",
    "square": true
+  },
+  "exit": [
+   0
+  ]
+ },
+ "media/video-info-reporter": {
+  "values": {
+   "from_json": [
+    "ffprobe-holiday.json"
+   ]
   },
   "exit": [
    0

@@ -51,7 +51,7 @@ The table below is rebuilt by `python tools/update_index.py` from `PLAN.md` and 
 
 <!-- INDEX:START -->
 
-**Progress: 174/300 done**
+**Progress: 176/300 done**
 
 | Day | # | Script | Category | Source | Live |
 | --- | --- | --- | --- | --- | --- |
@@ -229,6 +229,8 @@ The table below is rebuilt by `python tools/update_index.py` from `PLAN.md` and 
 | 18 | 02 | image-watermarker | media | [image-watermarker](scripts/media/image-watermarker/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/media/image-watermarker/) |
 | 18 | 03 | contact-sheet-maker | media | [contact-sheet-maker](scripts/media/contact-sheet-maker/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/media/contact-sheet-maker/) |
 | 18 | 04 | exif-stripper | media | [exif-stripper](scripts/media/exif-stripper/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/media/exif-stripper/) |
+| 18 | 05 | audio-metadata-reader | media | [audio-metadata-reader](scripts/media/audio-metadata-reader/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/media/audio-metadata-reader/) |
+| 18 | 06 | video-info-reporter | media | [video-info-reporter](scripts/media/video-info-reporter/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/media/video-info-reporter/) |
 
 <!-- INDEX:END -->
 
