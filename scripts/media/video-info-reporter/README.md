@@ -18,7 +18,16 @@ Folders are scanned for common video extensions. `--from-json` reads output you 
 python video_info_reporter.py --from-json ffprobe-holiday.json
 ```
 ```
-{{OUTPUT}}
+holiday.mp4
+  Duration   2:05
+  Size       73.6 MB
+  Bitrate    4922 kbps overall
+  Video      h264, 1920x1080, 29.97 fps, yuv420p
+  Audio      aac, 48 kHz, stereo
+  Title      Holiday in Goa
+  Creation time 2026-03-01T09:30:15.000000Z
+
+1 video(s), 2:05 in total.
 ```
 
 ## Notes
