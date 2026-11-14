@@ -20,7 +20,10 @@ python palette_extractor.py IMAGE [-n 5] [--json] [--swatch strip.png]
 python palette_extractor.py palette-demo.png -n 4
 ```
 ```
-{{OUTPUT}}
+#143C82  rgb( 20,  60, 130)   50.0%  navy    ###############
+#EB5A3C  rgb(235,  90,  60)   25.0%  orange  ########
+#FAFAF5  rgb(250, 250, 245)   12.5%  white   ####
+#F5D778  rgb(245, 215, 120)   12.5%  beige   ####
 ```
 
 ## Notes
