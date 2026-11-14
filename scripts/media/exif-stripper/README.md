@@ -20,7 +20,15 @@ Dry run by default: it lists what would be removed from each photo and writes no
 python exif_stripper.py . --apply
 ```
 ```
-{{OUTPUT}}
+gps-photo.jpg: removes GPS location, camera Canon EOS 90D, date 2026:03:01 09:30:15, software Demo Editor 2.1
+Holiday Photo 01.JPG: removes camera DemoCam D100
+Holiday Photo 02.JPG: removes camera DemoCam D100
+logo.png: no metadata found
+palette-demo.png: no metadata found
+photo-portrait.jpg: removes camera DemoCam D100
+Screenshot 2026-03-01 at 09.30.15.png: no metadata found
+Screenshot 2026-03-02 at 14.05.00.png: no metadata found
+Cleaned 8 photo(s); 4 carried metadata.
 ```
 
 ## Notes
