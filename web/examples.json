@@ -696,6 +696,15 @@
    0
   ]
  },
+ "media/palette-extractor": {
+  "values": {
+   "image": "palette-demo.png",
+   "colors": "4"
+  },
+  "exit": [
+   0
+  ]
+ },
  "media/photo-date-renamer": {
   "values": {
    "folder": "."
@@ -716,6 +725,14 @@
  "media/screenshot-organizer": {
   "values": {
    "folder": "."
+  },
+  "exit": [
+   0
+  ]
+ },
+ "media/similar-image-finder": {
+  "values": {
+   "folder": "similar-demo/"
   },
   "exit": [
    0

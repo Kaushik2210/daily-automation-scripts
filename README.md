@@ -51,7 +51,7 @@ The table below is rebuilt by `python tools/update_index.py` from `PLAN.md` and 
 
 <!-- INDEX:START -->
 
-**Progress: 176/300 done**
+**Progress: 178/300 done**
 
 | Day | # | Script | Category | Source | Live |
 | --- | --- | --- | --- | --- | --- |
@@ -231,6 +231,8 @@ The table below is rebuilt by `python tools/update_index.py` from `PLAN.md` and 
 | 18 | 04 | exif-stripper | media | [exif-stripper](scripts/media/exif-stripper/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/media/exif-stripper/) |
 | 18 | 05 | audio-metadata-reader | media | [audio-metadata-reader](scripts/media/audio-metadata-reader/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/media/audio-metadata-reader/) |
 | 18 | 06 | video-info-reporter | media | [video-info-reporter](scripts/media/video-info-reporter/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/media/video-info-reporter/) |
+| 18 | 07 | similar-image-finder | media | [similar-image-finder](scripts/media/similar-image-finder/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/media/similar-image-finder/) |
+| 18 | 08 | palette-extractor | media | [palette-extractor](scripts/media/palette-extractor/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/media/palette-extractor/) |
 
 <!-- INDEX:END -->
 

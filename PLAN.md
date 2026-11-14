@@ -215,8 +215,8 @@ Difficulty: easy on days 1-10, medium on days 11-20, more advanced on days 21-30
 - [x] 04. exif-stripper - Remove EXIF and location data from photos (media)
 - [x] 05. audio-metadata-reader - Read tags and duration from audio files (media)
 - [x] 06. video-info-reporter - Report codec, size and duration via ffprobe (media)
-- [ ] 07. similar-image-finder - Find near-duplicate images with perceptual hashes (media)
-- [ ] 08. palette-extractor - Extract dominant colors from an image (media)
+- [x] 07. similar-image-finder - Find near-duplicate images with perceptual hashes (media)
+- [x] 08. palette-extractor - Extract dominant colors from an image (media)
 - [ ] 09. video-frame-grabber - Save frames from a video at intervals via ffmpeg (media)
 - [ ] 10. sprite-sheet-builder - Pack images into a single sprite sheet (media)
 
