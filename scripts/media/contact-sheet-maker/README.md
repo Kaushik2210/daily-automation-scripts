@@ -20,7 +20,8 @@ Dry run by default: it reports the grid size and what it would create. With `--a
 python contact_sheet_maker.py sprites/ --columns 3 --thumb 96 --apply
 ```
 ```
-{{OUTPUT}}
+6 image(s) in a grid of 3 column(s): 320x252 pixels -> sprites\contact-sheet.png
+Saved sprites\contact-sheet.png.
 ```
 
 ## Notes
