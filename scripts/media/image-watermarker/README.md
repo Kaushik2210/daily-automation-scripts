@@ -20,7 +20,15 @@ python image_watermarker.py FOLDER --text "(c) Me 2026" [--position bottom-right
 python image_watermarker.py . --text "(c) Kaushik 2026" --position bottom-left --apply
 ```
 ```
-{{OUTPUT}}
+gps-photo.jpg -> watermarked\gps-photo.jpg (320x220)
+Holiday Photo 01.JPG -> watermarked\Holiday Photo 01.JPG (320x200)
+Holiday Photo 02.JPG -> watermarked\Holiday Photo 02.JPG (300x200)
+logo.png -> watermarked\logo.png (240x120)
+palette-demo.png -> watermarked\palette-demo.png (200x100)
+photo-portrait.jpg -> watermarked\photo-portrait.jpg (300x200)
+Screenshot 2026-03-01 at 09.30.15.png -> watermarked\Screenshot 2026-03-01 at 09.30.15.png (160x100)
+Screenshot 2026-03-02 at 14.05.00.png -> watermarked\Screenshot 2026-03-02 at 14.05.00.png (160x100)
+Watermarked 8 image(s).
 ```
 
 ## Notes
