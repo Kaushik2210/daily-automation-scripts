@@ -51,7 +51,7 @@ The table below is rebuilt by `python tools/update_index.py` from `PLAN.md` and 
 
 <!-- INDEX:START -->
 
-**Progress: 170/300 done**
+**Progress: 174/300 done**
 
 | Day | # | Script | Category | Source | Live |
 | --- | --- | --- | --- | --- | --- |
@@ -225,6 +225,10 @@ The table below is rebuilt by `python tools/update_index.py` from `PLAN.md` and 
 | 17 | 08 | whois-lookup | security | [whois-lookup](scripts/security/whois-lookup/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/security/whois-lookup/) |
 | 17 | 09 | security-header-checker | security | [security-header-checker](scripts/security/security-header-checker/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/security/security-header-checker/) |
 | 17 | 10 | cert-chain-viewer | security | [cert-chain-viewer](scripts/security/cert-chain-viewer/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/security/cert-chain-viewer/) |
+| 18 | 01 | image-compressor | media | [image-compressor](scripts/media/image-compressor/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/media/image-compressor/) |
+| 18 | 02 | image-watermarker | media | [image-watermarker](scripts/media/image-watermarker/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/media/image-watermarker/) |
+| 18 | 03 | contact-sheet-maker | media | [contact-sheet-maker](scripts/media/contact-sheet-maker/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/media/contact-sheet-maker/) |
+| 18 | 04 | exif-stripper | media | [exif-stripper](scripts/media/exif-stripper/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/media/exif-stripper/) |
 
 <!-- INDEX:END -->
 

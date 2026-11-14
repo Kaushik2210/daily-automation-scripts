@@ -209,10 +209,10 @@ Difficulty: easy on days 1-10, medium on days 11-20, more advanced on days 21-30
 - [x] 10. cert-chain-viewer - Print a site's TLS certificate chain (security)
 
 ## Day 18 - Media in bulk
-- [ ] 01. image-compressor - Compress images in bulk with a quality setting (media)
-- [ ] 02. image-watermarker - Add a text watermark to images (media)
-- [ ] 03. contact-sheet-maker - Build a contact sheet from a folder of images (media)
-- [ ] 04. exif-stripper - Remove EXIF and location data from photos (media)
+- [x] 01. image-compressor - Compress images in bulk with a quality setting (media)
+- [x] 02. image-watermarker - Add a text watermark to images (media)
+- [x] 03. contact-sheet-maker - Build a contact sheet from a folder of images (media)
+- [x] 04. exif-stripper - Remove EXIF and location data from photos (media)
 - [ ] 05. audio-metadata-reader - Read tags and duration from audio files (media)
 - [ ] 06. video-info-reporter - Report codec, size and duration via ffprobe (media)
 - [ ] 07. similar-image-finder - Find near-duplicate images with perceptual hashes (media)

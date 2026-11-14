@@ -579,6 +579,26 @@
    0
   ]
  },
+ "media/contact-sheet-maker": {
+  "values": {
+   "folder": "sprites/",
+   "columns": "3",
+   "thumb": "96",
+   "apply": true
+  },
+  "exit": [
+   0
+  ]
+ },
+ "media/exif-stripper": {
+  "values": {
+   "folder": ".",
+   "apply": true
+  },
+  "exit": [
+   0
+  ]
+ },
  "media/gif-frame-extractor": {
   "values": {
    "gif": "animated.gif"
@@ -593,6 +613,16 @@
     "."
    ],
    "contrast": true
+  },
+  "exit": [
+   0
+  ]
+ },
+ "media/image-compressor": {
+  "values": {
+   "folder": ".",
+   "quality": "40",
+   "apply": true
   },
   "exit": [
    0
@@ -640,6 +670,17 @@
    ],
    "rotate": 90,
    "fix_orientation": true
+  },
+  "exit": [
+   0
+  ]
+ },
+ "media/image-watermarker": {
+  "values": {
+   "folder": ".",
+   "text": "(c) Kaushik 2026",
+   "position": "bottom-left",
+   "apply": true
   },
   "exit": [
    0
