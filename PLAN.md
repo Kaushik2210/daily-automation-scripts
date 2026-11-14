@@ -217,8 +217,8 @@ Difficulty: easy on days 1-10, medium on days 11-20, more advanced on days 21-30
 - [x] 06. video-info-reporter - Report codec, size and duration via ffprobe (media)
 - [x] 07. similar-image-finder - Find near-duplicate images with perceptual hashes (media)
 - [x] 08. palette-extractor - Extract dominant colors from an image (media)
-- [ ] 09. video-frame-grabber - Save frames from a video at intervals via ffmpeg (media)
-- [ ] 10. sprite-sheet-builder - Pack images into a single sprite sheet (media)
+- [x] 09. video-frame-grabber - Save frames from a video at intervals via ffmpeg (media)
+- [x] 10. sprite-sheet-builder - Pack images into a single sprite sheet (media)
 
 ## Day 19 - Text and documents
 - [ ] 01. markdown-link-checker - Check links inside markdown files (text)

@@ -738,11 +738,31 @@
    0
   ]
  },
+ "media/sprite-sheet-builder": {
+  "values": {
+   "folder": "sprites/",
+   "columns": "3",
+   "apply": true
+  },
+  "exit": [
+   0
+  ]
+ },
  "media/thumbnail-generator": {
   "values": {
    "folder": ".",
    "size": "64",
    "square": true
+  },
+  "exit": [
+   0
+  ]
+ },
+ "media/video-frame-grabber": {
+  "values": {
+   "video": "holiday.mp4",
+   "duration": "95",
+   "every": "30"
   },
   "exit": [
    0

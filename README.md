@@ -51,7 +51,7 @@ The table below is rebuilt by `python tools/update_index.py` from `PLAN.md` and 
 
 <!-- INDEX:START -->
 
-**Progress: 178/300 done**
+**Progress: 180/300 done**
 
 | Day | # | Script | Category | Source | Live |
 | --- | --- | --- | --- | --- | --- |
@@ -233,6 +233,8 @@ The table below is rebuilt by `python tools/update_index.py` from `PLAN.md` and 
 | 18 | 06 | video-info-reporter | media | [video-info-reporter](scripts/media/video-info-reporter/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/media/video-info-reporter/) |
 | 18 | 07 | similar-image-finder | media | [similar-image-finder](scripts/media/similar-image-finder/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/media/similar-image-finder/) |
 | 18 | 08 | palette-extractor | media | [palette-extractor](scripts/media/palette-extractor/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/media/palette-extractor/) |
+| 18 | 09 | video-frame-grabber | media | [video-frame-grabber](scripts/media/video-frame-grabber/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/media/video-frame-grabber/) |
+| 18 | 10 | sprite-sheet-builder | media | [sprite-sheet-builder](scripts/media/sprite-sheet-builder/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/media/sprite-sheet-builder/) |
 
 <!-- INDEX:END -->
 
