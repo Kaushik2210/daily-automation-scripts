@@ -20,7 +20,14 @@ Frames are packed in file-name order, so name them `frame-01.png`, `frame-02.png
 python sprite_sheet_builder.py sprites/ --columns 3 --apply
 ```
 ```
-{{OUTPUT}}
+6 frame(s), cell 36x36, sheet 116x78
+  frame-01.png             at (4, 4) 32x32
+  frame-02.png             at (44, 2) 28x36
+  frame-03.png             at (78, 5) 36x30
+  frame-04.png             at (4, 42) 32x32
+  frame-05.png             at (46, 46) 24x24
+  frame-06.png             at (79, 41) 34x34
+Saved spritesheet.png and spritesheet.json in sprites.
 ```
 
 ## Notes
