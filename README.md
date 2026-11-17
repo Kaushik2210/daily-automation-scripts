@@ -51,7 +51,7 @@ The table below is rebuilt by `python tools/update_index.py` from `PLAN.md` and 
 
 <!-- INDEX:START -->
 
-**Progress: 186/300 done**
+**Progress: 190/300 done**
 
 | Day | # | Script | Category | Source | Live |
 | --- | --- | --- | --- | --- | --- |
@@ -241,6 +241,10 @@ The table below is rebuilt by `python tools/update_index.py` from `PLAN.md` and 
 | 19 | 04 | text-summarizer | text | [text-summarizer](scripts/text/text-summarizer/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/text/text-summarizer/) |
 | 19 | 05 | keyword-extractor | text | [keyword-extractor](scripts/text/keyword-extractor/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/text/keyword-extractor/) |
 | 19 | 06 | wordlist-spellcheck | text | [wordlist-spellcheck](scripts/text/wordlist-spellcheck/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/text/wordlist-spellcheck/) |
+| 19 | 07 | docx-to-markdown | pdf-docs | [docx-to-markdown](scripts/pdf-docs/docx-to-markdown/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/pdf-docs/docx-to-markdown/) |
+| 19 | 08 | readability-scorer | text | [readability-scorer](scripts/text/readability-scorer/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/text/readability-scorer/) |
+| 19 | 09 | srt-shifter | text | [srt-shifter](scripts/text/srt-shifter/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/text/srt-shifter/) |
+| 19 | 10 | glossary-builder | text | [glossary-builder](scripts/text/glossary-builder/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/text/glossary-builder/) |
 
 <!-- INDEX:END -->
 

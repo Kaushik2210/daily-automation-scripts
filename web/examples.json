@@ -991,6 +991,16 @@
    0
   ]
  },
+ "pdf-docs/docx-to-markdown": {
+  "values": {
+   "docx": [
+    "report.docx"
+   ]
+  },
+  "exit": [
+   0
+  ]
+ },
  "pdf-docs/images-to-pdf": {
   "values": {
    "images": [
@@ -1510,6 +1520,17 @@
    0
   ]
  },
+ "text/glossary-builder": {
+  "values": {
+   "notes": [
+    "study-notes.md"
+   ],
+   "include_undefined": true
+  },
+  "exit": [
+   0
+  ]
+ },
  "text/keyword-extractor": {
   "values": {
    "paths": [
@@ -1567,6 +1588,17 @@
    0
   ]
  },
+ "text/readability-scorer": {
+  "values": {
+   "files": [
+    "plain-english.txt",
+    "article-long.txt"
+   ]
+  },
+  "exit": [
+   0
+  ]
+ },
  "text/readme-linter": {
   "values": {
    "readme": "README.md"
@@ -1581,6 +1613,16 @@
     "Crème Brûlée & Café",
     "Hello, World!"
    ]
+  },
+  "exit": [
+   0
+  ]
+ },
+ "text/srt-shifter": {
+  "values": {
+   "srt": "subtitles.srt",
+   "shift": "2.5",
+   "apply": true
   },
   "exit": [
    0

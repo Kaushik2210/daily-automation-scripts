@@ -227,10 +227,10 @@ Difficulty: easy on days 1-10, medium on days 11-20, more advanced on days 21-30
 - [x] 04. text-summarizer - Extractive summary of a long text (text)
 - [x] 05. keyword-extractor - Pull top keywords from documents (text)
 - [x] 06. wordlist-spellcheck - Find unknown words against a word list (text)
-- [ ] 07. docx-to-markdown - Convert Word documents to markdown (pdf-docs)
-- [ ] 08. readability-scorer - Compute reading ease and grade level (text)
-- [ ] 09. srt-shifter - Shift subtitle timings by an offset (text)
-- [ ] 10. glossary-builder - Build a glossary from bolded terms in notes (text)
+- [x] 07. docx-to-markdown - Convert Word documents to markdown (pdf-docs)
+- [x] 08. readability-scorer - Compute reading ease and grade level (text)
+- [x] 09. srt-shifter - Shift subtitle timings by an offset (text)
+- [x] 10. glossary-builder - Build a glossary from bolded terms in notes (text)
 
 ## Day 20 - DevOps tooling
 - [ ] 01. dockerfile-linter - Flag common Dockerfile mistakes (devops)
