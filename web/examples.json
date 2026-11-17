@@ -1510,6 +1510,17 @@
    0
   ]
  },
+ "text/keyword-extractor": {
+  "values": {
+   "paths": [
+    "articles/"
+   ],
+   "top": "4"
+  },
+  "exit": [
+   0
+  ]
+ },
  "text/line-deduper": {
   "values": {
    "file": "notes.txt",
@@ -1584,6 +1595,16 @@
    0
   ]
  },
+ "text/text-summarizer": {
+  "values": {
+   "file": "article-long.txt",
+   "sentences": "3",
+   "bullets": true
+  },
+  "exit": [
+   0
+  ]
+ },
  "text/whitespace-stripper": {
   "values": {
    "paths": [
@@ -1605,6 +1626,17 @@
   },
   "exit": [
    0
+  ]
+ },
+ "text/wordlist-spellcheck": {
+  "values": {
+   "files": [
+    "draft.txt"
+   ],
+   "wordlist": "wordlist-small.txt"
+  },
+  "exit": [
+   1
   ]
  },
  "web-scraping/broken-link-finder": {

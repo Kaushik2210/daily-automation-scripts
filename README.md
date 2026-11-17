@@ -51,7 +51,7 @@ The table below is rebuilt by `python tools/update_index.py` from `PLAN.md` and 
 
 <!-- INDEX:START -->
 
-**Progress: 183/300 done**
+**Progress: 186/300 done**
 
 | Day | # | Script | Category | Source | Live |
 | --- | --- | --- | --- | --- | --- |
@@ -238,6 +238,9 @@ The table below is rebuilt by `python tools/update_index.py` from `PLAN.md` and 
 | 19 | 01 | markdown-link-checker | text | [markdown-link-checker](scripts/text/markdown-link-checker/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/text/markdown-link-checker/) |
 | 19 | 02 | markdown-to-html | text | [markdown-to-html](scripts/text/markdown-to-html/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/text/markdown-to-html/) |
 | 19 | 03 | readme-linter | text | [readme-linter](scripts/text/readme-linter/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/text/readme-linter/) |
+| 19 | 04 | text-summarizer | text | [text-summarizer](scripts/text/text-summarizer/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/text/text-summarizer/) |
+| 19 | 05 | keyword-extractor | text | [keyword-extractor](scripts/text/keyword-extractor/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/text/keyword-extractor/) |
+| 19 | 06 | wordlist-spellcheck | text | [wordlist-spellcheck](scripts/text/wordlist-spellcheck/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/text/wordlist-spellcheck/) |
 
 <!-- INDEX:END -->
 
