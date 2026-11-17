@@ -17,7 +17,23 @@ Folders are searched recursively for `.txt`, `.md`, `.markdown` and `.rst` files
 python keyword_extractor.py articles/ --top 4
 ```
 ```
-{{OUTPUT}}
+batteries.txt  (23 words)
+    batteries                x2
+    battery                  x1
+    changes                  x1
+    falling                  x1
+solar.txt  (25 words)
+    solar                    x4
+    panels                   x2
+    cheaper                  x1
+    evening                  x1
+wind.txt  (26 words)
+    wind                     x5
+    farms                    x2
+    air                      x1
+    blows                    x1
+
+Keywords are weighted so that words found in every document rank lower.
 ```
 
 ## Notes
