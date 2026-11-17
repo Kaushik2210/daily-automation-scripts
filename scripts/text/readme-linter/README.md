@@ -17,7 +17,22 @@ The exit code is 1 when the score is below `--min-score` or any check FAILs, so 
 python readme_linter.py README.md
 ```
 ```
-{{OUTPUT}}
+README.md: score 55/100
+
+  [PASS] Title: Demo Project
+  [FAIL] No short description under the title (what is this and who is it for?)
+  [PASS] Has the install section
+  [PASS] Has the usage section
+  [FAIL] Missing the license section
+  [WARN] Missing the contributing section
+  [WARN] Missing the features or overview section
+  [WARN] No code blocks: show a command or snippet people can copy
+  [PASS] Heading levels are in order
+  [WARN] Duplicate headings: usage
+  [PASS] No TODO/placeholder text
+  [WARN] Only 13 words; most READMEs need more detail
+
+2 problem(s), 5 suggestion(s).
 ```
 
 ## Notes
