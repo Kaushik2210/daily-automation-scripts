@@ -18,7 +18,13 @@ Offsets can be `2.5` or `+2.5s` (seconds), `1500ms`, `1m30s` or a clock time suc
 python srt_shifter.py subtitles.srt --shift 2.5 --apply
 ```
 ```
-{{OUTPUT}}
+5 cue(s), shifting by +2.5s
+  00:00:01,000 -> 00:00:03,500  Welcome back to the channel.
+  00:00:04,000 -> 00:00:06,500  Today we are building
+  00:00:08,100 -> 00:00:10,600  First, create a new folder.
+  00:01:02,500 -> 00:01:05,000  Now let's run it!
+  01:00:00,000 -> 01:00:02,500  See you next time.
+Saved subtitles.shifted.srt (5 cue(s)).
 ```
 
 ## Notes
