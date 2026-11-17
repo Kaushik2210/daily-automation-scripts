@@ -17,7 +17,8 @@ Dry run by default: it converts in memory and reports the title and size. With `
 python markdown_to_html.py meeting-notes.md --apply
 ```
 ```
-{{OUTPUT}}
+meeting-notes.md -> meeting-notes.html: "Team meeting", 1,827 characters, 3 heading(s)
+Saved meeting-notes.html.
 ```
 
 ## Notes
