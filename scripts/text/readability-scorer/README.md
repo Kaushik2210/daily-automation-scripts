@@ -17,7 +17,22 @@ python readability_scorer.py FILE [FILE ...] [--target-grade 9]
 python readability_scorer.py plain-english.txt article-long.txt
 ```
 ```
-{{OUTPUT}}
+plain-english.txt: 42 words, 9 sentences (4.7 words each, 0% long words)
+  Reading ease   117.5  very easy (about 5th grade)
+  Flesch-Kincaid grade  0.0
+  Gunning fog    grade  1.9
+  Coleman-Liau   grade  0.0
+  SMOG           grade  3.1
+  ARI            grade  0.0
+  Average grade   0.0
+article-long.txt: 245 words, 18 sentences (13.6 words each, 15% long words)
+  Reading ease    53.5  fairly difficult (10th-12th grade)
+  Flesch-Kincaid grade  9.2
+  Gunning fog    grade 11.3
+  Coleman-Liau   grade 11.9
+  SMOG           grade 11.2
+  ARI            grade  9.3
+  Average grade  10.6
 ```
 
 ## Notes
