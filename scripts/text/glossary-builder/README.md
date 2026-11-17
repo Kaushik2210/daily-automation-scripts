@@ -17,7 +17,51 @@ The result is printed unless you give `-o` (which refuses to overwrite an existi
 python glossary_builder.py study-notes.md --include-undefined
 ```
 ```
-{{OUTPUT}}
+# Glossary
+
+## B
+
+**Bandwidth**  
+how much data a connection can carry per second.
+
+## D
+
+**DNS**  
+translates names such as example.com into IP addresses.
+
+## L
+
+**Latency**  
+the time a message takes to travel from sender to receiver.
+
+## P
+
+**Packet**  
+a small chunk of data sent across a network.
+
+## T
+
+**TCP**  
+reliable, ordered delivery of data.
+
+## U
+
+**UDP**  
+faster but without delivery guarantees.
+
+**router**  
+(no definition yet)
+
+**firewall**  
+(no definition yet)
+
+**OSI model**  
+(no definition yet)
+
+**bold words**  
+(no definition yet)
+
+1 term(s) were defined more than once (first definition kept).
 ```
 
 ## Notes
