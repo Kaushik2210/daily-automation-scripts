@@ -51,7 +51,7 @@ The table below is rebuilt by `python tools/update_index.py` from `PLAN.md` and 
 
 <!-- INDEX:START -->
 
-**Progress: 180/300 done**
+**Progress: 183/300 done**
 
 | Day | # | Script | Category | Source | Live |
 | --- | --- | --- | --- | --- | --- |
@@ -235,6 +235,9 @@ The table below is rebuilt by `python tools/update_index.py` from `PLAN.md` and 
 | 18 | 08 | palette-extractor | media | [palette-extractor](scripts/media/palette-extractor/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/media/palette-extractor/) |
 | 18 | 09 | video-frame-grabber | media | [video-frame-grabber](scripts/media/video-frame-grabber/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/media/video-frame-grabber/) |
 | 18 | 10 | sprite-sheet-builder | media | [sprite-sheet-builder](scripts/media/sprite-sheet-builder/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/media/sprite-sheet-builder/) |
+| 19 | 01 | markdown-link-checker | text | [markdown-link-checker](scripts/text/markdown-link-checker/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/text/markdown-link-checker/) |
+| 19 | 02 | markdown-to-html | text | [markdown-to-html](scripts/text/markdown-to-html/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/text/markdown-to-html/) |
+| 19 | 03 | readme-linter | text | [readme-linter](scripts/text/readme-linter/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/text/readme-linter/) |
 
 <!-- INDEX:END -->
 

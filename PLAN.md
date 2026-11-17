@@ -221,9 +221,9 @@ Difficulty: easy on days 1-10, medium on days 11-20, more advanced on days 21-30
 - [x] 10. sprite-sheet-builder - Pack images into a single sprite sheet (media)
 
 ## Day 19 - Text and documents
-- [ ] 01. markdown-link-checker - Check links inside markdown files (text)
-- [ ] 02. markdown-to-html - Convert markdown to a styled HTML page (text)
-- [ ] 03. readme-linter - Check a README for missing sections (text)
+- [x] 01. markdown-link-checker - Check links inside markdown files (text)
+- [x] 02. markdown-to-html - Convert markdown to a styled HTML page (text)
+- [x] 03. readme-linter - Check a README for missing sections (text)
 - [ ] 04. text-summarizer - Extractive summary of a long text (text)
 - [ ] 05. keyword-extractor - Pull top keywords from documents (text)
 - [ ] 06. wordlist-spellcheck - Find unknown words against a word list (text)

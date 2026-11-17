@@ -1529,12 +1529,39 @@
    0
   ]
  },
+ "text/markdown-link-checker": {
+  "values": {
+   "paths": [
+    "handbook/"
+   ]
+  },
+  "exit": [
+   1
+  ]
+ },
+ "text/markdown-to-html": {
+  "values": {
+   "markdown": "meeting-notes.md",
+   "apply": true
+  },
+  "exit": [
+   0
+  ]
+ },
  "text/markdown-toc-generator": {
   "values": {
    "file": "README.md"
   },
   "exit": [
    0
+  ]
+ },
+ "text/readme-linter": {
+  "values": {
+   "readme": "README.md"
+  },
+  "exit": [
+   1
   ]
  },
  "text/slugify-text": {
