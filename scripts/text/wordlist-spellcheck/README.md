@@ -17,7 +17,18 @@ Web addresses, email addresses, `inline code` and ALL-CAPS words are skipped. `-
 python wordlist_spellcheck.py draft.txt --wordlist wordlist-small.txt
 ```
 ```
-{{OUTPUT}}
+draft.txt: 9 unknown word(s)
+  jumpd          line 1        did you mean: jumps
+  chek           line 2        did you mean: check
+  befor          line 2        did you mean: before, for
+  leter          line 2        did you mean: letter
+  freind         line 2        did you mean: friend
+  thier          line 3        did you mean: there, their, other
+  watter         line 3        did you mean: water
+  kaushik        line 4
+  zorblax        line 4
+
+9 word(s) to check against wordlist-small.txt (143 known words).
 ```
 
 ## Notes
