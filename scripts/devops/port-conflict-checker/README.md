@@ -18,7 +18,15 @@ Without `--static` each TCP port is also tested on this computer: `FREE` ports a
 python port_conflict_checker.py --compose docker-compose.yml --static
 ```
 ```
-{{OUTPUT}}
+5432/tcp DUPLICATE (docker-compose.yml:db and docker-compose.yml:cache) docker-compose.yml:cache, docker-compose.yml:db
+   6380/tcp ok                                 docker-compose.yml:cache
+   6381/tcp ok                                 docker-compose.yml:cache
+   6382/tcp ok                                 docker-compose.yml:cache
+   8000/tcp DUPLICATE (docker-compose.yml:web and docker-compose.yml:api) docker-compose.yml:api, docker-compose.yml:web
+   8443/tcp ok                                 docker-compose.yml:web
+   9090/tcp ok                                 docker-compose.yml:api
+
+7 port(s) checked: 2 problem(s). Machine check skipped (--static).
 ```
 
 ## Notes
