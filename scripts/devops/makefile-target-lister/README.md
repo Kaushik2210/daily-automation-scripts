@@ -23,7 +23,18 @@ test: ## Run the tests
 python makefile_target_lister.py Makefile --all
 ```
 ```
-{{OUTPUT}}
+Development
+  install  Install the dependencies
+  test     Run the test suite
+  lint     Check the code style
+  build    Build the distributable package  (needs: lint, test)
+
+Housekeeping
+  clean    Remove build output and caches
+  run      (no description)
+  docker   Build the Docker image
+
+7 target(s) listed.
 ```
 
 ## Notes
