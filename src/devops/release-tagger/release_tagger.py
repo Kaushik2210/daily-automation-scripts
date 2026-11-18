@@ -128,7 +128,13 @@ def main(argv=None):
     except OSError:
         notes = "\n".join(f"- {line}" for key in ("breaking", "feature", "fix")
                           for line in groups[key])
-        git(args.repo, "tag", "-a", new, "-m", f"Release {new}\n\n{notes}")
+        try:
+            git(args.repo, "tag", "-a", new, "-m", f"Release {new}\n\n{notes}")
+        except OSError as err:
+            print(f"Couldn't create the tag: {err}\n"
+                  "(git needs your name and email: git config user.name / user.email)",
+                  file=sys.stderr)
+            return 1
         print(f"Created tag {new}. Push it with: git push origin {new}")
         return 0
     print(f"The tag {new} already exists; nothing was changed.", file=sys.stderr)
