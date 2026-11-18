@@ -51,7 +51,7 @@ The table below is rebuilt by `python tools/update_index.py` from `PLAN.md` and 
 
 <!-- INDEX:START -->
 
-**Progress: 196/300 done**
+**Progress: 200/300 done**
 
 | Day | # | Script | Category | Source | Live |
 | --- | --- | --- | --- | --- | --- |
@@ -251,6 +251,10 @@ The table below is rebuilt by `python tools/update_index.py` from `PLAN.md` and 
 | 20 | 04 | ci-config-validator | devops | [ci-config-validator](scripts/devops/ci-config-validator/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/devops/ci-config-validator/) |
 | 20 | 05 | makefile-target-lister | devops | [makefile-target-lister](scripts/devops/makefile-target-lister/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/devops/makefile-target-lister/) |
 | 20 | 06 | port-conflict-checker | devops | [port-conflict-checker](scripts/devops/port-conflict-checker/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/devops/port-conflict-checker/) |
+| 20 | 07 | health-check-poller | devops | [health-check-poller](scripts/devops/health-check-poller/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/devops/health-check-poller/) |
+| 20 | 08 | cron-explainer | devops | [cron-explainer](scripts/devops/cron-explainer/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/devops/cron-explainer/) |
+| 20 | 09 | docker-image-reporter | devops | [docker-image-reporter](scripts/devops/docker-image-reporter/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/devops/docker-image-reporter/) |
+| 20 | 10 | release-tagger | devops | [release-tagger](scripts/devops/release-tagger/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/devops/release-tagger/) |
 
 <!-- INDEX:END -->
 

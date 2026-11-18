@@ -239,10 +239,10 @@ Difficulty: easy on days 1-10, medium on days 11-20, more advanced on days 21-30
 - [x] 04. ci-config-validator - Validate GitHub Actions workflow files (devops)
 - [x] 05. makefile-target-lister - List documented Makefile targets (devops)
 - [x] 06. port-conflict-checker - Check whether ports are free before starting services (devops)
-- [ ] 07. health-check-poller - Poll health endpoints and report failures (devops)
-- [ ] 08. cron-explainer - Explain cron expressions in plain English (devops)
-- [ ] 09. docker-image-reporter - Report local Docker image sizes (devops)
-- [ ] 10. release-tagger - Bump semantic version tags from commit history (devops)
+- [x] 07. health-check-poller - Poll health endpoints and report failures (devops)
+- [x] 08. cron-explainer - Explain cron expressions in plain English (devops)
+- [x] 09. docker-image-reporter - Report local Docker image sizes (devops)
+- [x] 10. release-tagger - Bump semantic version tags from commit history (devops)
 
 ## Day 21 - Desktop helpers
 - [ ] 01. clipboard-history-logger - Log clipboard changes to a searchable file (system)
