@@ -17,7 +17,17 @@ Dry run by default: it prints the template and says what it would write. With `-
 python env_template_generator.py app.env --keep-safe
 ```
 ```
-{{OUTPUT}}
+app.env: 5 variable(s), 4 value(s) removed
+
+API_KEY=
+DB_PASSWORD=
+NAME=
+EMPTY=
+TOKEN=
+
+app.env.example already exists and was not touched.
+  Missing from it: NAME, EMPTY
+  Only in it (not in app.env): SMTP_HOST
 ```
 
 ## Notes
