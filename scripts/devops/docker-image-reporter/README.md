@@ -18,7 +18,19 @@ Without options it runs `docker images --format "{{json .}}"` for you. `--from-f
 python docker_image_reporter.py --from-file docker-images.jsonl --top 6
 ```
 ```
-{{OUTPUT}}
+IMAGE                           SIZE  CREATED        ID
+node:20                       1.1 GB  2 months ago   c3d4e5f6a1b2  <- large
+python:3.12                   1.0 GB  3 weeks ago    a1b2c3d4e5f6  <- large
+myapp:latest                845.0 MB  2 days ago     f6a1b2c3d4e5  <- large
+<none>                      845.0 MB  3 days ago     1b2c3d4e5f6a
+myapp:1.4.0                 843.0 MB  2 weeks ago    0a1b2c3d4e5f  <- large
+postgres:16                 432.0 MB  5 weeks ago    d4e5f6a1b2c3
+... and 5 more
+
+11 image(s), 5.6 GB in total (shared layers are counted once per image, so the real disk use is lower).
+2 dangling image(s) using 1.1 GB: remove them with 'docker image prune'.
+myapp has 2 tags (latest, 1.4.0) totalling 1.7 GB: old tags may be removable.
+python has 2 tags (3.12, 3.12-slim) totalling 1.2 GB: old tags may be removable.
 ```
 
 ## Notes
