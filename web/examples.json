@@ -96,6 +96,16 @@
    0
   ]
  },
+ "devops/ci-config-validator": {
+  "values": {
+   "paths": [
+    "workflows/"
+   ]
+  },
+  "exit": [
+   1
+  ]
+ },
  "devops/dockerfile-linter": {
   "values": {
    "dockerfile": "Dockerfile"
@@ -111,6 +121,26 @@
   },
   "exit": [
    0,
+   1
+  ]
+ },
+ "devops/makefile-target-lister": {
+  "values": {
+   "makefile": "Makefile",
+   "all": true
+  },
+  "exit": [
+   0
+  ]
+ },
+ "devops/port-conflict-checker": {
+  "values": {
+   "compose": [
+    "docker-compose.yml"
+   ],
+   "static": true
+  },
+  "exit": [
    1
   ]
  },

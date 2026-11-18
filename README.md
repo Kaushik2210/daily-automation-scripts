@@ -51,7 +51,7 @@ The table below is rebuilt by `python tools/update_index.py` from `PLAN.md` and 
 
 <!-- INDEX:START -->
 
-**Progress: 193/300 done**
+**Progress: 196/300 done**
 
 | Day | # | Script | Category | Source | Live |
 | --- | --- | --- | --- | --- | --- |
@@ -248,6 +248,9 @@ The table below is rebuilt by `python tools/update_index.py` from `PLAN.md` and 
 | 20 | 01 | dockerfile-linter | devops | [dockerfile-linter](scripts/devops/dockerfile-linter/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/devops/dockerfile-linter/) |
 | 20 | 02 | env-template-generator | devops | [env-template-generator](scripts/devops/env-template-generator/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/devops/env-template-generator/) |
 | 20 | 03 | requirements-checker | devops | [requirements-checker](scripts/devops/requirements-checker/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/devops/requirements-checker/) |
+| 20 | 04 | ci-config-validator | devops | [ci-config-validator](scripts/devops/ci-config-validator/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/devops/ci-config-validator/) |
+| 20 | 05 | makefile-target-lister | devops | [makefile-target-lister](scripts/devops/makefile-target-lister/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/devops/makefile-target-lister/) |
+| 20 | 06 | port-conflict-checker | devops | [port-conflict-checker](scripts/devops/port-conflict-checker/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/devops/port-conflict-checker/) |
 
 <!-- INDEX:END -->
 
