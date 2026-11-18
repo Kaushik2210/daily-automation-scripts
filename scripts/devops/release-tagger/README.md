@@ -18,7 +18,26 @@ Dry run by default. With `--apply` the tool creates an annotated tag such as `v1
 python release_tagger.py --log-file commits.txt --current v1.4.2
 ```
 ```
-{{OUTPUT}}
+Current version: v1.4.2   (8 commit(s) since)
+
+Breaking changes:
+  - feat!: remove the deprecated v1 endpoints
+
+Features:
+  - feat(api): add pagination to the list endpoint
+
+Fixes:
+  - fix: handle empty responses from the billing service
+  - fix(ui): correct the dark mode contrast on buttons
+
+Other (no release on their own):
+  - docs: explain the retry settings
+  - chore: bump dependencies
+  - refactor: split the settings module
+  - Update README wording
+
+Next version: v2.0.0  (major bump)
+Dry run. Use --apply to create the tag in the repository.
 ```
 
 ## Notes
