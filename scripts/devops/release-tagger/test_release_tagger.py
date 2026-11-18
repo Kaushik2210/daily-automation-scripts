@@ -68,7 +68,10 @@ def test_cli_argument_errors(tmp_path):
 
 
 @pytest.mark.skipif(not shutil.which("git"), reason="git is not installed")
-def test_real_repository_dry_run_and_apply(tmp_path, capsys):
+def test_real_repository_dry_run_and_apply(tmp_path, capsys, monkeypatch):
+    for key, value in (("NAME", "Test"), ("EMAIL", "t@example.com")):
+        monkeypatch.setenv(f"GIT_AUTHOR_{key}", value)
+        monkeypatch.setenv(f"GIT_COMMITTER_{key}", value)
     def run(*args):
         subprocess.run(["git", "-C", str(tmp_path), "-c", "user.name=T", "-c",
                         "user.email=t@example.com", "-c", "commit.gpgsign=false", *args],
@@ -90,3 +93,19 @@ def test_real_repository_dry_run_and_apply(tmp_path, capsys):
     capsys.readouterr()
     assert rt.main(["--repo", str(tmp_path)]) == 0
     assert "No new commits since v0.2.0" in capsys.readouterr().out
+
+
+def test_apply_reports_a_missing_git_identity(tmp_path, monkeypatch, capsys):
+    def fake_git(repo, *args):
+        if args[0] == "describe":
+            return "v1.0.0\n"
+        if args[0] == "log":
+            return "fix: a\x1e"
+        if args[0] == "rev-parse":
+            raise OSError("no such tag")
+        raise OSError("fatal: unable to auto-detect email address")
+
+    monkeypatch.setattr(rt, "git", fake_git)
+    assert rt.main(["--repo", str(tmp_path), "--apply"]) == 1
+    err = capsys.readouterr().err
+    assert "Couldn't create the tag" in err and "user.name" in err
