@@ -96,6 +96,33 @@
    0
   ]
  },
+ "devops/dockerfile-linter": {
+  "values": {
+   "dockerfile": "Dockerfile"
+  },
+  "exit": [
+   1
+  ]
+ },
+ "devops/env-template-generator": {
+  "values": {
+   "env_file": "app.env",
+   "keep_safe": true
+  },
+  "exit": [
+   0,
+   1
+  ]
+ },
+ "devops/requirements-checker": {
+  "values": {
+   "requirements": "requirements-demo.txt",
+   "latest": "latest-versions.json"
+  },
+  "exit": [
+   1
+  ]
+ },
  "email/attachment-lister": {
   "values": {
    "mbox": "inbox.mbox",

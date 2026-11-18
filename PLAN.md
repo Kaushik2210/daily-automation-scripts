@@ -233,9 +233,9 @@ Difficulty: easy on days 1-10, medium on days 11-20, more advanced on days 21-30
 - [x] 10. glossary-builder - Build a glossary from bolded terms in notes (text)
 
 ## Day 20 - DevOps tooling
-- [ ] 01. dockerfile-linter - Flag common Dockerfile mistakes (devops)
-- [ ] 02. env-template-generator - Make .env.example from a real .env without values (devops)
-- [ ] 03. requirements-checker - Report outdated pinned requirements (devops)
+- [x] 01. dockerfile-linter - Flag common Dockerfile mistakes (devops)
+- [x] 02. env-template-generator - Make .env.example from a real .env without values (devops)
+- [x] 03. requirements-checker - Report outdated pinned requirements (devops)
 - [ ] 04. ci-config-validator - Validate GitHub Actions workflow files (devops)
 - [ ] 05. makefile-target-lister - List documented Makefile targets (devops)
 - [ ] 06. port-conflict-checker - Check whether ports are free before starting services (devops)

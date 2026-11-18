@@ -51,7 +51,7 @@ The table below is rebuilt by `python tools/update_index.py` from `PLAN.md` and 
 
 <!-- INDEX:START -->
 
-**Progress: 190/300 done**
+**Progress: 193/300 done**
 
 | Day | # | Script | Category | Source | Live |
 | --- | --- | --- | --- | --- | --- |
@@ -245,6 +245,9 @@ The table below is rebuilt by `python tools/update_index.py` from `PLAN.md` and 
 | 19 | 08 | readability-scorer | text | [readability-scorer](scripts/text/readability-scorer/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/text/readability-scorer/) |
 | 19 | 09 | srt-shifter | text | [srt-shifter](scripts/text/srt-shifter/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/text/srt-shifter/) |
 | 19 | 10 | glossary-builder | text | [glossary-builder](scripts/text/glossary-builder/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/text/glossary-builder/) |
+| 20 | 01 | dockerfile-linter | devops | [dockerfile-linter](scripts/devops/dockerfile-linter/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/devops/dockerfile-linter/) |
+| 20 | 02 | env-template-generator | devops | [env-template-generator](scripts/devops/env-template-generator/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/devops/env-template-generator/) |
+| 20 | 03 | requirements-checker | devops | [requirements-checker](scripts/devops/requirements-checker/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/devops/requirements-checker/) |
 
 <!-- INDEX:END -->
 
