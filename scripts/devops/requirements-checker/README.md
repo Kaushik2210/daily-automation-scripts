@@ -17,7 +17,13 @@ By default each package is looked up on PyPI over the internet. `--latest` reads
 python requirements_checker.py requirements-demo.txt --latest latest-versions.json
 ```
 ```
-{{OUTPUT}}
+!  flask              2.0.1      -> 3.0.3      major update
+!  requests           2.31.0     -> 2.32.3     minor update
+!  Jinja2             3.1.2      -> 3.1.4      patch update
+!  pytest             7.4.0      -> 8.3.3      major update
+?  internal-tool      0.4.2      could not check (not in the version file)
+
+5 pinned package(s): 4 outdated, 1 unchecked.
 ```
 
 ## Notes
