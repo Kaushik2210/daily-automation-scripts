@@ -22,7 +22,12 @@ Snippets live in `snippets.json` in your home folder, or the file you give with 
 python snippet_manager.py list --store snippets.json
 ```
 ```
-{{OUTPUT}}
+address               39 chars  used 4x  Kaushik 12 Park Street Bengaluru 560001
+meeting-reply         90 chars  used 9x  Thanks for the invite. I can join on {date} at {ti
+sig                   37 chars  used 31x  Best regards, Kaushik svk@example.com
+sql-active            62 chars  used 2x  SELECT * FROM users WHERE active = 1 ORDER BY crea
+
+4 snippet(s) in snippets.json.
 ```
 
 ## Notes
