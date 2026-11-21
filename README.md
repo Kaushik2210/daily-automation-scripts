@@ -51,7 +51,7 @@ The table below is rebuilt by `python tools/update_index.py` from `PLAN.md` and 
 
 <!-- INDEX:START -->
 
-**Progress: 210/300 done**
+**Progress: 213/300 done**
 
 | Day | # | Script | Category | Source | Live |
 | --- | --- | --- | --- | --- | --- |
@@ -265,6 +265,9 @@ The table below is rebuilt by `python tools/update_index.py` from `PLAN.md` and 
 | 21 | 08 | download-watcher | files | [download-watcher](scripts/files/download-watcher/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/files/download-watcher/) |
 | 21 | 09 | screenshot-indexer | media | [screenshot-indexer](scripts/media/screenshot-indexer/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/media/screenshot-indexer/) |
 | 21 | 10 | text-expander | text | [text-expander](scripts/text/text-expander/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/text/text-expander/) |
+| 22 | 01 | csv-schema-validator | data | [csv-schema-validator](scripts/data/csv-schema-validator/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/data/csv-schema-validator/) |
+| 22 | 02 | data-profiler | data | [data-profiler](scripts/data/data-profiler/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/data/data-profiler/) |
+| 22 | 03 | sqlite-csv-importer | data | [sqlite-csv-importer](scripts/data/sqlite-csv-importer/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/data/sqlite-csv-importer/) |
 
 <!-- INDEX:END -->
 

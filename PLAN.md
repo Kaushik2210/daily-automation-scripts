@@ -257,9 +257,9 @@ Difficulty: easy on days 1-10, medium on days 11-20, more advanced on days 21-30
 - [x] 10. text-expander - Expand abbreviations in text files from a map (text)
 
 ## Day 22 - Data pipelines
-- [ ] 01. csv-schema-validator - Validate CSV columns and types against a schema (data)
-- [ ] 02. data-profiler - Profile a dataset: nulls, uniques, distributions (data)
-- [ ] 03. sqlite-csv-importer - Load CSV files into SQLite tables (data)
+- [x] 01. csv-schema-validator - Validate CSV columns and types against a schema (data)
+- [x] 02. data-profiler - Profile a dataset: nulls, uniques, distributions (data)
+- [x] 03. sqlite-csv-importer - Load CSV files into SQLite tables (data)
 - [ ] 04. sqlite-query-cli - Run SQL against a SQLite file and print tables (data)
 - [ ] 05. json-schema-validator - Validate JSON files against a JSON Schema (data)
 - [ ] 06. data-anonymizer - Mask emails, names and phone numbers in a CSV (data)

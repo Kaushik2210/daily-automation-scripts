@@ -27,6 +27,8 @@ PYODIDE_PACKAGES = {"PIL": "pillow", "yaml": "pyyaml", "numpy": "numpy", "pandas
 WEB_OK_MARKER = "# web-ok:"
 # Packages that also need Pyodide's own helper packages to import (fpdf2 wants the ssl module).
 EXTRA_PACKAGES = {"fpdf": ["ssl"]}
+# Standard-library modules that Pyodide ships as separate packages to be loaded on demand.
+STDLIB_PACKAGES = {"sqlite3": "sqlite3"}
 PLAN_ITEM = re.compile(r"^- \[[ x]\] (\d\d)\. (\S+) - (.+) \(([a-z-]+)\)$")
 
 
@@ -54,6 +56,8 @@ def browser_support(source):
             reason = "it needs to run programs on your computer"
             return {"ok": False, "reason": reason, "packages": []}
         if top in sys.stdlib_module_names:
+            if top in STDLIB_PACKAGES:
+                packages.add(STDLIB_PACKAGES[top])
             continue
         if top in PYODIDE_PACKAGES:
             packages.add(PYODIDE_PACKAGES[top])

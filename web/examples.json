@@ -36,6 +36,15 @@
    0
   ]
  },
+ "data/csv-schema-validator": {
+  "values": {
+   "csv": "customers.csv",
+   "schema": "customers-schema.json"
+  },
+  "exit": [
+   1
+  ]
+ },
  "data/csv-splitter": {
   "values": {
    "file": "sales.csv",
@@ -58,6 +67,15 @@
   "values": {
    "file": "sales.csv",
    "align": "right"
+  },
+  "exit": [
+   0
+  ]
+ },
+ "data/data-profiler": {
+  "values": {
+   "csv": "customers.csv",
+   "columns": "age,status,score"
   },
   "exit": [
    0
@@ -91,6 +109,19 @@
  "data/json-yaml-converter": {
   "values": {
    "file": "config.yaml"
+  },
+  "exit": [
+   0
+  ]
+ },
+ "data/sqlite-csv-importer": {
+  "values": {
+   "csv": [
+    "customers.csv",
+    "orders.csv"
+   ],
+   "db": "demo.db",
+   "apply": true
   },
   "exit": [
    0
