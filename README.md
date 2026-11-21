@@ -51,7 +51,7 @@ The table below is rebuilt by `python tools/update_index.py` from `PLAN.md` and 
 
 <!-- INDEX:START -->
 
-**Progress: 203/300 done**
+**Progress: 206/300 done**
 
 | Day | # | Script | Category | Source | Live |
 | --- | --- | --- | --- | --- | --- |
@@ -258,6 +258,9 @@ The table below is rebuilt by `python tools/update_index.py` from `PLAN.md` and 
 | 21 | 01 | clipboard-history-logger | system | [clipboard-history-logger](scripts/system/clipboard-history-logger/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/system/clipboard-history-logger/) |
 | 21 | 02 | snippet-manager | notion-productivity | [snippet-manager](scripts/notion-productivity/snippet-manager/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/notion-productivity/snippet-manager/) |
 | 21 | 03 | active-window-logger | system | [active-window-logger](scripts/system/active-window-logger/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/system/active-window-logger/) |
+| 21 | 04 | screen-time-report | system | [screen-time-report](scripts/system/screen-time-report/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/system/screen-time-report/) |
+| 21 | 05 | wallpaper-rotator | media | [wallpaper-rotator](scripts/media/wallpaper-rotator/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/media/wallpaper-rotator/) |
+| 21 | 06 | reminder-scheduler | notion-productivity | [reminder-scheduler](scripts/notion-productivity/reminder-scheduler/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/notion-productivity/reminder-scheduler/) |
 
 <!-- INDEX:END -->
 

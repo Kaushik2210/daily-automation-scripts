@@ -871,6 +871,14 @@
    0
   ]
  },
+ "media/wallpaper-rotator": {
+  "values": {
+   "folder": "wallpapers/"
+  },
+  "exit": [
+   0
+  ]
+ },
  "notion-productivity/bookmark-deduper": {
   "values": {
    "export": "bookmarks.html"
@@ -1019,6 +1027,16 @@
   "values": {
    "action": "list",
    "file": "reading-list.json"
+  },
+  "exit": [
+   0
+  ]
+ },
+ "notion-productivity/reminder-scheduler": {
+  "values": {
+   "file": "reminders.txt",
+   "plan": true,
+   "now": "2026-11-21 09:00"
   },
   "exit": [
    0
@@ -1577,6 +1595,16 @@
  },
  "system/python-env-reporter": {
   "values": {},
+  "exit": [
+   0
+  ]
+ },
+ "system/screen-time-report": {
+  "values": {
+   "log": "window-log.csv",
+   "idle_gap": "30",
+   "date": "2026-11-20"
+  },
   "exit": [
    0
   ]
