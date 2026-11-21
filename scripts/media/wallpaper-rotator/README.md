@@ -20,7 +20,10 @@ Dry run by default: it shows which picture is next and what it would run, and ch
 python wallpaper_rotator.py wallpapers/
 ```
 ```
-{{OUTPUT}}
+3 picture(s) in wallpapers; mode next.
+Next wallpaper: sunrise-1.png
+Would run: SystemParametersInfoW SPI_SETDESKWALLPAPER ...
+Dry run. Use --apply to change it.
 ```
 
 ## Notes
