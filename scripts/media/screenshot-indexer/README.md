@@ -22,7 +22,12 @@ python screenshot_indexer.py search "words to find" [--index screenshots-index.j
 python screenshot_indexer.py index screenshots/ --index shots-index.json --apply
 ```
 ```
-{{OUTPUT}}
+shot-invoice.png: 320x180, 10 word(s) of text [sidecar]  Invoice #4821 Total due: 1,250.00 USD by...
+shot-login-error.png: 320x180, 10 word(s) of text [sidecar]  Error 403 Access denied. Please sign in ...
+shot-meeting.png: 320x180, 9 word(s) of text [sidecar]  Team standup Agenda: release plan, flask...
+
+3 image(s): 3 new, 0 updated, 0 unchanged.
+Saved shots-index.json.
 ```
 
 ## Notes
