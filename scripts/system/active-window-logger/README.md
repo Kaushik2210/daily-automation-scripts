@@ -21,7 +21,16 @@ python active_window_logger.py show [--last 15]
 python active_window_logger.py show --log window-log.csv --last 8
 ```
 ```
-{{OUTPUT}}
+2026-11-20 17:30:00  LockApp        Lock screen
+2026-11-21 09:00:00  Chrome         Inbox - Mail
+2026-11-21 09:20:00  Code           main.py - project
+2026-11-21 10:15:00  Terminal       git status
+2026-11-21 10:20:00  Code           main.py - project
+2026-11-21 11:05:00  Slack          #team-chat
+2026-11-21 11:20:00  Chrome         Docs - API reference
+2026-11-21 12:00:00  LockApp        Lock screen
+
+Showing 8 of 23 logged window change(s).
 ```
 
 ## Notes
