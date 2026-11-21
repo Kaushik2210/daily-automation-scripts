@@ -51,7 +51,7 @@ The table below is rebuilt by `python tools/update_index.py` from `PLAN.md` and 
 
 <!-- INDEX:START -->
 
-**Progress: 213/300 done**
+**Progress: 216/300 done**
 
 | Day | # | Script | Category | Source | Live |
 | --- | --- | --- | --- | --- | --- |
@@ -268,6 +268,9 @@ The table below is rebuilt by `python tools/update_index.py` from `PLAN.md` and 
 | 22 | 01 | csv-schema-validator | data | [csv-schema-validator](scripts/data/csv-schema-validator/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/data/csv-schema-validator/) |
 | 22 | 02 | data-profiler | data | [data-profiler](scripts/data/data-profiler/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/data/data-profiler/) |
 | 22 | 03 | sqlite-csv-importer | data | [sqlite-csv-importer](scripts/data/sqlite-csv-importer/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/data/sqlite-csv-importer/) |
+| 22 | 04 | sqlite-query-cli | data | [sqlite-query-cli](scripts/data/sqlite-query-cli/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/data/sqlite-query-cli/) |
+| 22 | 05 | json-schema-validator | data | [json-schema-validator](scripts/data/json-schema-validator/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/data/json-schema-validator/) |
+| 22 | 06 | data-anonymizer | data | [data-anonymizer](scripts/data/data-anonymizer/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/data/data-anonymizer/) |
 
 <!-- INDEX:END -->
 

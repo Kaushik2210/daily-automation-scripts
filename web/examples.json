@@ -72,6 +72,14 @@
    0
   ]
  },
+ "data/data-anonymizer": {
+  "values": {
+   "csv": "customers.csv"
+  },
+  "exit": [
+   0
+  ]
+ },
  "data/data-profiler": {
   "values": {
    "csv": "customers.csv",
@@ -98,6 +106,17 @@
    0
   ]
  },
+ "data/json-schema-validator": {
+  "values": {
+   "schema": "person.schema.json",
+   "files": [
+    "people/"
+   ]
+  },
+  "exit": [
+   1
+  ]
+ },
  "data/json-to-csv": {
   "values": {
    "file": "people.json"
@@ -122,6 +141,15 @@
    ],
    "db": "demo.db",
    "apply": true
+  },
+  "exit": [
+   0
+  ]
+ },
+ "data/sqlite-query-cli": {
+  "values": {
+   "db": "shop.db",
+   "query": "SELECT c.name, COUNT(o.order_id) AS orders, ROUND(SUM(o.qty * o.price), 2) AS spent FROM customers c JOIN orders o ON o.customer_id = c.id GROUP BY c.id ORDER BY spent DESC"
   },
   "exit": [
    0
