@@ -51,7 +51,7 @@ The table below is rebuilt by `python tools/update_index.py` from `PLAN.md` and 
 
 <!-- INDEX:START -->
 
-**Progress: 200/300 done**
+**Progress: 203/300 done**
 
 | Day | # | Script | Category | Source | Live |
 | --- | --- | --- | --- | --- | --- |
@@ -255,6 +255,9 @@ The table below is rebuilt by `python tools/update_index.py` from `PLAN.md` and 
 | 20 | 08 | cron-explainer | devops | [cron-explainer](scripts/devops/cron-explainer/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/devops/cron-explainer/) |
 | 20 | 09 | docker-image-reporter | devops | [docker-image-reporter](scripts/devops/docker-image-reporter/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/devops/docker-image-reporter/) |
 | 20 | 10 | release-tagger | devops | [release-tagger](scripts/devops/release-tagger/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/devops/release-tagger/) |
+| 21 | 01 | clipboard-history-logger | system | [clipboard-history-logger](scripts/system/clipboard-history-logger/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/system/clipboard-history-logger/) |
+| 21 | 02 | snippet-manager | notion-productivity | [snippet-manager](scripts/notion-productivity/snippet-manager/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/notion-productivity/snippet-manager/) |
+| 21 | 03 | active-window-logger | system | [active-window-logger](scripts/system/active-window-logger/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/system/active-window-logger/) |
 
 <!-- INDEX:END -->
 

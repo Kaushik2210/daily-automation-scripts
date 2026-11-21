@@ -1024,6 +1024,15 @@
    0
   ]
  },
+ "notion-productivity/snippet-manager": {
+  "values": {
+   "action": "list",
+   "store": "snippets.json"
+  },
+  "exit": [
+   0
+  ]
+ },
  "notion-productivity/timezone-converter": {
   "values": {
    "time": "12:00",
@@ -1372,6 +1381,26 @@
   "values": {
    "from_file": "whois.txt",
    "today": "2026-11-13"
+  },
+  "exit": [
+   0
+  ]
+ },
+ "system/active-window-logger": {
+  "values": {
+   "action": "show",
+   "log": "window-log.csv",
+   "last": "8"
+  },
+  "exit": [
+   0
+  ]
+ },
+ "system/clipboard-history-logger": {
+  "values": {
+   "action": "search",
+   "term": "flask",
+   "log": "clipboard-log.jsonl"
   },
   "exit": [
    0

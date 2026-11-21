@@ -245,9 +245,9 @@ Difficulty: easy on days 1-10, medium on days 11-20, more advanced on days 21-30
 - [x] 10. release-tagger - Bump semantic version tags from commit history (devops)
 
 ## Day 21 - Desktop helpers
-- [ ] 01. clipboard-history-logger - Log clipboard changes to a searchable file (system)
-- [ ] 02. snippet-manager - Store and paste text snippets via the clipboard (notion-productivity)
-- [ ] 03. active-window-logger - Log which app has focus over time (system)
+- [x] 01. clipboard-history-logger - Log clipboard changes to a searchable file (system)
+- [x] 02. snippet-manager - Store and paste text snippets via the clipboard (notion-productivity)
+- [x] 03. active-window-logger - Log which app has focus over time (system)
 - [ ] 04. screen-time-report - Summarize app usage from the window log (system)
 - [ ] 05. wallpaper-rotator - Rotate the desktop wallpaper from a folder (media)
 - [ ] 06. reminder-scheduler - Schedule one-off terminal reminders (notion-productivity)
