@@ -19,7 +19,12 @@ Times can be relative (`25m`, `1h30m`, `90s`, `in 2h`), a clock time today or to
 python reminder_scheduler.py --file reminders.txt --plan --now "2026-11-21 09:00"
 ```
 ```
-{{OUTPUT}}
+4 reminder(s), starting 2026-11-21 09:00:00:
+  Sat 21 Nov 09:25  (in 0h 25m)  Stand up and stretch
+  Sat 21 Nov 10:00  (in 1h 00m)  Join the team call
+  Sat 21 Nov 15:30  (in 6h 30m)  Submit the timesheet
+  Sat 21 Nov 18:00  (in 9h 00m)  Go home!
+Plan only; run without --plan to wait for them.
 ```
 
 ## Notes
