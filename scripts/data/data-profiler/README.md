@@ -17,7 +17,31 @@ Missing values are empty cells and the markers `NA`, `N/A`, `null`, `none`, `nan
 python data_profiler.py customers.csv --columns age,status,score
 ```
 ```
-{{OUTPUT}}
+customers.csv: 16 rows x 9 columns, 0 duplicate row(s)
+
+age  [int]  16 values, 0 missing, 15 unique
+    min 27  p25 29.25  median 35  p75 44  max 150  mean 42.94  std 29.52
+           27 - 47.50     #################### 14
+        47.50 - 68        #                    1
+           68 - 88.50                          0
+        88.50 - 109                            0
+          109 - 129.50                         0
+       129.50 - 150       #                    1
+
+status  [text]  16 values, 0 missing, 3 unique
+    length 6-8 (average 6.4)
+    common: active (12), inactive (3), pending (1)
+
+score  [float]  14 values, 2 missing, 14 unique
+    min 58  p25 71.25  median 80.25  p75 86.62  max 91  mean 78.54  std 9.82
+           58 - 63.50     #####                1
+        63.50 - 69        #####                1
+           69 - 74.50     ##########           2
+        74.50 - 80        ###############      3
+           80 - 85.50     ###############      3
+        85.50 - 91        #################### 4
+
+0 of 3 column(s) have something worth a look.
 ```
 
 ## Notes
