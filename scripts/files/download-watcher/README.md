@@ -17,7 +17,20 @@ python download_watcher.py [FOLDER] [--watch] [--interval 10] [--seconds N] [--s
 python download_watcher.py downloads/ --settle 0
 ```
 ```
-{{OUTPUT}}
+backup.zip -> Archives/
+data.csv -> Data/
+holiday.jpg -> Images/
+invoice.docx -> Documents/
+movie.mp4 -> Video/
+mystery -> Other/
+notes.txt -> Documents/
+report-q3.pdf -> Documents/
+Screenshot 2026-11-20.png -> Images/
+setup-1.2.exe -> Installers/
+song.mp3 -> Audio/
+skip big-file.iso.crdownload: download in progress or hidden
+
+Would move 11 file(s): 1 Archives, 1 Audio, 1 Data, 3 Documents, 2 Images, 1 Installers, 1 Other, 1 Video. Use --apply to do it.
 ```
 
 ## Notes
