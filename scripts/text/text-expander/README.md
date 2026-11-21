@@ -17,7 +17,11 @@ The map file has one `abbreviation = replacement` per line (use `\n` for a line 
 python text_expander.py expand-demo.txt --map expander-map.txt
 ```
 ```
-{{OUTPUT}}
+expand-demo.txt: 5 replacement(s) (;date x1, ;sig x1, addr x1, btw x1, omw x1)
+  - btw the report is ready; omw to the office now.
+  + by the way the report is ready; on my way to the office now.
+
+Dry run. Use --apply to change the files.
 ```
 
 ## Notes
