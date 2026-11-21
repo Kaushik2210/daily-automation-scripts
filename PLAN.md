@@ -251,10 +251,10 @@ Difficulty: easy on days 1-10, medium on days 11-20, more advanced on days 21-30
 - [x] 04. screen-time-report - Summarize app usage from the window log (system)
 - [x] 05. wallpaper-rotator - Rotate the desktop wallpaper from a folder (media)
 - [x] 06. reminder-scheduler - Schedule one-off terminal reminders (notion-productivity)
-- [ ] 07. folder-watcher - Run an action whenever files appear in a folder (files)
-- [ ] 08. download-watcher - Auto-sort new downloads as they arrive (files)
-- [ ] 09. screenshot-indexer - Index screenshots with OCR text for search (media)
-- [ ] 10. text-expander - Expand abbreviations in text files from a map (text)
+- [x] 07. folder-watcher - Run an action whenever files appear in a folder (files)
+- [x] 08. download-watcher - Auto-sort new downloads as they arrive (files)
+- [x] 09. screenshot-indexer - Index screenshots with OCR text for search (media)
+- [x] 10. text-expander - Expand abbreviations in text files from a map (text)
 
 ## Day 22 - Data pipelines
 - [ ] 01. csv-schema-validator - Validate CSV columns and types against a schema (data)

@@ -51,7 +51,7 @@ The table below is rebuilt by `python tools/update_index.py` from `PLAN.md` and 
 
 <!-- INDEX:START -->
 
-**Progress: 206/300 done**
+**Progress: 210/300 done**
 
 | Day | # | Script | Category | Source | Live |
 | --- | --- | --- | --- | --- | --- |
@@ -261,6 +261,10 @@ The table below is rebuilt by `python tools/update_index.py` from `PLAN.md` and 
 | 21 | 04 | screen-time-report | system | [screen-time-report](scripts/system/screen-time-report/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/system/screen-time-report/) |
 | 21 | 05 | wallpaper-rotator | media | [wallpaper-rotator](scripts/media/wallpaper-rotator/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/media/wallpaper-rotator/) |
 | 21 | 06 | reminder-scheduler | notion-productivity | [reminder-scheduler](scripts/notion-productivity/reminder-scheduler/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/notion-productivity/reminder-scheduler/) |
+| 21 | 07 | folder-watcher | files | [folder-watcher](scripts/files/folder-watcher/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/files/folder-watcher/) |
+| 21 | 08 | download-watcher | files | [download-watcher](scripts/files/download-watcher/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/files/download-watcher/) |
+| 21 | 09 | screenshot-indexer | media | [screenshot-indexer](scripts/media/screenshot-indexer/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/media/screenshot-indexer/) |
+| 21 | 10 | text-expander | text | [text-expander](scripts/text/text-expander/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/text/text-expander/) |
 
 <!-- INDEX:END -->
 

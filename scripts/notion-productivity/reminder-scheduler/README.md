@@ -30,4 +30,4 @@ Plan only; run without --plan to wait for them.
 ## Notes
 - Reminders only live while the program runs; if you close the window or shut down, they are gone.
 - A clock time that has already passed today means tomorrow at that time.
-- Use `timer-countdown` style tools for a simple countdown and `snippet-manager` for reusable text.
+- Use `countdown-timer` for a simple countdown and `snippet-manager` for reusable text.
