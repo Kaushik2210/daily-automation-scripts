@@ -17,7 +17,25 @@ python sqlite_csv_importer.py a.csv [b.csv ...] --db mydata.db [--table NAME] [-
 python sqlite_csv_importer.py customers.csv orders.csv --db demo.db --apply
 ```
 ```
-{{OUTPUT}}
+customers.csv -> table customers (create): 16 row(s)
+    id                   INTEGER
+    name                 TEXT
+    email                TEXT
+    phone                TEXT
+    age                  INTEGER
+    status               TEXT
+    signup_date          TEXT
+    country              TEXT
+    score                REAL
+    done: table 'customers' now has 16 row(s)
+orders.csv -> table orders (create): 12 row(s)
+    order_id             INTEGER
+    customer_id          INTEGER
+    product              TEXT
+    qty                  INTEGER
+    price                REAL
+    ordered_at           TEXT
+    done: table 'orders' now has 12 row(s)
 ```
 
 ## Notes
