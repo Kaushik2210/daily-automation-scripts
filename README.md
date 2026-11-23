@@ -51,7 +51,7 @@ The table below is rebuilt by `python tools/update_index.py` from `PLAN.md` and 
 
 <!-- INDEX:START -->
 
-**Progress: 218/300 done**
+**Progress: 220/300 done**
 
 | Day | # | Script | Category | Source | Live |
 | --- | --- | --- | --- | --- | --- |
@@ -273,6 +273,8 @@ The table below is rebuilt by `python tools/update_index.py` from `PLAN.md` and 
 | 22 | 06 | data-anonymizer | data | [data-anonymizer](scripts/data/data-anonymizer/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/data/data-anonymizer/) |
 | 22 | 07 | csv-differ | data | [csv-differ](scripts/data/csv-differ/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/data/csv-differ/) |
 | 22 | 08 | parquet-converter | data | [parquet-converter](scripts/data/parquet-converter/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/data/parquet-converter/) |
+| 22 | 09 | log-to-sqlite | data | [log-to-sqlite](scripts/data/log-to-sqlite/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/data/log-to-sqlite/) |
+| 22 | 10 | pipeline-runner | data | [pipeline-runner](scripts/data/pipeline-runner/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/data/pipeline-runner/) |
 
 <!-- INDEX:END -->
 

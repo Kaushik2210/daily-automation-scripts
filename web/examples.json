@@ -143,10 +143,31 @@
    0
   ]
  },
+ "data/log-to-sqlite": {
+  "values": {
+   "logs": [
+    "app.log",
+    "access.log"
+   ],
+   "db": "logs.db",
+   "apply": true
+  },
+  "exit": [
+   0
+  ]
+ },
  "data/parquet-converter": {
   "values": {
    "source": "orders.csv",
    "apply": true
+  },
+  "exit": [
+   0
+  ]
+ },
+ "data/pipeline-runner": {
+  "values": {
+   "pipeline": "pipeline.yml"
   },
   "exit": [
    0
