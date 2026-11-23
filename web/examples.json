@@ -2151,6 +2151,17 @@
    0
   ]
  },
+ "web-scraping/rate-limited-fetcher": {
+  "values": {
+   "urls": [
+    "urls.txt"
+   ],
+   "rate": "2"
+  },
+  "exit": [
+   0
+  ]
+ },
  "web-scraping/robots-checker": {
   "values": {
    "targets": [
@@ -2172,6 +2183,15 @@
    ],
    "since": "2026-01-01",
    "limit": "3"
+  },
+  "exit": [
+   0
+  ]
+ },
+ "web-scraping/sitemap-crawler": {
+  "values": {
+   "sitemap": "sitemap-full.xml",
+   "robots": "robots.txt"
   },
   "exit": [
    0

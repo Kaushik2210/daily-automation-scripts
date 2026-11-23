@@ -51,7 +51,7 @@ The table below is rebuilt by `python tools/update_index.py` from `PLAN.md` and 
 
 <!-- INDEX:START -->
 
-**Progress: 225/300 done**
+**Progress: 227/300 done**
 
 | Day | # | Script | Category | Source | Live |
 | --- | --- | --- | --- | --- | --- |
@@ -280,6 +280,8 @@ The table below is rebuilt by `python tools/update_index.py` from `PLAN.md` and 
 | 23 | 03 | api-recorder | web-scraping | [api-recorder](scripts/web-scraping/api-recorder/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/web-scraping/api-recorder/) |
 | 23 | 04 | api-smoke-tester | devops | [api-smoke-tester](scripts/devops/api-smoke-tester/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/devops/api-smoke-tester/) |
 | 23 | 05 | webhook-receiver | devops | [webhook-receiver](scripts/devops/webhook-receiver/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/devops/webhook-receiver/) |
+| 23 | 06 | rate-limited-fetcher | web-scraping | [rate-limited-fetcher](scripts/web-scraping/rate-limited-fetcher/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/web-scraping/rate-limited-fetcher/) |
+| 23 | 07 | sitemap-crawler | web-scraping | [sitemap-crawler](scripts/web-scraping/sitemap-crawler/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/web-scraping/sitemap-crawler/) |
 
 <!-- INDEX:END -->
 
