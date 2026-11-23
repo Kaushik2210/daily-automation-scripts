@@ -17,7 +17,25 @@ Kinds: `email`, `name`, `phone`, `card`, `ip`, `hash`, `redact`, `year` (keeps o
 python data_anonymizer.py customers.csv
 ```
 ```
-{{OUTPUT}}
+customers.csv: 16 row(s), 3 column(s) to mask
+  name           as name    (detected) - 15 value(s) changed
+  email          as email   (detected) - 16 value(s) changed
+  phone          as phone   (detected) - 15 value(s) changed
+
+Preview (first rows):
+  name         'Asha Rao'                   -> 'Casey Tate'
+  email        'asha.rao@example.com'       -> 'user_6de6d529@example.com'
+  phone        '+91 98765 43210'            -> '+XX XXXXX XXX10'
+
+  name         'Ben Carter'                 -> 'Reese Hayes'
+  email        'ben.carter@example.org'     -> 'user_e2c846fb@example.com'
+  phone        '(555) 201-3344'             -> '(XXX) XXX-XX44'
+
+  name         'Chloe Martin'               -> 'Sage Tate'
+  email        'chloe.m@example.com'        -> 'user_8e9f506d@example.com'
+  phone        '555-310-8899'               -> 'XXX-XXX-XX99'
+
+Dry run. Use --apply to write customers.anonymized.csv.
 ```
 
 ## Notes
