@@ -51,7 +51,7 @@ The table below is rebuilt by `python tools/update_index.py` from `PLAN.md` and 
 
 <!-- INDEX:START -->
 
-**Progress: 228/300 done**
+**Progress: 230/300 done**
 
 | Day | # | Script | Category | Source | Live |
 | --- | --- | --- | --- | --- | --- |
@@ -283,6 +283,8 @@ The table below is rebuilt by `python tools/update_index.py` from `PLAN.md` and 
 | 23 | 06 | rate-limited-fetcher | web-scraping | [rate-limited-fetcher](scripts/web-scraping/rate-limited-fetcher/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/web-scraping/rate-limited-fetcher/) |
 | 23 | 07 | sitemap-crawler | web-scraping | [sitemap-crawler](scripts/web-scraping/sitemap-crawler/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/web-scraping/sitemap-crawler/) |
 | 23 | 08 | link-graph-builder | web-scraping | [link-graph-builder](scripts/web-scraping/link-graph-builder/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/web-scraping/link-graph-builder/) |
+| 23 | 09 | mock-server | devops | [mock-server](scripts/devops/mock-server/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/devops/mock-server/) |
+| 23 | 10 | latency-benchmark | devops | [latency-benchmark](scripts/devops/latency-benchmark/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/devops/latency-benchmark/) |
 
 <!-- INDEX:END -->
 

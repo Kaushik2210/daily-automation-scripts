@@ -277,8 +277,8 @@ Difficulty: easy on days 1-10, medium on days 11-20, more advanced on days 21-30
 - [x] 06. rate-limited-fetcher - Fetch URLs politely with rate limits and backoff (web-scraping)
 - [x] 07. sitemap-crawler - Crawl a site within its sitemap and robots rules (web-scraping)
 - [x] 08. link-graph-builder - Build a link graph of a small site (web-scraping)
-- [ ] 09. mock-server - Serve mock API responses from a JSON file (devops)
-- [ ] 10. latency-benchmark - Benchmark endpoint latency with percentiles (devops)
+- [x] 09. mock-server - Serve mock API responses from a JSON file (devops)
+- [x] 10. latency-benchmark - Benchmark endpoint latency with percentiles (devops)
 
 ## Day 24 - Repo automation
 - [ ] 01. repo-health-scorer - Score a repo on README, license, tests and CI (github)

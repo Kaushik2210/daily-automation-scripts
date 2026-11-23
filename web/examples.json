@@ -259,10 +259,29 @@
    1
   ]
  },
+ "devops/latency-benchmark": {
+  "values": {
+   "summarise": "latencies.txt",
+   "slow": "500"
+  },
+  "exit": [
+   0
+  ]
+ },
  "devops/makefile-target-lister": {
   "values": {
    "makefile": "Makefile",
    "all": true
+  },
+  "exit": [
+   0
+  ]
+ },
+ "devops/mock-server": {
+  "values": {
+   "action": "simulate",
+   "definition": "mock-api.json",
+   "request": "GET /users/7?verbose=1"
   },
   "exit": [
    0
