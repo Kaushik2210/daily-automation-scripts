@@ -2,9 +2,12 @@
 import argparse
 import contextlib
 import sys
+import warnings
 from pathlib import Path
 
-import pandas as pd
+with warnings.catch_warnings():  # pandas 2.x announces that pyarrow will become required
+    warnings.simplefilter("ignore")
+    import pandas as pd
 
 with contextlib.suppress(ImportError):  # lets the browser demo load a Parquet engine
     import fastparquet  # noqa: F401
