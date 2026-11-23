@@ -1972,6 +1972,15 @@
    1
   ]
  },
+ "web-scraping/api-recorder": {
+  "values": {
+   "spec": "api-calls.json",
+   "outdir": "fixtures"
+  },
+  "exit": [
+   0
+  ]
+ },
  "web-scraping/async-url-checker": {
   "values": {
    "summarise": "link-check-results.csv"
