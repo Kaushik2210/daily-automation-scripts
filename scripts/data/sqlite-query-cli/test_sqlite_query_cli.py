@@ -92,4 +92,4 @@ def test_bad_arguments(db, tmp_path):
         sq.main([str(tmp_path / "none.db"), "SELECT 1"])
     not_a_db = tmp_path / "x.db"
     not_a_db.write_text("this is not sqlite")
-    assert sq.main([str(not_a_db), "SELECT 1"]) == 1
+    assert sq.main([str(not_a_db), "SELECT * FROM sqlite_master"]) == 1
