@@ -51,7 +51,7 @@ The table below is rebuilt by `python tools/update_index.py` from `PLAN.md` and 
 
 <!-- INDEX:START -->
 
-**Progress: 220/300 done**
+**Progress: 222/300 done**
 
 | Day | # | Script | Category | Source | Live |
 | --- | --- | --- | --- | --- | --- |
@@ -275,6 +275,8 @@ The table below is rebuilt by `python tools/update_index.py` from `PLAN.md` and 
 | 22 | 08 | parquet-converter | data | [parquet-converter](scripts/data/parquet-converter/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/data/parquet-converter/) |
 | 22 | 09 | log-to-sqlite | data | [log-to-sqlite](scripts/data/log-to-sqlite/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/data/log-to-sqlite/) |
 | 22 | 10 | pipeline-runner | data | [pipeline-runner](scripts/data/pipeline-runner/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/data/pipeline-runner/) |
+| 23 | 01 | async-url-checker | web-scraping | [async-url-checker](scripts/web-scraping/async-url-checker/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/web-scraping/async-url-checker/) |
+| 23 | 02 | parallel-downloader | web-scraping | [parallel-downloader](scripts/web-scraping/parallel-downloader/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/web-scraping/parallel-downloader/) |
 
 <!-- INDEX:END -->
 

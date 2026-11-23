@@ -269,8 +269,8 @@ Difficulty: easy on days 1-10, medium on days 11-20, more advanced on days 21-30
 - [x] 10. pipeline-runner - Run a chain of data steps from a YAML file (data)
 
 ## Day 23 - Async web and APIs
-- [ ] 01. async-url-checker - Check thousands of URLs concurrently with limits (web-scraping)
-- [ ] 02. parallel-downloader - Download many files in parallel with resume (web-scraping)
+- [x] 01. async-url-checker - Check thousands of URLs concurrently with limits (web-scraping)
+- [x] 02. parallel-downloader - Download many files in parallel with resume (web-scraping)
 - [ ] 03. api-recorder - Record API responses to JSON fixtures (web-scraping)
 - [ ] 04. api-smoke-tester - Run smoke tests against REST endpoints from a file (devops)
 - [ ] 05. webhook-receiver - Local server that logs incoming webhooks (devops)
