@@ -195,6 +195,15 @@
    0
   ]
  },
+ "devops/api-smoke-tester": {
+  "values": {
+   "spec": "smoke-tests.json",
+   "validate": true
+  },
+  "exit": [
+   0
+  ]
+ },
  "devops/ci-config-validator": {
   "values": {
    "paths": [
@@ -283,6 +292,15 @@
   "values": {
    "requirements": "requirements-demo.txt",
    "latest": "latest-versions.json"
+  },
+  "exit": [
+   1
+  ]
+ },
+ "devops/webhook-receiver": {
+  "values": {
+   "action": "show",
+   "file": "webhook-log.jsonl"
   },
   "exit": [
    1

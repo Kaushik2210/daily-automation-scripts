@@ -51,7 +51,7 @@ The table below is rebuilt by `python tools/update_index.py` from `PLAN.md` and 
 
 <!-- INDEX:START -->
 
-**Progress: 223/300 done**
+**Progress: 225/300 done**
 
 | Day | # | Script | Category | Source | Live |
 | --- | --- | --- | --- | --- | --- |
@@ -278,6 +278,8 @@ The table below is rebuilt by `python tools/update_index.py` from `PLAN.md` and 
 | 23 | 01 | async-url-checker | web-scraping | [async-url-checker](scripts/web-scraping/async-url-checker/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/web-scraping/async-url-checker/) |
 | 23 | 02 | parallel-downloader | web-scraping | [parallel-downloader](scripts/web-scraping/parallel-downloader/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/web-scraping/parallel-downloader/) |
 | 23 | 03 | api-recorder | web-scraping | [api-recorder](scripts/web-scraping/api-recorder/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/web-scraping/api-recorder/) |
+| 23 | 04 | api-smoke-tester | devops | [api-smoke-tester](scripts/devops/api-smoke-tester/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/devops/api-smoke-tester/) |
+| 23 | 05 | webhook-receiver | devops | [webhook-receiver](scripts/devops/webhook-receiver/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/devops/webhook-receiver/) |
 
 <!-- INDEX:END -->
 
