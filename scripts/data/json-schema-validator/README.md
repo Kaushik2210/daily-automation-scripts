@@ -17,7 +17,19 @@ Folders are searched recursively for `.json` files. Supported keywords: `type` (
 python json_schema_validator.py person.schema.json people/
 ```
 ```
-{{OUTPUT}}
+ada.json: valid
+bob.json: valid
+broken.json: 8 problem(s)
+  $.name is shorter than 1 character(s)
+  $.email does not match the pattern ^[^@\s]+@[^@\s]+\.[a-z]{2,}$
+  $.age is string, expected integer
+  $.role must be one of "admin", "editor", "viewer"
+  $.tags[1] is a duplicate of an earlier item
+  $.nickname is not an allowed property
+  $.address is missing the required property 'city'
+  $.address.zip does not match the pattern ^\d{5,6}$
+
+2 of 3 file(s) valid.
 ```
 
 ## Notes
