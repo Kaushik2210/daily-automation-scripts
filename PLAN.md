@@ -263,8 +263,8 @@ Difficulty: easy on days 1-10, medium on days 11-20, more advanced on days 21-30
 - [x] 04. sqlite-query-cli - Run SQL against a SQLite file and print tables (data)
 - [x] 05. json-schema-validator - Validate JSON files against a JSON Schema (data)
 - [x] 06. data-anonymizer - Mask emails, names and phone numbers in a CSV (data)
-- [ ] 07. csv-differ - Show added, removed and changed rows between CSVs (data)
-- [ ] 08. parquet-converter - Convert CSV to Parquet and back (data)
+- [x] 07. csv-differ - Show added, removed and changed rows between CSVs (data)
+- [x] 08. parquet-converter - Convert CSV to Parquet and back (data)
 - [ ] 09. log-to-sqlite - Load parsed logs into SQLite for querying (data)
 - [ ] 10. pipeline-runner - Run a chain of data steps from a YAML file (data)
 

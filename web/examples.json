@@ -24,6 +24,16 @@
    0
   ]
  },
+ "data/csv-differ": {
+  "values": {
+   "old": "customers-v1.csv",
+   "new": "customers-v2.csv",
+   "key": "id"
+  },
+  "exit": [
+   1
+  ]
+ },
  "data/csv-merger": {
   "values": {
    "files": [
@@ -128,6 +138,15 @@
  "data/json-yaml-converter": {
   "values": {
    "file": "config.yaml"
+  },
+  "exit": [
+   0
+  ]
+ },
+ "data/parquet-converter": {
+  "values": {
+   "source": "orders.csv",
+   "apply": true
   },
   "exit": [
    0

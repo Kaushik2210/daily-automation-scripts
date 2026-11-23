@@ -51,7 +51,7 @@ The table below is rebuilt by `python tools/update_index.py` from `PLAN.md` and 
 
 <!-- INDEX:START -->
 
-**Progress: 216/300 done**
+**Progress: 218/300 done**
 
 | Day | # | Script | Category | Source | Live |
 | --- | --- | --- | --- | --- | --- |
@@ -271,6 +271,8 @@ The table below is rebuilt by `python tools/update_index.py` from `PLAN.md` and 
 | 22 | 04 | sqlite-query-cli | data | [sqlite-query-cli](scripts/data/sqlite-query-cli/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/data/sqlite-query-cli/) |
 | 22 | 05 | json-schema-validator | data | [json-schema-validator](scripts/data/json-schema-validator/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/data/json-schema-validator/) |
 | 22 | 06 | data-anonymizer | data | [data-anonymizer](scripts/data/data-anonymizer/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/data/data-anonymizer/) |
+| 22 | 07 | csv-differ | data | [csv-differ](scripts/data/csv-differ/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/data/csv-differ/) |
+| 22 | 08 | parquet-converter | data | [parquet-converter](scripts/data/parquet-converter/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/data/parquet-converter/) |
 
 <!-- INDEX:END -->
 
