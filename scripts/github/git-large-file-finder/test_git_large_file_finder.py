@@ -88,5 +88,7 @@ def test_real_history_finds_deleted_big_file(tmp_path, capsys, monkeypatch):
     assert "git filter-repo --path old.bin" in out
     assert glf.main([*base, "--only-removed", "--format", "json"]) == 0
     assert [f["path"] for f in json.loads(capsys.readouterr().out)["files"]] == ["old.bin"]
+    assert glf.main([*base, "--ref", "main", "--only-removed"]) == 0  # a named ref works too
+    assert "old.bin" in capsys.readouterr().out
     assert glf.main([*base, "--fail-over", "500k"]) == 1
     assert glf.main(["--repo", str(tmp_path / "missing")]) == 1
