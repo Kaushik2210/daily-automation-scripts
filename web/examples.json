@@ -654,6 +654,22 @@
    0
   ]
  },
+ "github/changed-files-finder": {
+  "values": {
+   "source": "diff-names.txt",
+   "projects": [
+    "apps/*",
+    "libs/*",
+    "services/*"
+   ],
+   "depends": [
+    "libs/shared=apps/web,apps/mobile"
+   ]
+  },
+  "exit": [
+   0
+  ]
+ },
  "github/changelog-generator": {
   "values": {
    "log": "git-log.txt",
