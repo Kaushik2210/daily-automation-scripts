@@ -719,6 +719,14 @@
    0
   ]
  },
+ "github/import-graph-builder": {
+  "values": {
+   "folder": "pyproj/"
+  },
+  "exit": [
+   0
+  ]
+ },
  "github/issue-exporter": {
   "values": {
    "from_file": "gh-issues.json",
