@@ -745,6 +745,18 @@
    0
   ]
  },
+ "github/license-header-adder": {
+  "values": {
+   "paths": [
+    "pyproj/"
+   ],
+   "holder": "Demo Author",
+   "year": "2026"
+  },
+  "exit": [
+   0
+  ]
+ },
  "github/pr-review-queue": {
   "values": {
    "from_file": "gh-review-prs.json",
