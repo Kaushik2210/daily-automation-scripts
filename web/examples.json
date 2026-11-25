@@ -737,6 +737,15 @@
    0
   ]
  },
+ "github/git-large-file-finder": {
+  "values": {
+   "source": "git-objects.txt",
+   "min_size": "1M"
+  },
+  "exit": [
+   0
+  ]
+ },
  "github/git-log-summarizer": {
   "values": {
    "log": "git-log.txt"
