@@ -1543,6 +1543,15 @@
    0
   ]
  },
+ "security/history-secret-scanner": {
+  "values": {
+   "source": "git-history.patch",
+   "include_placeholders": true
+  },
+  "exit": [
+   1
+  ]
+ },
  "security/integrity-monitor": {
   "values": {
    "action": "check",
