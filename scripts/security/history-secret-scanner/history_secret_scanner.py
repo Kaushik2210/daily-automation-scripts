@@ -116,7 +116,7 @@ def main(argv=None):
         print(f"{len(findings)} possible secret(s) in the history:\n")
         for item in findings:
             state = (f"removed in {item['removed_in'][:8]}, still in history"
-                     if item["removed_in"] else "still present in a later version")
+                     if item["removed_in"] else "no later removal found")
             print(f"  {item['kind']}: {item['masked']}")
             print(f"    {item['path']}  commit {item['commit'][:8]} by {item['author']}")
             print(f"    {item['date']}  ({state})")

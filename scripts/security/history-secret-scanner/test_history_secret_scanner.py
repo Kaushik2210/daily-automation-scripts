@@ -79,7 +79,7 @@ def test_cli(tmp_path, capsys):
     assert hss.main(["--from-file", str(saved)]) == 1
     out = capsys.readouterr().out
     assert "2 possible secret(s)" in out and "removed in bbbb2222" in out
-    assert "still present in a later version" in out and "rotate it first" in out
+    assert "no later removal found" in out and "rotate it first" in out
     assert hss.main(["--from-file", str(saved), "--exit-zero", "--format", "json"]) == 0
     assert json.loads(capsys.readouterr().out)["count"] == 2
     clean = tmp_path / "c.patch"

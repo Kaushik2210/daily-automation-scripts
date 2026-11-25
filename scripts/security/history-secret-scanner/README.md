@@ -35,10 +35,10 @@ Exit code is 1 when anything is found, which suits a CI check; add `--exit-zero`
     Mon Nov 3 10:12:00 2026 +0000  (removed in 5e4d3c2b, still in history)
   Hard-coded credential: not**********890
     notes/todo.md  commit 7a6b5c4d by Dev One <dev1@example.com>
-    Wed Nov 5 09:05:00 2026 +0000  (still present in a later version)
+    Wed Nov 5 09:05:00 2026 +0000  (no later removal found)
   Private key block: ---**********---
     keys/id_deploy  commit 7a6b5c4d by Dev One <dev1@example.com>
-    Wed Nov 5 09:05:00 2026 +0000  (still present in a later version)
+    Wed Nov 5 09:05:00 2026 +0000  (no later removal found)
 
 A secret that was ever committed must be treated as leaked: rotate it first, then clean the history if you need to.
 ```
