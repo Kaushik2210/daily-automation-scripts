@@ -62,7 +62,7 @@ def git(repo, *args, stdin=None):
 
 def read_repo(repo, ref):
     """Return (`type sha size path` lines, set of paths in the latest commit)."""
-    listed = git(repo, "rev-list", "--objects", "--all" if ref == "--all" else ref).splitlines()
+    listed = git(repo, "rev-list", "--objects", "--all" if ref == "all" else ref).splitlines()
     named = [line.split(" ", 1) for line in listed if " " in line]  # drops path-less commits
     shas = "".join(f"{sha}\n" for sha, _ in named)
     info = git(repo, "cat-file", "--batch-check=%(objecttype) %(objectname) %(objectsize)",
@@ -77,7 +77,8 @@ def main(argv=None):
     parser.add_argument("--repo", type=Path, default=Path("."), help="the repository (.)")
     parser.add_argument("--from-file", type=Path, dest="source",
                         help="saved `type sha size path` lines instead of running git")
-    parser.add_argument("--ref", default="--all", help="history to scan (every branch and tag)")
+    parser.add_argument("--ref", default="all",
+                        help="branch or tag to scan, or 'all' for every branch and tag (all)")
     parser.add_argument("--min-size", default="1M", help="ignore files smaller than this (1M)")
     parser.add_argument("--top", type=int, default=20, help="show this many files (20)")
     parser.add_argument("--only-removed", action="store_true",
