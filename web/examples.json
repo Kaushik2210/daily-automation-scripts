@@ -849,6 +849,16 @@
    1
   ]
  },
+ "github/repo-activity-heatmap": {
+  "values": {
+   "source": "commit-dates.txt",
+   "end": "2026-11-25",
+   "weeks": "26"
+  },
+  "exit": [
+   0
+  ]
+ },
  "github/repo-health-scorer": {
   "values": {
    "folder": "pyproj/"

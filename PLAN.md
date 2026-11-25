@@ -290,7 +290,7 @@ Difficulty: easy on days 1-10, medium on days 11-20, more advanced on days 21-30
 - [x] 07. bulk-repo-cloner - Clone many repos from a list or GitHub user (github)
 - [x] 08. git-large-file-finder - Find big blobs in git history (github)
 - [x] 09. history-secret-scanner - Scan git history for leaked secrets (security)
-- [ ] 10. repo-activity-heatmap - Draw a commit heatmap in the terminal (github)
+- [x] 10. repo-activity-heatmap - Draw a commit heatmap in the terminal (github)
 
 ## Day 25 - Reports
 - [ ] 01. weekly-github-report - Weekly activity report across your repos (github)
