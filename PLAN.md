@@ -281,7 +281,7 @@ Difficulty: easy on days 1-10, medium on days 11-20, more advanced on days 21-30
 - [x] 10. latency-benchmark - Benchmark endpoint latency with percentiles (devops)
 
 ## Day 24 - Repo automation
-- [ ] 01. repo-health-scorer - Score a repo on README, license, tests and CI (github)
+- [x] 01. repo-health-scorer - Score a repo on README, license, tests and CI (github)
 - [ ] 02. license-header-adder - Add license headers to source files (dry-run first) (github)
 - [ ] 03. import-graph-builder - Map imports between Python modules (github)
 - [ ] 04. dead-code-finder - Find unused functions in a Python project (github)

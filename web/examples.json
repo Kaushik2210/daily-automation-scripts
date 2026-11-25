@@ -773,6 +773,14 @@
    1
   ]
  },
+ "github/repo-health-scorer": {
+  "values": {
+   "folder": "pyproj/"
+  },
+  "exit": [
+   0
+  ]
+ },
  "github/repo-readme-generator": {
   "values": {
    "folder": "demo-project"

@@ -51,7 +51,7 @@ The table below is rebuilt by `python tools/update_index.py` from `PLAN.md` and 
 
 <!-- INDEX:START -->
 
-**Progress: 230/300 done**
+**Progress: 231/300 done**
 
 | Day | # | Script | Category | Source | Live |
 | --- | --- | --- | --- | --- | --- |
@@ -285,6 +285,7 @@ The table below is rebuilt by `python tools/update_index.py` from `PLAN.md` and 
 | 23 | 08 | link-graph-builder | web-scraping | [link-graph-builder](scripts/web-scraping/link-graph-builder/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/web-scraping/link-graph-builder/) |
 | 23 | 09 | mock-server | devops | [mock-server](scripts/devops/mock-server/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/devops/mock-server/) |
 | 23 | 10 | latency-benchmark | devops | [latency-benchmark](scripts/devops/latency-benchmark/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/devops/latency-benchmark/) |
+| 24 | 01 | repo-health-scorer | github | [repo-health-scorer](scripts/github/repo-health-scorer/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/github/repo-health-scorer/) |
 
 <!-- INDEX:END -->
 
