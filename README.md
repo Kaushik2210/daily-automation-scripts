@@ -51,7 +51,7 @@ The table below is rebuilt by `python tools/update_index.py` from `PLAN.md` and 
 
 <!-- INDEX:START -->
 
-**Progress: 234/300 done**
+**Progress: 235/300 done**
 
 | Day | # | Script | Category | Source | Live |
 | --- | --- | --- | --- | --- | --- |
@@ -289,6 +289,7 @@ The table below is rebuilt by `python tools/update_index.py` from `PLAN.md` and 
 | 24 | 02 | license-header-adder | github | [license-header-adder](scripts/github/license-header-adder/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/github/license-header-adder/) |
 | 24 | 03 | import-graph-builder | github | [import-graph-builder](scripts/github/import-graph-builder/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/github/import-graph-builder/) |
 | 24 | 04 | dead-code-finder | github | [dead-code-finder](scripts/github/dead-code-finder/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/github/dead-code-finder/) |
+| 24 | 05 | git-hook-installer | github | [git-hook-installer](scripts/github/git-hook-installer/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/github/git-hook-installer/) |
 
 <!-- INDEX:END -->
 

@@ -285,7 +285,7 @@ Difficulty: easy on days 1-10, medium on days 11-20, more advanced on days 21-30
 - [x] 02. license-header-adder - Add license headers to source files (dry-run first) (github)
 - [x] 03. import-graph-builder - Map imports between Python modules (github)
 - [x] 04. dead-code-finder - Find unused functions in a Python project (github)
-- [ ] 05. git-hook-installer - Install pre-commit style hooks from a template (github)
+- [x] 05. git-hook-installer - Install pre-commit style hooks from a template (github)
 - [ ] 06. changed-files-finder - List changed paths in a monorepo since a ref (github)
 - [ ] 07. bulk-repo-cloner - Clone many repos from a list or GitHub user (github)
 - [ ] 08. git-large-file-finder - Find big blobs in git history (github)

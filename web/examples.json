@@ -698,6 +698,20 @@
    0
   ]
  },
+ "github/git-hook-installer": {
+  "values": {
+   "action": "install",
+   "hooks": [
+    "commit-msg",
+    "pre-commit"
+   ],
+   "hooks_dir": "hooks-demo/",
+   "preset": "python"
+  },
+  "exit": [
+   0
+  ]
+ },
  "github/git-log-summarizer": {
   "values": {
    "log": "git-log.txt"
