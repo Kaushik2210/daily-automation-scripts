@@ -682,6 +682,14 @@
    0
   ]
  },
+ "github/dead-code-finder": {
+  "values": {
+   "folder": "pyproj/"
+  },
+  "exit": [
+   0
+  ]
+ },
  "github/git-author-stats": {
   "values": {
    "log": "git-log.txt"
