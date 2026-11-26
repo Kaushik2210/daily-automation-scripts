@@ -2068,6 +2068,14 @@
    0
   ]
  },
+ "system/wifi-info-reporter": {
+  "values": {
+   "source": "netsh-wlan.txt"
+  },
+  "exit": [
+   0
+  ]
+ },
  "text/bulk-find-replace": {
   "values": {
    "folder": ".",
