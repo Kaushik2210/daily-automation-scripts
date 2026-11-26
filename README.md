@@ -51,7 +51,7 @@ The table below is rebuilt by `python tools/update_index.py` from `PLAN.md` and 
 
 <!-- INDEX:START -->
 
-**Progress: 243/300 done**
+**Progress: 244/300 done**
 
 | Day | # | Script | Category | Source | Live |
 | --- | --- | --- | --- | --- | --- |
@@ -298,6 +298,7 @@ The table below is rebuilt by `python tools/update_index.py` from `PLAN.md` and 
 | 25 | 01 | weekly-github-report | github | [weekly-github-report](scripts/github/weekly-github-report/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/github/weekly-github-report/) |
 | 25 | 02 | markdown-report-builder | text | [markdown-report-builder](scripts/text/markdown-report-builder/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/text/markdown-report-builder/) |
 | 25 | 03 | html-dashboard-builder | data | [html-dashboard-builder](scripts/data/html-dashboard-builder/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/data/html-dashboard-builder/) |
+| 25 | 04 | chart-generator | data | [chart-generator](scripts/data/chart-generator/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/data/chart-generator/) |
 
 <!-- INDEX:END -->
 

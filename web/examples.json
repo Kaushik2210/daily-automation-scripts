@@ -1,4 +1,17 @@
 {
+ "data/chart-generator": {
+  "values": {
+   "csv": "sales-monthly.csv",
+   "y": [
+    "revenue"
+   ],
+   "x": "month",
+   "format": "text"
+  },
+  "exit": [
+   0
+  ]
+ },
  "data/csv-cleaner": {
   "values": {
    "file": "contacts.csv"
