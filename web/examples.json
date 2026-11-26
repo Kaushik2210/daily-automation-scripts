@@ -107,6 +107,15 @@
    0
   ]
  },
+ "data/html-dashboard-builder": {
+  "values": {
+   "data": "dashboard-data.json",
+   "output": "dashboard.html"
+  },
+  "exit": [
+   0
+  ]
+ },
  "data/json-pretty-printer": {
   "values": {
    "file": "people.json",
