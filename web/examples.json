@@ -1787,6 +1787,14 @@
    0
   ]
  },
+ "system/battery-reporter": {
+  "values": {
+   "sysfs": "battery-demo"
+  },
+  "exit": [
+   0
+  ]
+ },
  "system/clipboard-history-logger": {
   "values": {
    "action": "search",

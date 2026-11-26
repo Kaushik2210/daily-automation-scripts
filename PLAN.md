@@ -313,7 +313,7 @@ Difficulty: easy on days 1-10, medium on days 11-20, more advanced on days 21-30
 - [x] 06. task-scheduler-helper - Generate cron or Task Scheduler entries for a script (system)
 - [x] 07. startup-lister - List programs that start with the OS (system)
 - [x] 08. event-log-exporter - Export recent system events to a file (system)
-- [ ] 09. battery-reporter - Report battery health and charge history (system)
+- [x] 09. battery-reporter - Report battery health and charge history (system)
 - [ ] 10. process-cleaner - Stop duplicate or runaway processes (dry-run first) (system)
 
 ## Day 27 - Security tools
