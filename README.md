@@ -51,7 +51,7 @@ The table below is rebuilt by `python tools/update_index.py` from `PLAN.md` and 
 
 <!-- INDEX:START -->
 
-**Progress: 250/300 done**
+**Progress: 251/300 done**
 
 | Day | # | Script | Category | Source | Live |
 | --- | --- | --- | --- | --- | --- |
@@ -305,6 +305,7 @@ The table below is rebuilt by `python tools/update_index.py` from `PLAN.md` and 
 | 25 | 08 | expense-summary | data | [expense-summary](scripts/data/expense-summary/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/data/expense-summary/) |
 | 25 | 09 | habit-streak-report | notion-productivity | [habit-streak-report](scripts/notion-productivity/habit-streak-report/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/notion-productivity/habit-streak-report/) |
 | 25 | 10 | email-report-sender | email | [email-report-sender](scripts/email/email-report-sender/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/email/email-report-sender/) |
+| 26 | 01 | process-monitor | system | [process-monitor](scripts/system/process-monitor/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/system/process-monitor/) |
 
 <!-- INDEX:END -->
 

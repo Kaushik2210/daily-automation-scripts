@@ -305,7 +305,7 @@ Difficulty: easy on days 1-10, medium on days 11-20, more advanced on days 21-30
 - [x] 10. email-report-sender - Send a report by SMTP with a dry-run preview (email)
 
 ## Day 26 - System administration
-- [ ] 01. process-monitor - Watch CPU and memory of chosen processes (system)
+- [x] 01. process-monitor - Watch CPU and memory of chosen processes (system)
 - [ ] 02. service-status-checker - Check whether named services are running (system)
 - [ ] 03. resource-logger - Log CPU, memory and disk to CSV on an interval (system)
 - [ ] 04. speed-tester - Measure download speed against a test file (system)

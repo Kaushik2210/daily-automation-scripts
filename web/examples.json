@@ -1966,6 +1966,20 @@
    0
   ]
  },
+ "system/process-monitor": {
+  "values": {
+   "names": [
+    "chrome",
+    "nginx",
+    "python",
+    "node"
+   ],
+   "source": "ps-snapshot.txt"
+  },
+  "exit": [
+   0
+  ]
+ },
  "system/python-env-reporter": {
   "values": {},
   "exit": [
