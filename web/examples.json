@@ -120,6 +120,18 @@
    0
   ]
  },
+ "data/expense-summary": {
+  "values": {
+   "csv": "expenses-2026.csv",
+   "budget": [
+    "groceries=400",
+    "dining=150"
+   ]
+  },
+  "exit": [
+   0
+  ]
+ },
  "data/html-dashboard-builder": {
   "values": {
    "data": "dashboard-data.json",
