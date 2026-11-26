@@ -310,7 +310,7 @@ Difficulty: easy on days 1-10, medium on days 11-20, more advanced on days 21-30
 - [x] 03. resource-logger - Log CPU, memory and disk to CSV on an interval (system)
 - [x] 04. speed-tester - Measure download speed against a test file (system)
 - [x] 05. wifi-info-reporter - Report current Wi-Fi network and signal (system)
-- [ ] 06. task-scheduler-helper - Generate cron or Task Scheduler entries for a script (system)
+- [x] 06. task-scheduler-helper - Generate cron or Task Scheduler entries for a script (system)
 - [ ] 07. startup-lister - List programs that start with the OS (system)
 - [ ] 08. event-log-exporter - Export recent system events to a file (system)
 - [ ] 09. battery-reporter - Report battery health and charge history (system)

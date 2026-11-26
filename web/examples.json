@@ -2046,6 +2046,19 @@
    0
   ]
  },
+ "system/task-scheduler-helper": {
+  "values": {
+   "command": "python C:/scripts/backup.py --apply",
+   "name": "nightly-backup",
+   "every": "weekly",
+   "at": "02:30",
+   "days": "mon,wed,fri",
+   "target": "all"
+  },
+  "exit": [
+   0
+  ]
+ },
  "system/temp-cleaner": {
   "values": {
    "folders": [

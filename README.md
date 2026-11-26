@@ -51,7 +51,7 @@ The table below is rebuilt by `python tools/update_index.py` from `PLAN.md` and 
 
 <!-- INDEX:START -->
 
-**Progress: 255/300 done**
+**Progress: 256/300 done**
 
 | Day | # | Script | Category | Source | Live |
 | --- | --- | --- | --- | --- | --- |
@@ -310,6 +310,7 @@ The table below is rebuilt by `python tools/update_index.py` from `PLAN.md` and 
 | 26 | 03 | resource-logger | system | [resource-logger](scripts/system/resource-logger/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/system/resource-logger/) |
 | 26 | 04 | speed-tester | system | [speed-tester](scripts/system/speed-tester/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/system/speed-tester/) |
 | 26 | 05 | wifi-info-reporter | system | [wifi-info-reporter](scripts/system/wifi-info-reporter/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/system/wifi-info-reporter/) |
+| 26 | 06 | task-scheduler-helper | system | [task-scheduler-helper](scripts/system/task-scheduler-helper/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/system/task-scheduler-helper/) |
 
 <!-- INDEX:END -->
 
