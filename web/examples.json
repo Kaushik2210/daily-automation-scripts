@@ -2022,6 +2022,14 @@
    1
   ]
  },
+ "system/speed-tester": {
+  "values": {
+   "source": "speed-runs.txt"
+  },
+  "exit": [
+   0
+  ]
+ },
  "system/status-code-counter": {
   "values": {
    "files": [
