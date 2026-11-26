@@ -1996,6 +1996,21 @@
    0
   ]
  },
+ "system/service-status-checker": {
+  "values": {
+   "names": [
+    "nginx",
+    "redis",
+    "docker",
+    "cron"
+   ],
+   "source": "services-systemctl.txt",
+   "list": true
+  },
+  "exit": [
+   1
+  ]
+ },
  "system/status-code-counter": {
   "values": {
    "files": [
