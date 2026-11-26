@@ -51,7 +51,7 @@ The table below is rebuilt by `python tools/update_index.py` from `PLAN.md` and 
 
 <!-- INDEX:START -->
 
-**Progress: 245/300 done**
+**Progress: 246/300 done**
 
 | Day | # | Script | Category | Source | Live |
 | --- | --- | --- | --- | --- | --- |
@@ -300,6 +300,7 @@ The table below is rebuilt by `python tools/update_index.py` from `PLAN.md` and 
 | 25 | 03 | html-dashboard-builder | data | [html-dashboard-builder](scripts/data/html-dashboard-builder/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/data/html-dashboard-builder/) |
 | 25 | 04 | chart-generator | data | [chart-generator](scripts/data/chart-generator/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/data/chart-generator/) |
 | 25 | 05 | sparkline-printer | data | [sparkline-printer](scripts/data/sparkline-printer/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/data/sparkline-printer/) |
+| 25 | 06 | time-tracking-report | notion-productivity | [time-tracking-report](scripts/notion-productivity/time-tracking-report/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/notion-productivity/time-tracking-report/) |
 
 <!-- INDEX:END -->
 

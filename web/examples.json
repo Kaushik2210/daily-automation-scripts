@@ -1356,6 +1356,18 @@
    0
   ]
  },
+ "notion-productivity/time-tracking-report": {
+  "values": {
+   "log": "time-log.csv",
+   "rate": [
+    "60",
+    "website=85"
+   ]
+  },
+  "exit": [
+   0
+  ]
+ },
  "notion-productivity/timezone-converter": {
   "values": {
    "time": "12:00",
