@@ -201,7 +201,7 @@ def main(argv=None):
     except (OSError, subprocess.SubprocessError, UnicodeDecodeError) as err:
         print(f"Can't read the processes: {err}", file=sys.stderr)
         return 1
-    mine = {os.getpid(), os.getppid()}
+    mine = set() if args.source else {os.getpid(), os.getppid()}  # a saved list isn't this machine
     targets, skipped = plan(procs, args.names, args.keep, args.duplicates, args.cpu_over,
                             args.mem_over, args.min_age, mine)
     for proc in skipped:

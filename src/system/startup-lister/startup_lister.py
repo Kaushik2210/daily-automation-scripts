@@ -113,7 +113,7 @@ def scan_system():
         if Path(folder).is_dir():
             items += scan_plist_dir(folder, label)
     if os.name == "nt":
-        import winreg
+        import winreg  # web-ok: only reached on a real Windows system, never with --root
         items += read_run_keys(winreg)
         for base in (os.environ.get("APPDATA"), os.environ.get("PROGRAMDATA")):
             startup = Path(base or "") / "Microsoft/Windows/Start Menu/Programs/Startup"
