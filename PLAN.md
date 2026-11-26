@@ -307,7 +307,7 @@ Difficulty: easy on days 1-10, medium on days 11-20, more advanced on days 21-30
 ## Day 26 - System administration
 - [x] 01. process-monitor - Watch CPU and memory of chosen processes (system)
 - [x] 02. service-status-checker - Check whether named services are running (system)
-- [ ] 03. resource-logger - Log CPU, memory and disk to CSV on an interval (system)
+- [x] 03. resource-logger - Log CPU, memory and disk to CSV on an interval (system)
 - [ ] 04. speed-tester - Measure download speed against a test file (system)
 - [ ] 05. wifi-info-reporter - Report current Wi-Fi network and signal (system)
 - [ ] 06. task-scheduler-helper - Generate cron or Task Scheduler entries for a script (system)
