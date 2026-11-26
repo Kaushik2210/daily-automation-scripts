@@ -1984,6 +1984,20 @@
    0
   ]
  },
+ "system/process-cleaner": {
+  "values": {
+   "names": [
+    "nginx",
+    "systemd"
+   ],
+   "duplicates": true,
+   "min_age": "0",
+   "source": "ps-snapshot.txt"
+  },
+  "exit": [
+   0
+  ]
+ },
  "system/process-monitor": {
   "values": {
    "names": [

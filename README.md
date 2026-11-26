@@ -51,7 +51,7 @@ The table below is rebuilt by `python tools/update_index.py` from `PLAN.md` and 
 
 <!-- INDEX:START -->
 
-**Progress: 259/300 done**
+**Progress: 260/300 done**
 
 | Day | # | Script | Category | Source | Live |
 | --- | --- | --- | --- | --- | --- |
@@ -314,6 +314,7 @@ The table below is rebuilt by `python tools/update_index.py` from `PLAN.md` and 
 | 26 | 07 | startup-lister | system | [startup-lister](scripts/system/startup-lister/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/system/startup-lister/) |
 | 26 | 08 | event-log-exporter | system | [event-log-exporter](scripts/system/event-log-exporter/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/system/event-log-exporter/) |
 | 26 | 09 | battery-reporter | system | [battery-reporter](scripts/system/battery-reporter/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/system/battery-reporter/) |
+| 26 | 10 | process-cleaner | system | [process-cleaner](scripts/system/process-cleaner/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/system/process-cleaner/) |
 
 <!-- INDEX:END -->
 
