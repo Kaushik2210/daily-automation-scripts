@@ -195,6 +195,20 @@
    0
   ]
  },
+ "data/sparkline-printer": {
+  "values": {
+   "csv": "sales-monthly.csv",
+   "column": [
+    "revenue",
+    "costs"
+   ],
+   "stats": true,
+   "style": "unicode"
+  },
+  "exit": [
+   0
+  ]
+ },
  "data/sqlite-csv-importer": {
   "values": {
    "csv": [
