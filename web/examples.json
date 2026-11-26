@@ -2030,6 +2030,14 @@
    0
   ]
  },
+ "system/startup-lister": {
+  "values": {
+   "root": "startup-demo"
+  },
+  "exit": [
+   0
+  ]
+ },
  "system/status-code-counter": {
   "values": {
    "files": [
