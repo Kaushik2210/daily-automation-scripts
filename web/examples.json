@@ -922,6 +922,14 @@
    0
   ]
  },
+ "github/weekly-github-report": {
+  "values": {
+   "saved": "gh-weekly.json"
+  },
+  "exit": [
+   0
+  ]
+ },
  "media/audio-metadata-reader": {
   "values": {
    "paths": [

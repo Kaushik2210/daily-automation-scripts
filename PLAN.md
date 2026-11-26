@@ -293,7 +293,7 @@ Difficulty: easy on days 1-10, medium on days 11-20, more advanced on days 21-30
 - [x] 10. repo-activity-heatmap - Draw a commit heatmap in the terminal (github)
 
 ## Day 25 - Reports
-- [ ] 01. weekly-github-report - Weekly activity report across your repos (github)
+- [x] 01. weekly-github-report - Weekly activity report across your repos (github)
 - [ ] 02. markdown-report-builder - Assemble a markdown report from section files (text)
 - [ ] 03. html-dashboard-builder - Generate a static HTML dashboard from JSON data (data)
 - [ ] 04. chart-generator - Plot a quick chart from a CSV column (data)

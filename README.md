@@ -51,7 +51,7 @@ The table below is rebuilt by `python tools/update_index.py` from `PLAN.md` and 
 
 <!-- INDEX:START -->
 
-**Progress: 240/300 done**
+**Progress: 241/300 done**
 
 | Day | # | Script | Category | Source | Live |
 | --- | --- | --- | --- | --- | --- |
@@ -295,6 +295,7 @@ The table below is rebuilt by `python tools/update_index.py` from `PLAN.md` and 
 | 24 | 08 | git-large-file-finder | github | [git-large-file-finder](scripts/github/git-large-file-finder/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/github/git-large-file-finder/) |
 | 24 | 09 | history-secret-scanner | security | [history-secret-scanner](scripts/security/history-secret-scanner/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/security/history-secret-scanner/) |
 | 24 | 10 | repo-activity-heatmap | github | [repo-activity-heatmap](scripts/github/repo-activity-heatmap/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/github/repo-activity-heatmap/) |
+| 25 | 01 | weekly-github-report | github | [weekly-github-report](scripts/github/weekly-github-report/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/github/weekly-github-report/) |
 
 <!-- INDEX:END -->
 
