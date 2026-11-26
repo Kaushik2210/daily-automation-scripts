@@ -391,6 +391,22 @@
    0
   ]
  },
+ "email/email-report-sender": {
+  "values": {
+   "to": [
+    "team@example.com"
+   ],
+   "sender": "reports@example.com",
+   "subject": "Weekly report",
+   "body_file": "report-body.txt",
+   "attach": [
+    "report-sections/02-results.md"
+   ]
+  },
+  "exit": [
+   0
+  ]
+ },
  "email/email-validator": {
   "values": {
    "file": "emails.txt",

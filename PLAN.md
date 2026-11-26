@@ -302,7 +302,7 @@ Difficulty: easy on days 1-10, medium on days 11-20, more advanced on days 21-30
 - [x] 07. invoice-generator - Generate invoices as HTML from a JSON file (pdf-docs)
 - [x] 08. expense-summary - Monthly expense summary with category breakdown (data)
 - [x] 09. habit-streak-report - Report habit streaks and consistency (notion-productivity)
-- [ ] 10. email-report-sender - Send a report by SMTP with a dry-run preview (email)
+- [x] 10. email-report-sender - Send a report by SMTP with a dry-run preview (email)
 
 ## Day 26 - System administration
 - [ ] 01. process-monitor - Watch CPU and memory of chosen processes (system)
