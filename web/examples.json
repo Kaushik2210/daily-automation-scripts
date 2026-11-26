@@ -1825,6 +1825,16 @@
    0
   ]
  },
+ "system/event-log-exporter": {
+  "values": {
+   "saved": "journal-events.jsonl",
+   "level": "error",
+   "format": "text"
+  },
+  "exit": [
+   0
+  ]
+ },
  "system/folder-size-history": {
   "values": {
    "folder": ".",
