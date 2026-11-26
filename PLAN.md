@@ -299,7 +299,7 @@ Difficulty: easy on days 1-10, medium on days 11-20, more advanced on days 21-30
 - [x] 04. chart-generator - Plot a quick chart from a CSV column (data)
 - [x] 05. sparkline-printer - Print terminal sparklines from numbers (data)
 - [x] 06. time-tracking-report - Summarize hours by project from a time log (notion-productivity)
-- [ ] 07. invoice-generator - Generate invoices as HTML from a JSON file (pdf-docs)
+- [x] 07. invoice-generator - Generate invoices as HTML from a JSON file (pdf-docs)
 - [ ] 08. expense-summary - Monthly expense summary with category breakdown (data)
 - [ ] 09. habit-streak-report - Report habit streaks and consistency (notion-productivity)
 - [ ] 10. email-report-sender - Send a report by SMTP with a dry-run preview (email)

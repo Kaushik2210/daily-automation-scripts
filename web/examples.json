@@ -1451,6 +1451,15 @@
    0
   ]
  },
+ "pdf-docs/invoice-generator": {
+  "values": {
+   "invoice": "invoice.json",
+   "format": "text"
+  },
+  "exit": [
+   0
+  ]
+ },
  "pdf-docs/invoice-renamer": {
   "values": {
    "folder": "."
