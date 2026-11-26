@@ -1999,6 +1999,21 @@
    1
   ]
  },
+ "text/markdown-report-builder": {
+  "values": {
+   "sections": [
+    "report-sections/"
+   ],
+   "exclude": [
+    "draft*"
+   ],
+   "toc": true,
+   "date": "2026-11-23"
+  },
+  "exit": [
+   0
+  ]
+ },
  "text/markdown-to-html": {
   "values": {
    "markdown": "meeting-notes.md",
