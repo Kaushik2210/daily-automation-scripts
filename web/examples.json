@@ -1801,6 +1801,16 @@
    0
   ]
  },
+ "security/totp-generator": {
+  "values": {
+   "secret_file": "demo-totp-secret.txt",
+   "time": "1700000000",
+   "count": "3"
+  },
+  "exit": [
+   0
+  ]
+ },
  "security/whois-lookup": {
   "values": {
    "from_file": "whois.txt",
