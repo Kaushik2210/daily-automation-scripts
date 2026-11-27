@@ -51,7 +51,7 @@ The table below is rebuilt by `python tools/update_index.py` from `PLAN.md` and 
 
 <!-- INDEX:START -->
 
-**Progress: 262/300 done**
+**Progress: 263/300 done**
 
 | Day | # | Script | Category | Source | Live |
 | --- | --- | --- | --- | --- | --- |
@@ -317,6 +317,7 @@ The table below is rebuilt by `python tools/update_index.py` from `PLAN.md` and 
 | 26 | 10 | process-cleaner | system | [process-cleaner](scripts/system/process-cleaner/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/system/process-cleaner/) |
 | 27 | 01 | note-vault | security | [note-vault](scripts/security/note-vault/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/security/note-vault/) |
 | 27 | 02 | file-encryptor | security | [file-encryptor](scripts/security/file-encryptor/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/security/file-encryptor/) |
+| 27 | 03 | password-vault | security | [password-vault](scripts/security/password-vault/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/security/password-vault/) |
 
 <!-- INDEX:END -->
 

@@ -1722,6 +1722,17 @@
    1
   ]
  },
+ "security/password-vault": {
+  "values": {
+   "command": "get",
+   "name": "github",
+   "vault": "passwords.vault",
+   "passphrase_file": "demo-passphrase.txt"
+  },
+  "exit": [
+   0
+  ]
+ },
  "security/permission-auditor": {
   "values": {
    "folder": "."
