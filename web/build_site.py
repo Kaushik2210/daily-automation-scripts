@@ -22,7 +22,7 @@ NEEDS_SYSTEM = {"subprocess", "multiprocessing", "tkinter", "curses", "winreg", 
 PYODIDE_PACKAGES = {"PIL": "pillow", "yaml": "pyyaml", "numpy": "numpy", "pandas": "pandas",
                     "openpyxl": "openpyxl", "lxml": "lxml", "bs4": "beautifulsoup4",
                     "qrcode": "qrcode", "tzdata": "tzdata", "pypdf": "pypdf", "fpdf": "fpdf2",
-                    "fastparquet": "fastparquet"}
+                    "fastparquet": "fastparquet", "cryptography": "cryptography"}
 # A script can opt in with this comment when it only uses the network or other programs in
 # optional modes (for example git or fetching a URL), so its offline modes still work in a browser.
 WEB_OK_MARKER = "# web-ok:"
