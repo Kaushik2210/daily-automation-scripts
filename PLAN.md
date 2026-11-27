@@ -317,7 +317,7 @@ Difficulty: easy on days 1-10, medium on days 11-20, more advanced on days 21-30
 - [x] 10. process-cleaner - Stop duplicate or runaway processes (dry-run first) (system)
 
 ## Day 27 - Security tools
-- [ ] 01. note-vault - Store notes encrypted with a passphrase (security)
+- [x] 01. note-vault - Store notes encrypted with a passphrase (security)
 - [ ] 02. file-encryptor - Encrypt and decrypt files with a passphrase (security)
 - [ ] 03. password-vault - Minimal encrypted password store for the terminal (security)
 - [ ] 04. totp-generator - Generate TOTP codes from a base32 secret (security)

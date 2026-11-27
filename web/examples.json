@@ -1675,6 +1675,16 @@
    1
   ]
  },
+ "security/note-vault": {
+  "values": {
+   "command": "list",
+   "vault": "demo.vault",
+   "passphrase_file": "demo-passphrase.txt"
+  },
+  "exit": [
+   0
+  ]
+ },
  "security/open-ports-lister": {
   "values": {
    "parse": "ss.txt"
