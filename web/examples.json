@@ -1687,6 +1687,15 @@
    1
   ]
  },
+ "security/jwt-decoder": {
+  "values": {
+   "file": "sample-jwt.txt",
+   "now": "1764000000"
+  },
+  "exit": [
+   0
+  ]
+ },
  "security/note-vault": {
   "values": {
    "command": "list",

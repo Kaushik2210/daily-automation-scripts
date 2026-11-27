@@ -321,7 +321,7 @@ Difficulty: easy on days 1-10, medium on days 11-20, more advanced on days 21-30
 - [x] 02. file-encryptor - Encrypt and decrypt files with a passphrase (security)
 - [x] 03. password-vault - Minimal encrypted password store for the terminal (security)
 - [x] 04. totp-generator - Generate TOTP codes from a base32 secret (security)
-- [ ] 05. jwt-decoder - Decode JWT headers and claims without verifying (security)
+- [x] 05. jwt-decoder - Decode JWT headers and claims without verifying (security)
 - [ ] 06. csp-builder - Build a Content-Security-Policy header interactively (security)
 - [ ] 07. signature-verifier - Verify detached signatures with GnuPG (security)
 - [ ] 08. weak-password-auditor - Audit your own password list for reuse and weakness (security)
