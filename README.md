@@ -51,7 +51,7 @@ The table below is rebuilt by `python tools/update_index.py` from `PLAN.md` and 
 
 <!-- INDEX:START -->
 
-**Progress: 269/300 done**
+**Progress: 270/300 done**
 
 | Day | # | Script | Category | Source | Live |
 | --- | --- | --- | --- | --- | --- |
@@ -324,6 +324,7 @@ The table below is rebuilt by `python tools/update_index.py` from `PLAN.md` and 
 | 27 | 07 | signature-verifier | security | [signature-verifier](scripts/security/signature-verifier/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/security/signature-verifier/) |
 | 27 | 08 | weak-password-auditor | security | [weak-password-auditor](scripts/security/weak-password-auditor/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/security/weak-password-auditor/) |
 | 27 | 09 | ssh-config-auditor | security | [ssh-config-auditor](scripts/security/ssh-config-auditor/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/security/ssh-config-auditor/) |
+| 27 | 10 | dependency-vuln-checker | security | [dependency-vuln-checker](scripts/security/dependency-vuln-checker/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/security/dependency-vuln-checker/) |
 
 <!-- INDEX:END -->
 

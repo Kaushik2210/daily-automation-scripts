@@ -1628,6 +1628,15 @@
    0
   ]
  },
+ "security/dependency-vuln-checker": {
+  "values": {
+   "file": "requirements-pinned.txt",
+   "db": "osv-demo-db.json"
+  },
+  "exit": [
+   1
+  ]
+ },
  "security/dns-lookup": {
   "values": {
    "domain": "example.com",
