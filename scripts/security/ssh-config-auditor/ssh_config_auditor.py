@@ -46,13 +46,14 @@ def parse(text):
         key, value = match.group(1).lower(), match.group(2).strip().strip('"')
         if key in ("host", "match"):
             context = f"{key.title()} {value}"
-        directives.append({"line": number, "context": context, "key": key, "value": value,
+        directives.append({"line": number, "context": context, "key": key, "name": match.group(1),
+                           "value": value,
                            "global": context == "global" or context in ("Host *", "Match all")})
     return directives
 
 
 def finding(d, severity, title, advice):
-    return {"line": d["line"], "context": d["context"], "setting": f"{d['key']} {d['value']}",
+    return {"line": d["line"], "context": d["context"], "setting": f"{d['name']} {d['value']}",
             "severity": severity, "title": title, "advice": advice}
 
 
@@ -71,7 +72,7 @@ def check_algorithms(d):
 
 def client_checks(d, check_files, home):
     key, low = d["key"], d["value"].lower()
-    wide = "applies to every host" if d["global"] else f"for {d['context']}"
+    wide = "applies to every host" if d["global"] else f"only in {d['context']}"
     found = []
     if key == "stricthostkeychecking" and low in FALSE:
         found.append(finding(d, "high", "host key checking is turned off",
@@ -83,11 +84,11 @@ def client_checks(d, check_files, home):
                              "so changed keys are never noticed."))
     if key == "forwardagent" and low in TRUE:
         found.append(finding(d, "high" if d["global"] else "medium",
-                             "agent forwarding is on " + wide,
+                             f"agent forwarding is on ({wide})",
                              "A compromised server can use your keys while you are connected. "
                              "Enable it only for hosts you fully trust, or use ProxyJump instead."))
     if key == "forwardx11" and low in TRUE:
-        found.append(finding(d, "medium", "X11 forwarding is on " + wide,
+        found.append(finding(d, "medium", f"X11 forwarding is on ({wide})",
                              "A remote program can watch your keystrokes and screen. Turn it off "
                              "unless you need it."))
     if key == "forwardx11trusted" and low in TRUE:
@@ -95,7 +96,7 @@ def client_checks(d, check_files, home):
                              "ForwardX11Trusted removes the X11 safeguards. Use -X without it."))
     if key == "passwordauthentication" and low in TRUE:
         found.append(finding(d, "medium" if d["global"] else "low",
-                             "password login is allowed " + wide,
+                             f"password login is allowed ({wide})",
                              "Passwords can be guessed or phished; prefer keys "
                              "(PasswordAuthentication no)."))
     if key == "protocol" and "1" in re.split(r"[,\s]+", low):
@@ -108,7 +109,7 @@ def client_checks(d, check_files, home):
         found.append(finding(d, "low", "known_hosts names are stored in plain text",
                              "HashKnownHosts yes hides which servers you visit if the file leaks."))
     if key == "compression" and low in TRUE:
-        found.append(finding(d, "low", "compression is on " + wide,
+        found.append(finding(d, "low", f"compression is on ({wide})",
                              "Compression adds little on fast links and has had security "
                              "issues; leave it off unless the link is slow."))
     if key == "verifyhostkeydns" and low in TRUE:

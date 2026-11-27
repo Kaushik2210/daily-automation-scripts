@@ -42,51 +42,51 @@ Each finding shows its severity (`critical`, `high`, `medium`, `low`), the line,
 ssh_config-demo: 12 finding(s)
 
 [CRITICAL] line 9 (Host *): SSH protocol 1 is enabled
-    protocol 1,2
+    Protocol 1,2
     Protocol 1 is badly broken and removed from modern OpenSSH.
 
-[HIGH] line 3 (Host *): agent forwarding is on applies to every host
-    forwardagent yes
+[HIGH] line 3 (Host *): agent forwarding is on (applies to every host)
+    ForwardAgent yes
     A compromised server can use your keys while you are connected. Enable it only for hosts you fully trust, or use ProxyJump instead.
 
 [HIGH] line 4 (Host *): host key checking is turned off
-    stricthostkeychecking no
+    StrictHostKeyChecking no
     Anyone on the network path can impersonate the server (applies to every host). Use 'accept-new' or leave the default.
 
 [HIGH] line 5 (Host *): known hosts are thrown away
-    userknownhostsfile /dev/null
+    UserKnownHostsFile /dev/null
     Pointing UserKnownHostsFile at /dev/null forgets every server key, so changed keys are never noticed.
 
 [HIGH] line 6 (Host *): weak algorithm 3des-cbc in ciphers
-    ciphers aes256-ctr,3des-cbc,arcfour
+    Ciphers aes256-ctr,3des-cbc,arcfour
     3DES is old and breakable with enough traffic. Remove it from the list.
 
 [HIGH] line 6 (Host *): weak algorithm arcfour in ciphers
-    ciphers aes256-ctr,3des-cbc,arcfour
+    Ciphers aes256-ctr,3des-cbc,arcfour
     RC4 (arcfour) is broken. Remove it from the list.
 
 [HIGH] line 7 (Host *): weak algorithm hmac-md5 in macs
-    macs hmac-sha2-256,hmac-md5
+    MACs hmac-sha2-256,hmac-md5
     MD5-based MACs are weak. Remove it from the list.
 
 [HIGH] line 8 (Host *): weak algorithm ssh-rsa in hostkeyalgorithms
-    hostkeyalgorithms +ssh-rsa
+    HostKeyAlgorithms +ssh-rsa
     ssh-rsa signatures use SHA-1; use rsa-sha2-256/512 or ed25519. Remove it from the list.
 
-[MEDIUM] line 20 (Host build-server): X11 forwarding is on for Host build-server
-    forwardx11 yes
+[MEDIUM] line 20 (Host build-server): X11 forwarding is on (only in Host build-server)
+    ForwardX11 yes
     A remote program can watch your keystrokes and screen. Turn it off unless you need it.
 
-[LOW] line 19 (Host build-server): password login is allowed for Host build-server
-    passwordauthentication yes
+[LOW] line 19 (Host build-server): password login is allowed (only in Host build-server)
+    PasswordAuthentication yes
     Passwords can be guessed or phished; prefer keys (PasswordAuthentication no).
 
-[LOW] line 21 (Host build-server): compression is on for Host build-server
-    compression yes
+[LOW] line 21 (Host build-server): compression is on (only in Host build-server)
+    Compression yes
     Compression adds little on fast links and has had security issues; leave it off unless the link is slow.
 
 [LOW] line 22 (Host build-server): known_hosts names are stored in plain text
-    hashknownhosts no
+    HashKnownHosts no
     HashKnownHosts yes hides which servers you visit if the file leaks.
 ```
 
