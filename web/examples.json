@@ -1614,6 +1614,20 @@
    0
   ]
  },
+ "security/csp-builder": {
+  "values": {
+   "preset": "balanced",
+   "allow": [
+    "script-src=https://cdn.example.com",
+    "connect-src=https://api.example.com"
+   ],
+   "nonce": true,
+   "report_uri": "/csp-reports"
+  },
+  "exit": [
+   0
+  ]
+ },
  "security/dns-lookup": {
   "values": {
    "domain": "example.com",

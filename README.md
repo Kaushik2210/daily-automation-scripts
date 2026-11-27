@@ -51,7 +51,7 @@ The table below is rebuilt by `python tools/update_index.py` from `PLAN.md` and 
 
 <!-- INDEX:START -->
 
-**Progress: 265/300 done**
+**Progress: 266/300 done**
 
 | Day | # | Script | Category | Source | Live |
 | --- | --- | --- | --- | --- | --- |
@@ -320,6 +320,7 @@ The table below is rebuilt by `python tools/update_index.py` from `PLAN.md` and 
 | 27 | 03 | password-vault | security | [password-vault](scripts/security/password-vault/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/security/password-vault/) |
 | 27 | 04 | totp-generator | security | [totp-generator](scripts/security/totp-generator/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/security/totp-generator/) |
 | 27 | 05 | jwt-decoder | security | [jwt-decoder](scripts/security/jwt-decoder/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/security/jwt-decoder/) |
+| 27 | 06 | csp-builder | security | [csp-builder](scripts/security/csp-builder/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/security/csp-builder/) |
 
 <!-- INDEX:END -->
 
