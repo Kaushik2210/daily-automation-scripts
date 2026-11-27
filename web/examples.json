@@ -1845,6 +1845,14 @@
    0
   ]
  },
+ "security/weak-password-auditor": {
+  "values": {
+   "file": "passwords-demo.csv"
+  },
+  "exit": [
+   0
+  ]
+ },
  "security/whois-lookup": {
   "values": {
    "from_file": "whois.txt",
