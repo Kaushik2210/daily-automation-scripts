@@ -1801,6 +1801,14 @@
    0
   ]
  },
+ "security/ssh-config-auditor": {
+  "values": {
+   "config": "ssh_config-demo"
+  },
+  "exit": [
+   0
+  ]
+ },
  "security/ssh-key-auditor": {
   "values": {
    "paths": [

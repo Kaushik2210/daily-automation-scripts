@@ -51,7 +51,7 @@ The table below is rebuilt by `python tools/update_index.py` from `PLAN.md` and 
 
 <!-- INDEX:START -->
 
-**Progress: 268/300 done**
+**Progress: 269/300 done**
 
 | Day | # | Script | Category | Source | Live |
 | --- | --- | --- | --- | --- | --- |
@@ -323,6 +323,7 @@ The table below is rebuilt by `python tools/update_index.py` from `PLAN.md` and 
 | 27 | 06 | csp-builder | security | [csp-builder](scripts/security/csp-builder/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/security/csp-builder/) |
 | 27 | 07 | signature-verifier | security | [signature-verifier](scripts/security/signature-verifier/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/security/signature-verifier/) |
 | 27 | 08 | weak-password-auditor | security | [weak-password-auditor](scripts/security/weak-password-auditor/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/security/weak-password-auditor/) |
+| 27 | 09 | ssh-config-auditor | security | [ssh-config-auditor](scripts/security/ssh-config-auditor/) | [Try it](https://kaushik2210.github.io/daily-automation-scripts/tools/security/ssh-config-auditor/) |
 
 <!-- INDEX:END -->
 
