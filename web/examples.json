@@ -1790,6 +1790,17 @@
    0
   ]
  },
+ "security/signature-verifier": {
+  "values": {
+   "status": "gpg-status-good.txt",
+   "expect_fingerprint": [
+    "0123456789ABCDEF0123456789ABCDEF01234567"
+   ]
+  },
+  "exit": [
+   0
+  ]
+ },
  "security/ssh-key-auditor": {
   "values": {
    "paths": [

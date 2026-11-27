@@ -323,7 +323,7 @@ Difficulty: easy on days 1-10, medium on days 11-20, more advanced on days 21-30
 - [x] 04. totp-generator - Generate TOTP codes from a base32 secret (security)
 - [x] 05. jwt-decoder - Decode JWT headers and claims without verifying (security)
 - [x] 06. csp-builder - Build a Content-Security-Policy header interactively (security)
-- [ ] 07. signature-verifier - Verify detached signatures with GnuPG (security)
+- [x] 07. signature-verifier - Verify detached signatures with GnuPG (security)
 - [ ] 08. weak-password-auditor - Audit your own password list for reuse and weakness (security)
 - [ ] 09. ssh-config-auditor - Review ssh_config for risky settings (security)
 - [ ] 10. dependency-vuln-checker - Check pinned deps against the OSV database (security)
