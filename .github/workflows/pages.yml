@@ -39,7 +39,7 @@ jobs:
         with:
           path: _site
       - id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
       - name: Check live links
         run: |
           for attempt in 1 2 3 4 5; do
